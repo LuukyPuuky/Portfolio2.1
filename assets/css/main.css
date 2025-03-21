@@ -2,6 +2,8 @@
 
 @import "tailwindcss";
 
+@plugin 'tailwind-scrollbar';
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
@@ -12,5 +14,7 @@
 @utility container {
   padding-inline: 2rem;
   margin-inline: auto;
-  align-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

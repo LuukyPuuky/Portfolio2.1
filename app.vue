@@ -2,14 +2,21 @@
 import Navbar from "./components/Navbar.vue";
 </script>
 <template>
-  <body class="moving-gradient overflow-hidden">
+  <html
+    class="scrollbar scrollbar-thumb-green-500 scrollbar-track-[#0F172A]"
+  ></html>
+  <body class="bg-[#0F172A] text-white">
     <Navbar />
+
+    <h1 class="flex items-center justify-center h-screen text-white text-4xl">
+      Vue.js
+    </h1>
+
     <div>
-      <h1
-        class="flex items-center justify-center w-screen h-screen text-white text-4xl"
-      >
-        Vue.js
-      </h1>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, laboriosam
+      ipsam! Illum, quaerat? Quibusdam aliquid accusamus aperiam tempora sunt
+      ipsum laborum quaerat quisquam molestiae qui explicabo, totam praesentium
+      provident mollitia!
     </div>
   </body>
 </template>
