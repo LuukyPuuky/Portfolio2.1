@@ -18,6 +18,11 @@ import Navbar from "./components/Navbar.vue";
       ipsum laborum quaerat quisquam molestiae qui explicabo, totam praesentium
       provident mollitia!
     </div>
+    <div class="h-100">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est, expedita
+      quisquam at nobis vel eligendi odio asperiores explicabo, amet reiciendis
+      veniam, accusantium quod ab. Eos non delectus similique ut officia.
+    </div>
   </body>
 </template>
 
