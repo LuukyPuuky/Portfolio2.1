@@ -1,14 +1,12 @@
 <script setup>
-import { ref, onMounted } from "vue";
-import { Sun, Moon, Menu, X } from "lucide-vue-next";
-
-import { toggleDarkMode } from "./DarkmodeToggle";
+import { Menu, X } from "lucide-vue-next";
+const isOpen = ref(false);
 </script>
 
 <template>
   <div class="container flex justify-center pt-8 sticky top-0">
     <nav
-      class="relative flex flex-col md:flex-row items-center rounded-4xl justify-between px-6 py-2 border border-gray-300 dark:border-white/20 backdrop-blur-md bg-transparent top-0 z-50"
+      class="relative flex flex-col md:gap-8 md:flex-row items-center rounded-4xl justify-between px-6 py-2 border border-gray-300 dark:border-white/20 backdrop-blur-md bg-transparent top-0 z-50"
       :class="{
         'rounded-4xl': !isOpen,
         'rounded-4xl': isOpen,
@@ -26,21 +24,27 @@ import { toggleDarkMode } from "./DarkmodeToggle";
 
         <!-- Hamburger Icon -->
         <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-          <Menu v-if="!isOpen" class="w-8 h-8 text-gray-500 dark:text-white" />
-          <X v-else class="w-8 h-8 text-gray-500 dark:text-white" />
+          <Menu
+            v-if="!isOpen"
+            class="w-8 h-8 text-gray-500 dark:text-white cursor-pointer"
+          />
+          <X
+            v-else
+            class="w-8 h-8 text-gray-500 dark:text-white cursor-pointer"
+          />
         </button>
       </div>
 
       <!-- Navigation Links -->
       <div
-        class="flex flex-col md:flex-row md:items-center justify-center gap-4 md:gap-8 mt-4 md:mt-0 z-50"
+        class="flex flex-col md:flex-row md:items-center justify-center gap-4 md:gap-8 mt-4 md:mt-0 z-50 w-full"
         :class="{ flex: isOpen, hidden: !isOpen, 'md:flex': true }"
       >
         <a
           v-for="(item, index) in navItems"
           :key="index"
           :href="item.url"
-          class="relative text-lg font-medium text-gray-500 dark:text-white hover:text-white font-Roboto group z-50"
+          class="relative text-lg font-medium w-max text-gray-500 dark:text-white hover:text-white font-Roboto group z-50"
         >
           {{ item.label }}
           <span
@@ -49,10 +53,7 @@ import { toggleDarkMode } from "./DarkmodeToggle";
         </a>
 
         <!-- Dark Mode Toggle -->
-        <button @click="toggleDarkMode" class="focus:outline-none">
-          <Sun v-if="!isDark" class="w-6 h-6 text-gray-500 dark:text-white" />
-          <Moon v-else class="w-6 h-6 text-gray-500 dark:text-white" />
-        </button>
+        <DarkmodeToggle />
       </div>
     </nav>
   </div>

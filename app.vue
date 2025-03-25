@@ -1,5 +1,7 @@
 <script>
 import Navbar from "./components/Navbar.vue";
+
+import DarkmodeToggle from "./components/DarkmodeToggle.vue";
 </script>
 <template>
   <html
@@ -12,7 +14,7 @@ import Navbar from "./components/Navbar.vue";
       Vue.js
     </h1>
 
-    <div>
+    <div class="h-[400vh]">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, laboriosam
       ipsam! Illum, quaerat? Quibusdam aliquid accusamus aperiam tempora sunt
       ipsum laborum quaerat quisquam molestiae qui explicabo, totam praesentium

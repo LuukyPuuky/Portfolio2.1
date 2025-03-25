@@ -1,5 +1,7 @@
 <script setup>
-const isOpen = ref(false);
+import { ref, onMounted } from "vue";
+import { Sun, Moon } from "lucide-vue-next";
+
 const isDark = ref(false);
 
 // Toggle Dark Mode
@@ -22,3 +24,10 @@ onMounted(() => {
   }
 });
 </script>
+<template>
+  <!-- Dark Mode Toggle -->
+  <button @click="toggleDarkMode" class="focus:outline-none">
+    <Sun v-if="!isDark" class="w-6 h-6 text-gray-500 dark:text-white" />
+    <Moon v-else class="w-6 h-6 text-gray-500 dark:text-white" />
+  </button>
+</template>
