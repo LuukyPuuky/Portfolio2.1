@@ -1,7 +1,6 @@
 <script>
 import Navbar from "./components/Navbar.vue";
-
-import DarkmodeToggle from "./components/DarkmodeToggle.vue";
+import Headerhero from "./components/Headerhero.vue";
 </script>
 <template>
   <html
@@ -9,17 +8,7 @@ import DarkmodeToggle from "./components/DarkmodeToggle.vue";
   ></html>
   <body class="bg-[#0F172A] text-white">
     <Navbar />
-
-    <h1 class="flex items-center justify-center h-screen text-white text-4xl">
-      Vue.js
-    </h1>
-
-    <div class="h-[400vh]">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, laboriosam
-      ipsam! Illum, quaerat? Quibusdam aliquid accusamus aperiam tempora sunt
-      ipsum laborum quaerat quisquam molestiae qui explicabo, totam praesentium
-      provident mollitia!
-    </div>
+    <Headerhero />
   </body>
 </template>
 

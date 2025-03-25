@@ -11,18 +11,18 @@
 
 @font-face {
   font-family: roboto condensed;
-  src: url("../fonts/RobotoCondensed-Regular.ttf");
+  src: url("../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf");
 }
 
 @font-face {
   font-family: roboto condensed;
-  src: url("../fonts/RobotoCondensed-Bold.ttf");
+  src: url("../fonts/Roboto/RobotoCondensed-Bold.ttf");
   font-weight: bold;
 }
 
 @font-face {
   font-family: KronaOne;
-  src: url("../fonts/KronaOne-Regular.ttf");
+  src: url("../fonts/Krona_One/KronaOne-Regular.ttf");
 }
 
 @import "tailwindcss";
@@ -33,6 +33,8 @@
 
 @theme {
   --font-Roboto: "roboto", sans-serif;
+  --font-KronaOne: "KronaOne", sans-serif;
+  --font-RobotoCondensed: "roboto condensed", sans-serif;
 }
 
 @utility container {
