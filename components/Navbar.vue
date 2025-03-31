@@ -1,4 +1,5 @@
 <script setup>
+import { NuxtLink } from "#components";
 import { Menu, X } from "lucide-vue-next";
 const isOpen = ref(false);
 </script>
@@ -15,12 +16,12 @@ const isOpen = ref(false);
       <!-- Top Section (Logo & Hamburger) -->
       <div class="flex w-full justify-between items-center gap-8">
         <!-- Logo -->
-        <a
-          href="/"
+        <NuxtLink
+          href="/app"
           class="text-lg font-medium font-Roboto text-gray-500 dark:text-white"
         >
           Luuk Steijaert
-        </a>
+        </NuxtLink>
 
         <!-- Hamburger Icon -->
         <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
@@ -40,7 +41,7 @@ const isOpen = ref(false);
         class="flex flex-col md:flex-row md:items-center justify-center gap-4 md:gap-8 mt-4 md:mt-0 z-50 w-full"
         :class="{ flex: isOpen, hidden: !isOpen, 'md:flex': true }"
       >
-        <a
+        <NuxtLink
           v-for="(item, index) in navItems"
           :key="index"
           :href="item.url"
@@ -50,7 +51,7 @@ const isOpen = ref(false);
           <span
             class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
           ></span>
-        </a>
+        </NuxtLink>
 
         <!-- Dark Mode Toggle -->
         <DarkmodeToggle />
@@ -67,7 +68,7 @@ export default {
       navItems: [
         { label: "Learning Outcomes", url: "/learning-outcomes" },
         { label: "Projects", url: "/projects" },
-        { label: "About", url: "/about" },
+        { label: "About", url: "./about" },
       ],
     };
   },

@@ -5,7 +5,7 @@ export default {
 </script>
 <template>
   <div class="md:max-w-6xl mx-auto pt-20 px-4">
-    <div class="relative bg-[#0F172A] text-white flex flex-col gap-2">
+    <div class="relative bg-navy-900 text-white flex flex-col gap-2">
       <h1 class="font-KronaOne md:text-9xl text-6xl">Portfolio</h1>
       <h1 class="font-KronaOne md:text-5xl text-3xl">Luuk Steijaert</h1>
       <p class="font-KronaOne text-gray-300 md:text-1xl">
