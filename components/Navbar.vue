@@ -17,7 +17,7 @@ const isOpen = ref(false);
       <div class="flex w-full justify-between items-center gap-8">
         <!-- Logo -->
         <NuxtLink
-          href="/app"
+          href="/"
           class="text-lg font-medium font-Roboto text-gray-500 dark:text-white"
         >
           Luuk Steijaert

@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@nuxt/fonts": "^0.11.0",
     "@nuxtjs/tailwindcss": "^6.13.1",
     "@tailwindcss/vite": "^4.0.7",
     "lucide-vue-next": "^0.483.0",

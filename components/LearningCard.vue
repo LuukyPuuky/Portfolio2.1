@@ -25,10 +25,12 @@ const handlePdfClick = () => {
 };
 </script>
 <template>
-  <div>
-    <h2 class="text-white mb-1 font-RobotoCondensed text-4xl">{{ title }}</h2>
+  <div class="max-w-2xl">
+    <h2 class="text-white font-RobotoCondensed text-4xl mx-[-2px]">
+      {{ title }}
+    </h2>
     <p class="text-green-400 mb-2 font-Roboto text-2xl">{{ subtitle }}</p>
-    <p class="text-gray-300 mb-4 font-Roboto">{{ description }}</p>
+    <p class="text-gray-300 mb-10 font-Roboto text-xl">{{ description }}</p>
     <button-pdf @click="handlePdfClick" />
   </div>
 </template>
