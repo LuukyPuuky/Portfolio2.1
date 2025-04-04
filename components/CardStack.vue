@@ -1,10 +1,10 @@
 <template>
   <div
-    class="flex flex-col-2 gap-4 md:flex-row md:gap-8 max-w-6xl mx-auto py-18"
-    ref="cardStack"
+    class="flex flex-col gap-4 p-4 md:flex-row md:gap-8 mx-auto py-18 bg-[#0f172a] rounded-2xl max-w-7xl"
   >
+    <!-- Leftside Card -->
     <div class="flex flex-col gap-2">
-      <h1 class="font-KronaOne text-5xl">{{ title }}</h1>
+      <h1 class="font-KronaOne md:text-5xl text-4xl w-max">{{ title }}</h1>
       <h2 class="font-KronaOne text-2xl">{{ subtitle }}</h2>
       <p
         class="md:text-2xl text-gray-300 font-Roboto md:w-2xl size md:mb-10 mb-5"
@@ -18,18 +18,19 @@
         {{ buttonText }}
       </NuxtLink>
     </div>
-    <div class="md:flex md:flex-col md:gap-4 hidden">
-      <h1 class="md:text-5xl text-2xl font-KronaOne w-max">
+
+    <!-- Rightside Card -->
+    <div class="md:flex md:flex-col md:gap-4">
+      <h1 class="md:text-5xl sm:text-4xl text-3xl font-KronaOne md:w-max">
         {{ brandingTitle }}
       </h1>
-      <div class="relative flex justify-center items-center w-full h-96">
+      <div class="w-full flex justify-center items-center">
         <svg
-          class="absolute top-0 left-0"
-          xmlns="http://www.w3.org/2000/svg"
-          width="463"
-          height="301"
+          class="w-full h-auto max-w-full"
           viewBox="0 0 463 301"
+          xmlns="http://www.w3.org/2000/svg"
           fill="none"
+          preserveAspectRatio="xMidYMid meet"
         >
           <path
             fill-rule="evenodd"
@@ -40,7 +41,7 @@
           <foreignObject x="35" y="60" width="400" height="200">
             <img
               :src="brandingImage"
-              class="w-full h-full"
+              class="w-full h-full object-contain"
               alt="Branding Image"
             />
           </foreignObject>
@@ -88,37 +89,4 @@ export default {
     },
   },
 };
-</script>
-
-<script setup>
-import { ref, onMounted } from "vue";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-//register the ScrollTrigger plugin
-gsap.registerPlugin(ScrollTrigger);
-
-const cardStack = ref(null);
-
-//animate the card stack on scroll
-onMounted(() => {
-  if (cardStack.value) {
-    gsap.fromTo(
-      cardStack.value,
-      { y: 100, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 1.2,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: cardStack.value,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
-          pin: true,
-        },
-      }
-    );
-  }
-});
 </script>
