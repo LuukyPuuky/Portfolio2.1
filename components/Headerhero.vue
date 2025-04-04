@@ -4,7 +4,7 @@ export default {
 };
 </script>
 <template>
-  <div class="md:max-w-6xl mx-auto pt-20 px-4">
+  <div class="md:max-w-6xl mx-auto pt-20 px-4 h-screen">
     <div class="relative bg-navy-900 text-white flex flex-col gap-2">
       <h1 class="font-KronaOne md:text-9xl text-6xl md:mx-[-10px] mx-[-4px]">
         Portfolio

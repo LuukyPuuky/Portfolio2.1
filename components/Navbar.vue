@@ -5,7 +5,7 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <div class="container flex justify-center pt-8 sticky top-0">
+  <div class="container flex justify-center pt-8 sticky top-0 z-50">
     <nav
       class="relative flex flex-col md:gap-8 md:flex-row items-center rounded-4xl justify-between px-6 py-2 border border-gray-300 dark:border-white/20 backdrop-blur-md bg-transparent top-0 z-50"
       :class="{

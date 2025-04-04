@@ -1,56 +1,124 @@
 <template>
   <div
-    class="flex flex-col-2 gap-4 md:flex-row md:gap-8 max-w-6xl mx-auto py-18 px-4"
+    class="flex flex-col-2 gap-4 md:flex-row md:gap-8 max-w-6xl mx-auto py-18"
+    ref="cardStack"
   >
-    <div>
-      <h1>{{ title }}</h1>
-      <h2>{{ subtitle }}</h2>
-      <p>{{ description }}</p>
-      <NuxtLink
-        to="/"
-        class="bg-green-400 text-black px-11 py-3 cursor-pointer rounded-lg font-RobotoCondensed text-1xl"
+    <div class="flex flex-col gap-2">
+      <h1 class="font-KronaOne text-5xl">{{ title }}</h1>
+      <h2 class="font-KronaOne text-2xl">{{ subtitle }}</h2>
+      <p
+        class="md:text-2xl text-gray-300 font-Roboto md:w-2xl size md:mb-10 mb-5"
       >
-        Lees Meer
+        {{ description }}
+      </p>
+      <NuxtLink
+        :to="buttonLink"
+        class="bg-green-400 text-black cursor-pointer rounded-lg text-1xl font-KronaOne flex justify-center items-center w-max px-10 py-3"
+      >
+        {{ buttonText }}
       </NuxtLink>
     </div>
-
-    <h1>{{ projecttitle }}</h1>
-    <img src="#" alt="#" />
+    <div class="md:flex md:flex-col md:gap-4 hidden">
+      <h1 class="md:text-5xl text-2xl font-KronaOne w-max">
+        {{ brandingTitle }}
+      </h1>
+      <div class="relative flex justify-center items-center w-full h-96">
+        <svg
+          class="absolute top-0 left-0"
+          xmlns="http://www.w3.org/2000/svg"
+          width="463"
+          height="301"
+          viewBox="0 0 463 301"
+          fill="none"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M25.0268 58.4342V242.768C25.0268 261.855 41.3403 277.33 61.4643 277.33H401.548C421.671 277.33 437.985 261.855 437.985 242.768V104.518C437.985 85.4292 421.671 69.9551 401.548 69.9551H241.568C231.904 69.9551 222.637 66.3138 215.804 59.832L181.449 27.2462C179.171 25.0856 176.082 23.8717 172.861 23.8717H61.4643C54.7564 23.8717 49.3184 18.7136 49.3184 12.3509C49.3184 5.98819 54.7564 0.830078 61.4643 0.830078H172.861C182.524 0.830078 191.791 4.47135 198.625 10.9532L232.98 43.539C235.257 45.6996 238.346 46.9134 241.568 46.9134H401.548C435.087 46.9134 462.277 72.7037 462.277 104.518V242.768C462.277 274.581 435.087 300.372 401.548 300.372H61.4643C27.9245 300.372 0.735107 274.581 0.735107 242.768V58.4342C0.735107 52.0715 6.17304 46.9134 12.8809 46.9134C19.5888 46.9134 25.0268 52.0715 25.0268 58.4342Z"
+            :fill="fileColor"
+          />
+          <foreignObject x="35" y="60" width="400" height="200">
+            <img
+              :src="brandingImage"
+              class="w-full h-full"
+              alt="Branding Image"
+            />
+          </foreignObject>
+        </svg>
+      </div>
+    </div>
   </div>
 </template>
 
-<script setup>
-const props = defineProps({
-  cards: {
-    type: Array,
-    default: () => [
-      {
-        title: "Project 1",
-        subtitle: "Boris Schmidt",
-        description:
-          "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie.Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.  ",
-      },
-      {
-        title: "Project 1",
-        subtitle: "Boris Schmidt",
-        description:
-          "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie.Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.  ",
-      },
-      {
-        title: "Project 1",
-        subtitle: "Boris Schmidt",
-        description:
-          "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie.Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.  ",
-      },
-      {
-        title: "Project X",
-        subtitle: "Spline",
-        description:
-          "Dit project is mijn eigen project. Hierin mocht ik zelf gaan exploren wat ik graag wilde gaan doen. Ik heb besloten om mijzelf te verdiepen in Spline. Spline is een tool waarmee je 3D objecten kan maken voor het web.",
-      },
-    ],
+<script>
+export default {
+  props: {
+    title: {
+      type: String,
+      default: "Project 1",
+    },
+    subtitle: {
+      type: String,
+      default: "Boris Schmidt",
+    },
+    description: {
+      type: String,
+      default:
+        "Voor dit project heb ik een branding gemaakt voor Boris Schmidt...",
+    },
+    buttonText: {
+      type: String,
+      default: "Lees Meer",
+    },
+    buttonLink: {
+      type: String,
+      default: "/",
+    },
+    brandingTitle: {
+      type: String,
+      default: "Branding",
+    },
+    brandingImage: {
+      type: String,
+      default: "/images/card1folderinside.svg",
+    },
+    fileColor: {
+      type: String,
+      default: "#381C22",
+    },
   },
-});
+};
 </script>
 
-<script></script>
+<script setup>
+import { ref, onMounted } from "vue";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+//register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+const cardStack = ref(null);
+
+//animate the card stack on scroll
+onMounted(() => {
+  if (cardStack.value) {
+    gsap.fromTo(
+      cardStack.value,
+      { y: 100, opacity: 0 },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: cardStack.value,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+          pin: true,
+        },
+      }
+    );
+  }
+});
+</script>

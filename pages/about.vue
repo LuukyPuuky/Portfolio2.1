@@ -4,7 +4,6 @@
       <Navbar />
       <HeaderProjectSection />
       <ProjectLayout />
-      <CardStack></CardStack>
     </div>
   </div>
 </template>
