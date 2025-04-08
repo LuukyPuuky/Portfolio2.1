@@ -13,7 +13,7 @@
       </p>
       <NuxtLink
         :to="buttonLink"
-        class="bg-green-400 text-black cursor-pointer rounded-lg text-1xl font-KronaOne flex justify-center items-center w-max px-10 py-3"
+        class="bg-green-500 text-black cursor-pointer rounded-lg text-1xl font-KronaOne flex justify-center items-center w-max px-10 py-3"
       >
         {{ buttonText }}
       </NuxtLink>

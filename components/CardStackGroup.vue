@@ -55,6 +55,17 @@ const cards = [
     brandingImage: "/images/card2.svg",
     fileColor: "#234567",
   },
+  {
+    title: "Project 3",
+    subtitle: "Portfolio",
+    description:
+      "Dit project gaat over mijn portfolio. Hierin beschrijf ik hoe ik tot mijn portfolio ben gekomen, wat ik ervoor heb gedesigned en hoe ik mezelf beter ben leren kennen in mijn waardes.",
+    buttonText: "Lees Meer",
+    buttonLink: "/portfolio",
+    brandingTitle: "Luuk Steijaert",
+    brandingImage: "/images/card2.svg",
+    fileColor: "#00c951",
+  },
 ];
 
 onMounted(() => {
