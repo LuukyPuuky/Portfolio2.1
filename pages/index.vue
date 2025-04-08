@@ -5,6 +5,13 @@
   <body class="bg-[#0f172a] text-white">
     <Navbar />
     <Headerhero />
-    <CardStackGroup />
+
+    <CardStackGroup id="projects" />
   </body>
 </template>
+
+<style>
+html {
+  scroll-behavior: smooth;
+}
+</style>

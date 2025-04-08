@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex flex-col gap-4 p-4 md:flex-row md:gap-8 mx-auto py-18 bg-[#0f172a] rounded-2xl max-w-7xl"
+    class="flex flex-col gap-4 p-4 md:flex-row md:gap-8 mx-auto bg-[#0f172a] rounded-2xl max-w-7xl"
   >
     <!-- Leftside Card -->
     <div class="flex flex-col gap-2">

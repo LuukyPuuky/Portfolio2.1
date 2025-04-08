@@ -39,7 +39,7 @@ const cards = [
     description:
       "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie.Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.",
     buttonText: "Lees Meer",
-    buttonLink: "/",
+    buttonLink: "/branding",
     brandingTitle: "Branding",
     brandingImage: "/images/card1folderinside.svg",
     fileColor: "#381C22",
