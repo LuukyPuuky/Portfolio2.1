@@ -5,6 +5,5 @@
       <HeaderProject title="Branding" subtitle="Boris Schmidt" />
       <ProjectLayout />
     </div>
-    <h1>hello world!</h1>
   </div>
 </template>
