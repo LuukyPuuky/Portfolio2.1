@@ -33,7 +33,7 @@ const scrollSection = ref(null);
 
 const cards = [
   {
-    title: "Project 2",
+    title: "Project 1",
     subtitle: "Boris Schimidt",
     description:
       "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie. Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.",
@@ -49,10 +49,10 @@ const cards = [
     description:
       "Voor dit project heb ik samen met mijn groepsgenoten een UX design gemaakt voor Cardan. Cardan is een bedrijf dat zich richt op het verbeteren van de accecibility van websites.",
     buttonText: "Lees Meer",
-    buttonLink: "/",
+    buttonLink: "cardan",
     brandingTitle: "Create that UX",
-    brandingImage: "/images/card2.svg",
-    fileColor: "#234567",
+    brandingImage: "images/Cardanlogo.svg",
+    fileColor: "#654E6F",
   },
   {
     title: "Project 3",
@@ -62,7 +62,7 @@ const cards = [
     buttonText: "Lees Meer",
     buttonLink: "/portfolio",
     brandingTitle: "Luuk Steijaert",
-    brandingImage: "/images/card2.svg",
+    brandingImage: "",
     fileColor: "#00c951",
   },
 ];

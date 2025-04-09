@@ -1,6 +1,6 @@
 <template>
   <div
-    class="w-full max-w-6xl h-[500px] justify-center flex flex-col md:flex-row bg-[#0f172a] rounded-2xl p-6 md:p-10 mx-auto gap-8"
+    class="w-full max-w-5xl h-[450px] justify-center flex flex-col md:flex-row bg-[#0f172a] rounded-2xl p-6 md:p-10 mx-auto gap-8"
   >
     <!-- Leftside Card -->
     <div class="flex-1 flex flex-col gap-4 min-w-[300px]">
@@ -13,7 +13,7 @@
       </p>
       <NuxtLink
         :to="buttonLink"
-        class="bg-green-500 text-black cursor-pointer rounded-lg text-1xl font-KronaOne flex justify-center items-center w-max px-10 py-3"
+        class="bg-green-500 text-black cursor-pointer rounded-lg text-1xl font-KronaOne flex justify-center items-center w-max px-10 py-3 mt-auto"
       >
         {{ buttonText }}
       </NuxtLink>
@@ -43,7 +43,7 @@
           <foreignObject x="35" y="60" width="400" height="200">
             <img
               :src="brandingImage"
-              class="w-full h-full object-contain"
+              class="w-full h-full object-contain px-4"
               alt="Branding Image"
             />
           </foreignObject>
