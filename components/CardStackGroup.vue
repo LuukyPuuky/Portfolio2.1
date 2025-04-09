@@ -1,7 +1,6 @@
 <template>
   <div class="scroll-section vertical-section h-screen" ref="scrollSection">
     <div class="wrapper relative w-full h-full overflow-hidden">
-      <!-- Loop door de kaarten -->
       <div
         v-for="(card, index) in cards"
         :key="index"
@@ -34,12 +33,12 @@ const scrollSection = ref(null);
 
 const cards = [
   {
-    title: "Project 1",
-    subtitle: "Boris Schmidt",
+    title: "Project 2",
+    subtitle: "Boris Schimidt",
     description:
-      "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie.Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.",
+      "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie. Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.",
     buttonText: "Lees Meer",
-    buttonLink: "/branding",
+    buttonLink: "branding",
     brandingTitle: "Branding",
     brandingImage: "/images/card1folderinside.svg",
     fileColor: "#381C22",
@@ -69,59 +68,75 @@ const cards = [
 ];
 
 onMounted(() => {
+  // Zorg ervoor dat de ref gekoppeld is aan een element
+  if (!scrollSection.value) {
+    console.error("scrollSection ref is not assigned to an element.");
+    return;
+  }
   const section = scrollSection.value;
+
+  // check voor foutmelding indien scrollSection niet gevonden is
   const wrapper = section.querySelector(".wrapper");
+  if (!wrapper) {
+    console.error(
+      "Element with class '.wrapper' not found inside scrollSection."
+    );
+    return;
+  }
   const items = wrapper.querySelectorAll(".item");
+  if (!items || items.length === 0) {
+    console.warn("No elements with class '.item' found inside .wrapper.");
+    return;
+  }
 
-  let direction = "vertical";
-
-  initScroll(section, items, direction);
+  // Roep de specifieke verticale initialisatie functie aan
+  initVerticalScroll(section, items);
 });
 
-function initScroll(section, items, direction) {
+// functie aanroepen
+function initVerticalScroll(section, items) {
+  // 1. Initiële setup: positioneer items (behalve de eerste) onderaan
   items.forEach((item, index) => {
     if (index !== 0) {
-      direction == "horizontal"
-        ? gsap.set(item, { xPercent: 100 })
-        : gsap.set(item, { yPercent: 100 });
+      // Positioneer alle items onder de viewport (100% naar beneden)
+      // Dit zorgt ervoor dat ze niet zichtbaar zijn bij de start van de scroll
+      gsap.set(item, { yPercent: 100 });
     }
   });
 
-  //timeline
+  // Timeline
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: section,
       pin: true,
       start: "top top",
-      end: () => `+=${items.length * 100}%`,
+      end: () => `+=${(items.length - 1) * 100}%`,
       scrub: 1,
       invalidateOnRefresh: true,
     },
     defaults: { ease: "none" },
   });
 
-  // Voeg de animaties voor elke item toe aan de timeline
+  // Animaties toevoegen aan de timeline
   items.forEach((item, index) => {
+    // Animatie voor het HUIDIGE item (wordt kleiner/afgerond)
     timeline.to(item, {
       scale: 0.9,
       borderRadius: "10px",
     });
 
-    direction == "horizontal"
-      ? timeline.to(
-          items[index + 1],
-          {
-            xPercent: 0,
-          },
-          "<"
-        )
-      : timeline.to(
-          items[index + 1],
-          {
-            yPercent: 0,
-          },
-          "<"
-        );
+    // Animeer het VOLGENDE item in beeld (van onder naar positie 0)
+    // Controleer of het volgende item bestaat om errors te voorkomen
+    if (items[index + 1]) {
+      // Alleen de verticale animatie blijft over
+      timeline.to(
+        items[index + 1],
+        {
+          yPercent: 0, // Schuift naar de oorspronkelijke verticale positie
+        },
+        "<" // Start deze animatie tegelijk met de vorige (scale/borderRadius)
+      );
+    }
   });
 }
 </script>

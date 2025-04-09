@@ -8,5 +8,9 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
 
+  nitro: {
+    preset: "cloudflare-pages",
+  },
+
   modules: ["@nuxt/fonts"],
 });

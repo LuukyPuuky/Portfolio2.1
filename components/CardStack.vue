@@ -20,8 +20,10 @@
     </div>
 
     <!-- Rightside Card -->
-    <div class="md:flex md:flex-col md:gap-4">
-      <h1 class="md:text-5xl sm:text-4xl text-3xl font-KronaOne md:w-max">
+    <div class="flex flex-col gap-4 basis-1/2 min-w-[320px]">
+      <h1
+        class="md:text-5xl sm:text-4xl text-3xl font-KronaOne break-words min-w-[250px] md:min-w-[320px]"
+      >
         {{ brandingTitle }}
       </h1>
       <div class="w-full flex justify-center items-center">
