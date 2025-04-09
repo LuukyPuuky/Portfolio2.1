@@ -1,13 +1,13 @@
 <template>
   <div
-    class="flex flex-col gap-4 p-4 md:flex-row md:gap-8 mx-auto bg-[#0f172a] rounded-2xl max-w-7xl"
+    class="w-full max-w-6xl h-[500px] justify-center flex flex-col md:flex-row bg-[#0f172a] rounded-2xl p-6 md:p-10 mx-auto gap-8"
   >
     <!-- Leftside Card -->
-    <div class="flex flex-col gap-2">
+    <div class="flex-1 flex flex-col gap-4 min-w-[300px]">
       <h1 class="font-KronaOne md:text-5xl text-4xl w-max">{{ title }}</h1>
       <h2 class="font-KronaOne text-2xl">{{ subtitle }}</h2>
       <p
-        class="md:text-2xl text-gray-300 font-Roboto md:w-2xl size md:mb-10 mb-5"
+        class="text-gray-300 text-base md:text-lg mb-6 leading-relaxed font-RobotoCondensed"
       >
         {{ description }}
       </p>
