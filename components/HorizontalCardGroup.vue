@@ -5,7 +5,6 @@
         ref="pinnedElementRef"
         class="sticky top-0 h-screen w-full overflow-hidden"
       >
-        ->
         <div
           ref="cardsWrapperRef"
           class="flex flex-nowrap w-max items-center h-full px-[5vw] gap-8"
