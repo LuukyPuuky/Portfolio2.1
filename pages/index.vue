@@ -1,13 +1,14 @@
 <template>
-  <html
+  <div
     class="scrollbar scrollbar-thumb-green-500 scrollbar-track-[#0f172a]"
-  ></html>
-  <body class="bg-[#0f172a] text-white">
+  ></div>
+  <div class="bg-[#0f172a] text-white">
     <Navbar />
     <Headerhero />
+    <LearningOutcomestack />
 
     <CardStackGroup id="projects" />
-  </body>
+  </div>
 </template>
 
 <style>

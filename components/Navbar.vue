@@ -66,7 +66,11 @@ export default {
   data() {
     return {
       navItems: [
-        { label: "Learning Outcomes", url: "#learning Outcomes" },
+        {
+          label: "Learning Outcomes",
+          url: "#learning Outcomes",
+          hash: "#learningOutcomes",
+        },
         { label: "Projects", url: "/#projects", hash: "#projects" },
         { label: "About", url: "./about" },
       ],
