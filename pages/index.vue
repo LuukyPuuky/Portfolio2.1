@@ -5,13 +5,23 @@
   <div class="bg-[#0f172a] text-white">
     <Navbar />
     <Headerhero />
-    <LearningOutcomestack />
-
+    <HorizontalCardGroup id="learningoutcomes" />
     <CardStackGroup id="projects" />
   </div>
 </template>
 
 <style>
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #00c951;
+  border-radius: 10px;
+}
+
 html {
   scroll-behavior: smooth;
 }
