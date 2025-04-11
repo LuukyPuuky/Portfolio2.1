@@ -26,6 +26,7 @@
         </div>
       </div>
       <learning-card
+        id="#product1"
         title="Samenwerkingsovereenkomst"
         subtitle="Learning Outcome 4 Professional Standard"
         description="Voordat we begonnen met het groepsproject heb ik een samenwerkingsovereenkomst gemaakt zodat we regels hadden om ons aan te houden tijdens het werken aan dit project."

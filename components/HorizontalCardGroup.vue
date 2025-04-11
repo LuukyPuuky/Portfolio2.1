@@ -1,13 +1,13 @@
 <template>
   <div class="horizontal-scroll-section">
-    <div ref="pinContainerRef" class="h-[280vh]">
+    <div ref="pinContainerRef" :style="{ height: `${scrollHeight}px` }">
       <div
         ref="pinnedElementRef"
         class="sticky top-0 h-screen w-full overflow-hidden"
       >
         <div
           ref="cardsWrapperRef"
-          class="flex flex-nowrap w-max items-center h-full px-[5vw] gap-8"
+          class="flex flex-nowrap w-max items-center h-full px-[5vw] gap-[5vw]"
         >
           <div v-for="(card, index) in cards" :key="index" class="card-item">
             <HorizontalCard
@@ -27,12 +27,12 @@ import { ref, onMounted, onUnmounted } from "vue";
 import HorizontalCard from "./HorizontalCard.vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import Lo1 from "~/pages/lo1.vue";
 
 // --- Refs for DOM elements ---
 const pinContainerRef = ref(null);
 const pinnedElementRef = ref(null);
 const cardsWrapperRef = ref(null);
+const scrollHeight = ref(0);
 
 // --- Card Data ---
 const cards = ref([
@@ -57,6 +57,7 @@ onMounted(() => {
 
     const amountToScroll =
       cardsWrapperRef.value.offsetWidth - window.innerWidth;
+    scrollHeight.value = window.innerHeight + amountToScroll;
 
     st = ScrollTrigger.create({
       trigger: pinContainerRef.value,

@@ -68,7 +68,7 @@ export default {
       navItems: [
         {
           label: "Learning Outcomes",
-          url: "#learningoutcomes",
+          url: "/#learningoutcomes",
           hash: "#learningOutcomes",
         },
         { label: "Projects", url: "/#projects", hash: "#projects" },

@@ -38,7 +38,7 @@ const cards = [
     description:
       "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie. Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.",
     buttonText: "Lees Meer",
-    buttonLink: "branding",
+    buttonLink: "/projects/branding",
     brandingTitle: "Branding",
     brandingImage: "/images/card1folderinside.svg",
     fileColor: "#381C22",
@@ -49,7 +49,7 @@ const cards = [
     description:
       "Voor dit project heb ik samen met mijn groepsgenoten een UX design gemaakt voor Cardan. Cardan is een bedrijf dat zich richt op het verbeteren van de accecibility van websites.",
     buttonText: "Lees Meer",
-    buttonLink: "cardan",
+    buttonLink: "/projects/cardan",
     brandingTitle: "Create that UX",
     brandingImage: "images/Cardanlogo.svg",
     fileColor: "#654E6F",
@@ -60,7 +60,7 @@ const cards = [
     description:
       "Dit project gaat over mijn portfolio. Hierin beschrijf ik hoe ik tot mijn portfolio ben gekomen, wat ik ervoor heb gedesigned en hoe ik mezelf beter ben leren kennen in mijn waardes.",
     buttonText: "Lees Meer",
-    buttonLink: "/portfolio",
+    buttonLink: "/projects/portfolio",
     brandingTitle: "Luuk Steijaert",
     brandingImage: "",
     fileColor: "#00c951",
