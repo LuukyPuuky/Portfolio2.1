@@ -1,6 +1,9 @@
 <template>
-  <footer class="bg-[#0f172a] text-white py-10 px-6 md:px-20 font-KronaOne">
-    <div class="flex flex-col md:flex-row justify-between gap-8">
+  <div class="border-t border-gray-600"></div>
+  <footer
+    class="bg-[#0f172a] text-white py-10 md:px-20 font-KronaOne max-w-6xl mx-auto gap-8"
+  >
+    <div class="flex flex-col md:flex-row justify-between">
       <!-- Learning Outcomes -->
       <div>
         <h2 class="text-xl font-semibold mb-4">Learning Outcomes</h2>
@@ -12,7 +15,7 @@
             >
               {{ item.label }}
               <span
-                class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+                class="absolute left-0 top-5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
               ></span>
             </NuxtLink>
           </li>
@@ -30,7 +33,7 @@
             >
               {{ item.label }}
               <span
-                class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+                class="absolute left-0 top-5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
               ></span>
             </NuxtLink>
           </li>
@@ -44,11 +47,11 @@
           :key="i"
           :to="item.url"
           target="_blank"
-          class="relative text-[#22C55E] group"
+          class="relative text-[#00c951] group"
         >
-          <component :is="item.icon" class="w-6 h-6" />
+          <component :is="item.icon" class="w-8 h-8" />
           <span
-            class="absolute left-0 -bottom-1 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+            class="absolute left-0 bottom-[-3] w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
           ></span>
         </NuxtLink>
       </div>
@@ -80,6 +83,9 @@ const projectLinks = [
 const socialLinks = [
   { icon: Github, url: "https://github.com/LuukyPuuky" },
   { icon: Mail, url: "mailto:example@email.com" },
-  { icon: Linkedin, url: "https://linkedin.com/luuksteijaert" },
+  {
+    icon: Linkedin,
+    url: "https://www.linkedin.com/in/luuk-steijaert-028702287/",
+  },
 ];
 </script>

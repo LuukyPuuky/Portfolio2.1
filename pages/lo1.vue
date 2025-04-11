@@ -1,11 +1,8 @@
-<script setup lang="ts">
-import Navbar from "~/components/Navbar.vue";
-</script>
-
 <template>
-  <Navbar />
-  <div class="bg-slate-900 text-white">
-    <HeaderProject title="Interactive Media Products" />
-    <ProjectLayout />
+  <div class="scrollbar scrollbar-thumb-green-500 scrollbar-track-slate-900">
+    <div class="bg-slate-900 text-white">
+      <Navbar />
+      <HeaderProject title="Interactive Media Products" />
+    </div>
   </div>
 </template>
