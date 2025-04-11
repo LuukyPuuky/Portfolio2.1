@@ -1,6 +1,6 @@
 <template>
   <div class="horizontal-scroll-section">
-    <div ref="pinContainerRef" class="pin-container h-[280vh]">
+    <div ref="pinContainerRef" class="h-[280vh]">
       <div
         ref="pinnedElementRef"
         class="sticky top-0 h-screen w-full overflow-hidden"
@@ -10,7 +10,11 @@
           class="flex flex-nowrap w-max items-center h-full px-[5vw] gap-8"
         >
           <div v-for="(card, index) in cards" :key="index" class="card-item">
-            <HorizontalCard :number="card.number" :title="card.title" />
+            <HorizontalCard
+              :number="card.number"
+              :title="card.title"
+              :Buttonlink="card.Buttonlink"
+            />
           </div>
         </div>
       </div>
@@ -23,6 +27,7 @@ import { ref, onMounted, onUnmounted } from "vue";
 import HorizontalCard from "./HorizontalCard.vue";
 import { gsap } from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import Lo1 from "~/pages/lo1.vue";
 
 // --- Refs for DOM elements ---
 const pinContainerRef = ref(null);
@@ -31,16 +36,15 @@ const cardsWrapperRef = ref(null);
 
 // --- Card Data ---
 const cards = ref([
-  { number: "01", title: "Interactive Media Products" },
+  { number: "01", title: "Interactive Media Products", Buttonlink: Lo1 },
   { number: "02", title: "Development & Version Control" },
   { number: "03", title: "Design" },
-  { number: "04", title: "Personal leadership" },
+  { number: "04", title: "Personal Leadership" },
   { number: "05", title: "Professional Standard" },
 ]);
 
 let st = null; // Variable to hold the ScrollTrigger instance for cleanup
 
-// --- GSAP Animation Setup ---
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -58,15 +62,15 @@ onMounted(() => {
       trigger: pinContainerRef.value,
       start: "top top",
       end: () => "+=" + amountToScroll,
-      pin: pinnedElementRef.value, // Pin the inner element containing the cards
-      pinSpacing: true, // Add padding to the bottom of the trigger to prevent jump when unpinning
-      scrub: 1, // Smoothly link animation progress to scroll progress (1 = 1 second delay)
-      invalidateOnRefresh: true, // Recalculate values on viewport resize
+      pin: pinnedElementRef.value, // Pin the element
+      pinSpacing: true,
+      scrub: 1,
+      invalidateOnRefresh: true,
 
       // The animation itself
       animation: gsap.to(cardsWrapperRef.value, {
-        x: -amountToScroll, // Move left by the calculated amount
-        ease: "none", // Linear easing for direct scroll correlation
+        x: -amountToScroll,
+        ease: "none",
       }),
     });
   });

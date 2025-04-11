@@ -4,4 +4,8 @@ import Navbar from "~/components/Navbar.vue";
 
 <template>
   <Navbar />
+  <div class="bg-slate-900 text-white">
+    <HeaderProject title="Interactive Media Products" />
+    <ProjectLayout />
+  </div>
 </template>

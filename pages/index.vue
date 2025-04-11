@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import Footer from "~/components/footer.vue";
+</script>
+
 <template>
   <div
     class="scrollbar scrollbar-thumb-green-500 scrollbar-track-[#0f172a]"
@@ -7,6 +11,7 @@
     <Headerhero />
     <HorizontalCardGroup id="learningoutcomes" />
     <CardStackGroup id="projects" />
+    <Footer />
   </div>
 </template>
 

@@ -1,0 +1,85 @@
+<template>
+  <footer class="bg-[#0f172a] text-white py-10 px-6 md:px-20 font-KronaOne">
+    <div class="flex flex-col md:flex-row justify-between gap-8">
+      <!-- Learning Outcomes -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Learning Outcomes</h2>
+        <ul class="space-y-3 text-gray-300">
+          <li v-for="(item, i) in learningOutcomes" :key="i">
+            <NuxtLink
+              :to="item.url"
+              class="relative text-lg font-medium w-max text-gray-300 hover:text-white font-Roboto group"
+            >
+              {{ item.label }}
+              <span
+                class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+              ></span>
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Projects -->
+      <div class="">
+        <h2 class="text-xl font-semibold mb-4">Projects</h2>
+        <ul class="space-y-3 text-gray-300 font-KronaOne">
+          <li v-for="(item, i) in projectLinks" :key="i">
+            <NuxtLink
+              :to="item.url"
+              class="relative text-lg font-medium w-max text-gray-300 hover:text-white font-Roboto group"
+            >
+              {{ item.label }}
+              <span
+                class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+              ></span>
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social Icons with underline hover -->
+      <div class="flex items-start gap-6 mt-4 md:mt-0">
+        <NuxtLink
+          v-for="(item, i) in socialLinks"
+          :key="i"
+          :to="item.url"
+          target="_blank"
+          class="relative text-[#22C55E] group"
+        >
+          <component :is="item.icon" class="w-6 h-6" />
+          <span
+            class="absolute left-0 -bottom-1 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+          ></span>
+        </NuxtLink>
+      </div>
+    </div>
+  </footer>
+</template>
+
+<script setup>
+import { Github, Mail, Linkedin } from "lucide-vue-next";
+
+const learningOutcomes = [
+  { label: "Interactive Media Products", url: "/lo1" },
+  {
+    label: "Development and Version Control",
+    url: "/lo2",
+  },
+  { label: "Iterative Design", url: "/lo3" },
+  { label: "Professional Standard", url: "/lo4" },
+  { label: "Personal leadership", url: "/lo5" },
+];
+
+const projectLinks = [
+  { label: "Branding", url: "/projects/branding" },
+  { label: "Create that UX", url: "/projects/cardan" },
+  { label: "Development", url: "/projects/development" },
+  { label: "Project X", url: "/projects/project-x" },
+];
+
+const socialLinks = [
+  { icon: Github, url: "https://github.com/LuukyPuuky" },
+  { icon: Mail, url: "mailto:example@email.com" },
+  { icon: Linkedin, url: "https://linkedin.com/luuksteijaert" },
+];
+</script>
