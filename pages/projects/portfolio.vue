@@ -3,6 +3,7 @@
     <div class="bg-slate-900 text-white">
       <Navbar />
       <HeaderProject title="Portfolio" subtitle="Luuk Steijaert" />
+      <Footer />
     </div>
   </div>
 </template>

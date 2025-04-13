@@ -69,8 +69,8 @@ const learningOutcomes = [
     url: "/lo2",
   },
   { label: "Iterative Design", url: "/lo3" },
-  { label: "Professional Standard", url: "/lo4" },
-  { label: "Personal leadership", url: "/lo5" },
+  { label: "Personal Leadership", url: "/lo4" },
+  { label: "Professional Standards", url: "/lo5" },
 ];
 
 const projectLinks = [
