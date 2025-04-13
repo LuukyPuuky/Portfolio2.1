@@ -82,7 +82,6 @@ const projectLinks = [
 
 const socialLinks = [
   { icon: Github, url: "https://github.com/LuukyPuuky" },
-  { icon: Mail, url: "mailto:example@email.com" },
   {
     icon: Linkedin,
     url: "https://www.linkedin.com/in/luuk-steijaert-028702287/",

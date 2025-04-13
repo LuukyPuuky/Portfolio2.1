@@ -32,7 +32,7 @@
             </div>
           </div>
           <learning-card
-            id="#product1"
+            id="product1"
             title="Samenwerkingsovereenkomst"
             subtitle="Learning Outcome 4 Professional Standard"
             description="Voordat we begonnen met het groepsproject heb ik een samenwerkingsovereenkomst gemaakt zodat we regels hadden om ons aan te houden tijdens het werken aan dit project."
@@ -41,7 +41,7 @@
           />
 
           <learning-card
-            id="#product2"
+            id="product2"
             title="Onderzoek Boris"
             subtitle="Learning outcome 3: Iterative design"
             description="Als eerste ben ik gaan kijken op het internet naar informatie over Boris zelf via Google. Wat zijn muziek precies is, wat voor soort muziek hij maakt en welke artiesten hij zelf als inspiratie heeft. Daarnaast heeft hij al veel verschillende sociale media platformen om zijn muziek te delen met de wereld, zoals Soundcloud en Spotify. Ook gebruikt hij Tiktok en Instagram om zijn muziek meer aandacht te laten trekken. Hierdoor kreeg ik een beter beeld van zijn muziek. "

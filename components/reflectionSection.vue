@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full bg-gray-900 text-white py-10">
-    <div class="container mx-auto px-4">
+  <div class="w-full text-white">
+    <div class="mx-auto mt-12 max-w-6xl flex flex-col">
       <!-- Reflection Section -->
       <div id="reflection" class="mb-12">
         <h2 class="text-4xl font-bold mb-6">Reflectie</h2>
@@ -25,37 +25,49 @@
       <!-- Products Section -->
       <div id="products" class="mb-12">
         <h2 class="text-4xl font-bold mb-6">Producten</h2>
-        <ul class="space-y-3">
+        <ul class="space-y-2">
           <li>
             <NuxtLink
               to="/projects/branding#product1"
-              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200"
+              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200 relative group"
             >
               Product 1
+              <span
+                class="absolute left-0 bottom-[-3px] w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+              ></span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink
               to="/projects/branding#product2"
-              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200"
+              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200 relative group"
             >
               Product 2
+              <span
+                class="absolute left-0 bottom-[-3px] w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+              ></span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink
               to="/branding#product3"
-              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200"
+              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200 relative group"
             >
               Product 3
+              <span
+                class="absolute left-0 bottom-[-3px] w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+              ></span>
             </NuxtLink>
           </li>
           <li>
             <NuxtLink
               to="/branding#product4"
-              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200"
+              class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200 relative group"
             >
               Product 4
+              <span
+                class="absolute left-0 bottom-[-3px] w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+              ></span>
             </NuxtLink>
           </li>
         </ul>
@@ -63,9 +75,3 @@
     </div>
   </div>
 </template>
-
-<style scoped>
-html {
-  scroll-behavior: smooth;
-}
-</style>
