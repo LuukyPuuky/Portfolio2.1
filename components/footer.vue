@@ -68,7 +68,7 @@ const learningOutcomes = [
     label: "Development and Version Control",
     url: "/lo2",
   },
-  { label: "Iterative Design", url: "/lo3" },
+  { label: "Design", url: "/lo3" },
   { label: "Personal Leadership", url: "/lo4" },
   { label: "Professional Standards", url: "/lo5" },
 ];
