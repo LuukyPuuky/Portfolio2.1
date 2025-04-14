@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import Footer from "~/components/Footer.vue";
-</script>
-
 <template>
   <div
     class="scrollbar scrollbar-thumb-green-500 scrollbar-track-[#0f172a]"

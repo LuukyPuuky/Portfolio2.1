@@ -18,11 +18,7 @@ const products = [
           <div id="reflection" class="mb-12">
             <h2 class="text-4xl font-bold mb-6">Reflectie</h2>
             <div class="space-y-4 max-w-3xl">
-              <p class="text-gray-300 leading-relaxed">
-                We kregen de opdracht om de visuele en digitale branding van
-                Boris Schmidt te maken. Boris is een Techno Dj en producer. Hij
-                studeert aan de Rockacademie van Fontys. Voor zijn
-              </p>
+              <p class="text-gray-300 leading-relaxed"></p>
               <p class="text-gray-300 leading-relaxed">
                 Boris is een talentvolle DJ en producer aan de Rockacademie van
                 Fontys, bekend om zijn melodische techno en energieke beats. Het
