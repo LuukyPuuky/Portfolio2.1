@@ -29,22 +29,26 @@
         </div>
 
         <ContentSection
+          id="samenwerking"
+          class="scroll-mt-24"
           title="Samenwerkingsovereenkomst"
           subtitle="Learning Outcome 4 Professional Standard"
           description="Voordat we begonnen met het groepsproject heb ik een samenwerkingsovereenkomst gemaakt zodat we regels hadden om ons aan te houden tijdens het werken aan dit project."
-          pdfLink="/documents/samenwerkingsovereenkomst.pdf"
+          pdfLink="/documents/Samenwerkingsovereenkomstbranding.pdf"
           pdfText="Samenwerkingsovereenkomst"
           :loNumber="4"
         />
 
         <ContentSection
+          id="onderzoek"
+          class="scroll-mt-24"
           title="Onderzoek Boris"
           subtitle="Learning outcome 3: Iterative design"
           description="Als eerste ben ik gaan kijken op het internet naar informatie over Boris zelf via Google. Wat zijn muziek precies is, wat voor soort muziek hij maakt en welke artiesten hij zelf als inspiratie heeft. Daarnaast heeft hij al veel verschillende sociale media platformen om zijn muziek te delen met de wereld, zoals Soundcloud en Spotify. Ook gebruikt hij Tiktok en Instagram om zijn muziek meer aandacht te laten trekken. Hierdoor kreeg ik een beter beeld van zijn muziek."
           :loNumber="3"
         />
 
-        <div class="max-w-2xl mb-10">
+        <div id="moodboard" class="max-w-2xl mb-10 scroll-mt-24">
           <h1 class="font-RobotoCondensed text-4xl">Moodboard</h1>
           <NuxtLink
             to="/lo1"
@@ -88,6 +92,8 @@
         </div>
 
         <ContentSection
+          id="stylescapes"
+          class="scroll-mt-24"
           title="Stylescapes"
           subtitle="Learning outcome 3: Iterative design"
           description="Ik ben opzoek gegaan naar wat artiesten die Boris had aangegeven die hij wel leuk vind. Ik begon met het maken van verschillende stylescapes. Dit was namelijk een van de deliverables. Ik heb in totaal 4 stylescapes gemaakt om een beter beeld te schetsen voor Boris zijn smaak."

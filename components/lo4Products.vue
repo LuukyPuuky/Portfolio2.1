@@ -8,13 +8,6 @@ defineProps<{
   title?: string;
   products: ProductLink[];
 }>();
-
-const scrollToSection = (sectionId: string) => {
-  const element = document.getElementById(sectionId);
-  if (element) {
-    element.scrollIntoView({ behavior: "smooth" });
-  }
-};
 </script>
 
 <template>
@@ -23,9 +16,8 @@ const scrollToSection = (sectionId: string) => {
     <ul class="space-y-2">
       <li v-for="(product, index) in products" :key="index">
         <NuxtLink
-          :to="product.to"
+          :href="product.to"
           class="text-green-500 hover:text-green-400 text-xl transition-colors duration-200 relative group"
-          @click.prevent="scrollToSection(product.to.split('#')[1])"
         >
           {{ product.text }}
           <span
