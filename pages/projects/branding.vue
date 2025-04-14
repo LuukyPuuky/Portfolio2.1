@@ -28,6 +28,7 @@
             />
           </div>
         </div>
+
         <learning-card
           id="product1"
           title="Samenwerkingsovereenkomst"
@@ -41,6 +42,32 @@
           subtitle="Learning outcome 3: Iterative design"
           description="Als eerste ben ik gaan kijken op het internet naar informatie over Boris zelf via Google. Wat zijn muziek precies is, wat voor soort muziek hij maakt en welke artiesten hij zelf als inspiratie heeft. Daarnaast heeft hij al veel verschillende sociale media platformen om zijn muziek te delen met de wereld, zoals Soundcloud en Spotify. Ook gebruikt hij Tiktok en Instagram om zijn muziek meer aandacht te laten trekken. Hierdoor kreeg ik een beter beeld van zijn muziek. "
         />
+
+        <div class="max-w-2xl mt-8 mb-10">
+          <h1 class="font-RobotoCondensed text-4xl">Moodboard</h1>
+          <h2 class="font-RobotoCondensed text-2xl text-green-500 mb-2">
+            Learning outcome 1: Interactive Media Products
+          </h2>
+          <p class="text-gray-300 font-Roboto text-xl">
+            Ook heb ik al wat insides gekregen van het eerste gesprek wat we
+            samen met de klas met Boris hebben gehad. Hieruit kwamen deze
+            elementen naar voren <br />
+            <ul class="list-disc list-inside text-gray-300 font-Roboto text-xl">
+              <li>Natuur</li>
+              <li>Mysterieus</li>
+              <li>Donkere warme kleuren</li>
+            </ul>
+          </p>
+          <p class="text-gray-300 font-Roboto text-xl mb-10">
+            Deze elementen ben ik ook gaan gebruiken voor mijn moodboard.
+          </p>
+          <img
+            src="/images/moodboardbranding.png"
+            alt="Moodboard"
+            class="h-auto max-w-full  w-full"
+          />
+        </div>
+        <Pdf />
       </div>
     </div>
     <Footer />
