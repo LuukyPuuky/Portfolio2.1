@@ -43,7 +43,10 @@
             samenwerkingsovereenkomst gemaakt zodat we regels hadden om ons aan
             te houden tijdens het werken aan dit project.
           </p>
-          <Pdf />
+          <Pdf
+            documentLink="/documents/samenwerkingsovereenkomstBranding.pdf"
+            buttonText="Samenwerkingsovereenkomst"
+          />
         </div>
 
         <div class="max-w-2xl mb-10">
@@ -64,7 +67,7 @@
             Ook gebruikt hij Tiktok en Instagram om zijn muziek meer aandacht te
             laten trekken. Hierdoor kreeg ik een beter beeld van zijn muziek.
           </p>
-          <Pdf />
+          <Pdf documentLink="/" />
         </div>
 
         <div class="max-w-2xl mb-10">
@@ -100,7 +103,7 @@
             geen Feedpulse van deze feedback gemaakt omdat dit feedback was die
             naar de hele groep was gericht.
           </p>
-          <Pdf />
+          <Pdf documentLink="/" />
         </div>
 
         <div class="max-w-2xl mb-10">
@@ -156,7 +159,7 @@
             <!-- Navigation Arrows -->
             <button
               @click="prevSlide"
-              class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+              class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
               aria-label="Previous slide"
             >
               <svg
@@ -177,7 +180,7 @@
 
             <button
               @click="nextSlide"
-              class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+              class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
               aria-label="Next slide"
             >
               <svg
@@ -212,7 +215,10 @@
             class="h-auto max-w-full w-full rounded-lg mb-5"
           />
 
-          <Pdf />
+          <Pdf
+            documentLink="/documents/brandingprojectmidtermpowerpoint.pdf"
+            buttonText="PDF"
+          />
         </div>
       </div>
     </div>
