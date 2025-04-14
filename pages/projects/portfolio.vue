@@ -5,6 +5,7 @@
       <HeaderProject title="Portfolio" subtitle="Luuk Steijaert" />
 
       <Teamrolles />
+      <personal />
       <Footer />
     </div>
   </div>

@@ -9,16 +9,16 @@
       <h2 class="text-green-500 font-RobotoCondensed text-2xl">
         Learning outcome 5 Personal Leadership
       </h2>
-      <p class="text-gray-300 font-Roboto text-xl">
+      <p class="text-gray-300 font-Roboto text-xl max-w-2xl">
         Tijdens een workshop van Guido hebben we met onze groep verschillende
         rollen bepaald volgens de Theorie van Belbin. Deze heb ik aangewezen bij
         mezelf en bij mijn teamgenoten. Ook heb ik beschreven waarom deze rollen
         bij mij passen en waarom deze rollen bij mijn teamgenoten passen.
       </p>
 
-      <p class="text-gray-300 font-Roboto text-xl">
+      <p class="text-gray-300 font-Roboto text-xl max-w-2xl">
         Hieronder zijn de teamrolles te zien die ik heb aangewezen bij mezelf en
-        bij mijn teamgenoten. In de PDF hieronder wordt meer beschreven wat er
+        bij mijn teamgenoten. In het PDF hieronder wordt meer beschreven wat er
         besproken is in het overleg.
       </p>
 
