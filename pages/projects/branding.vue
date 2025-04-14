@@ -34,19 +34,28 @@
           description="Voordat we begonnen met het groepsproject heb ik een samenwerkingsovereenkomst gemaakt zodat we regels hadden om ons aan te houden tijdens het werken aan dit project."
           pdfLink="/documents/samenwerkingsovereenkomst.pdf"
           pdfText="Samenwerkingsovereenkomst"
+          :loNumber="4"
         />
 
         <ContentSection
           title="Onderzoek Boris"
           subtitle="Learning outcome 3: Iterative design"
           description="Als eerste ben ik gaan kijken op het internet naar informatie over Boris zelf via Google. Wat zijn muziek precies is, wat voor soort muziek hij maakt en welke artiesten hij zelf als inspiratie heeft. Daarnaast heeft hij al veel verschillende sociale media platformen om zijn muziek te delen met de wereld, zoals Soundcloud en Spotify. Ook gebruikt hij Tiktok en Instagram om zijn muziek meer aandacht te laten trekken. Hierdoor kreeg ik een beter beeld van zijn muziek."
+          :loNumber="3"
         />
 
         <div class="max-w-2xl mb-10">
           <h1 class="font-RobotoCondensed text-4xl">Moodboard</h1>
-          <h2 class="font-RobotoCondensed text-2xl text-green-500 mb-2">
+          <NuxtLink
+            to="/lo1"
+            class="text-green-400 mb-2 font-Roboto md:text-2xl text-xl group relative"
+          >
             Learning outcome 1: Interactive Media Products
-          </h2>
+            <!-- Underline Span -->
+            <span
+              class="absolute left-0 top-7 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+            ></span>
+          </NuxtLink>
           <p class="text-gray-300 font-Roboto text-xl">
             Ik heb al wat insides gekregen van het eerste gesprek wat we samen
             met de klas met Boris hebben gehad. Hieruit kwamen deze elementen
@@ -82,6 +91,7 @@
           title="Stylescapes"
           subtitle="Learning outcome 3: Iterative design"
           description="Ik ben opzoek gegaan naar wat artiesten die Boris had aangegeven die hij wel leuk vind. Ik begon met het maken van verschillende stylescapes. Dit was namelijk een van de deliverables. Ik heb in totaal 4 stylescapes gemaakt om een beter beeld te schetsen voor Boris zijn smaak."
+          :loNumber="3"
         >
           <!-- Image Slider for Stylescapes -->
           <div class="relative mb-8">

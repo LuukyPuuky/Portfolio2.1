@@ -6,7 +6,7 @@ import ReflectionSection from "~/components/reflectionSection.vue";
   <div class="scrollbar scrollbar-thumb-green-500 scrollbar-track-slate-900">
     <div class="bg-slate-900 text-white">
       <Navbar />
-      <HeaderProject title="Professional Standards" />
+      <HeaderProject title="Personal Leadership" />
       <ReflectionSection />
       <Footer />
     </div>

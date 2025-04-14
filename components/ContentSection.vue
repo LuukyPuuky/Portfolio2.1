@@ -3,9 +3,16 @@
     <h2 class="text-white font-RobotoCondensed md:text-4xl mx-[-2px] text-2xl">
       {{ title }}
     </h2>
-    <p class="text-green-400 mb-2 font-Roboto md:text-2xl text-xl">
+    <NuxtLink
+      :to="`/lo${loNumber}`"
+      class="text-green-400 mb-2 font-Roboto md:text-2xl text-xl group relative"
+    >
       {{ subtitle }}
-    </p>
+      <!-- Underline Span -->
+      <span
+        class="absolute left-0 top-7 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+      ></span>
+    </NuxtLink>
     <p class="text-gray-300 font-Roboto md:text-xl text-lg mb-5">
       {{ description }}
     </p>
@@ -35,6 +42,10 @@ defineProps({
   pdfText: {
     type: String,
     default: "PDF",
+  },
+  loNumber: {
+    type: Number,
+    required: true,
   },
 });
 </script>

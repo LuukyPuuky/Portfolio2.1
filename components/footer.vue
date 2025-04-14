@@ -69,9 +69,9 @@ import { Github, Linkedin } from "lucide-vue-next";
 const learningOutcomes = [
   { label: "Interactive Media Products", url: "/lo1" },
   { label: "Development and Version Control", url: "/lo2" },
-  { label: "Design", url: "/lo3" },
-  { label: "Personal Leadership", url: "/lo4" },
-  { label: "Professional Standards", url: "/lo5" },
+  { label: "Iterative Design", url: "/lo3" },
+  { label: "Professional Standard", url: "/lo4" },
+  { label: "Personal Leadership", url: "/lo5" },
 ];
 
 const projectLinks = [
