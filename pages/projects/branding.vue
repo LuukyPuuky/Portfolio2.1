@@ -196,6 +196,21 @@
               </svg>
             </button>
           </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            De derde stylescape heeft een hele andere mood dan de andere 3
+            stylescapes. Ik wilde namelijk wat verandering en een andere
+            richting bekijken die ook mogelijk zou zijn voor een eventuele style
+            voor Boris. Ik heb onderzoek gedaan naar
+            <span class="underline decoration-purple-400">Crooked Colours</span
+            >, een band die ook dezelfde techno muziek maken als Boris zelf. Ik
+            heb met Google Image reverse search naar de verschillende plaatjes
+            gekeken en deze toegepast op mijn stylescape.
+          </p>
+          <img
+            src="/images/CrookedColours.png"
+            alt="Crooked Colours"
+            class="h-auto max-w-full w-full rounded-lg mb-5"
+          />
 
           <Pdf />
         </div>
