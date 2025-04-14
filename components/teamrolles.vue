@@ -1,7 +1,11 @@
 <template>
   <div class="bg-slate-900 text-white">
     <div class="max-w-7xl mx-auto mb-10">
-      <h1 class="font-RobotoCondensed text-4xl">Teamrolles</h1>
+      <h1
+        class="text-white font-RobotoCondensed md:text-4xl mx-[-2px] text-2xl"
+      >
+        Teamrolles
+      </h1>
       <h2 class="text-green-500 font-RobotoCondensed text-2xl">
         Learning outcome 5 Personal Leadership
       </h2>
