@@ -119,6 +119,84 @@
             totaal 4 stylescapes gemaakt om een beter beeld te schetsen voor
             Boris zijn smaak.
           </p>
+
+          <!-- Image Slider for Stylescapes -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden rounded-lg">
+              <div
+                class="flex transition-transform duration-500 ease-in-out"
+                ref="sliderContainer"
+              >
+                <img
+                  v-for="(image, index) in stylescapeImages"
+                  :key="index"
+                  :src="image"
+                  :alt="`Stylescape ${index + 1}`"
+                  class="w-full h-auto flex-shrink-0 object-cover"
+                />
+              </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-4 gap-2">
+              <button
+                v-for="(_, index) in stylescapeImages"
+                :key="index"
+                @click="currentSlide = index"
+                class="w-3 h-3 rounded-full transition-colors duration-300"
+                :class="
+                  currentSlide === index
+                    ? 'bg-purple-400'
+                    : 'bg-gray-400 hover:bg-gray-300'
+                "
+                :aria-label="`Go to slidescape ${index + 1}`"
+              ></button>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button
+              @click="prevSlide"
+              class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+              aria-label="Previous slide"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              @click="nextSlide"
+              class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70"
+              aria-label="Next slide"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+
           <Pdf />
         </div>
       </div>
@@ -127,4 +205,46 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, watch, onMounted } from "vue";
+
+// Stylescape images array
+const stylescapeImages = [
+  "/images/StylescapeLuuk1.png",
+  "/images/StylescapeLuuk2.png",
+  "/images/StylescapeLuuk3.png",
+  "/images/StylescapeLuuk4.png",
+];
+
+const currentSlide = ref(0);
+const sliderContainer = ref(null);
+
+// Function to go to previous slide
+const prevSlide = () => {
+  currentSlide.value =
+    (currentSlide.value - 1 + stylescapeImages.length) %
+    stylescapeImages.length;
+};
+
+// Function to go to next slide
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % stylescapeImages.length;
+};
+
+// Watch for slide changes to update the transform
+watch(currentSlide, (newValue) => {
+  if (sliderContainer.value) {
+    sliderContainer.value.style.transform = `translateX(-${newValue * 100}%)`;
+  }
+});
+
+// Auto-slide functionality
+onMounted(() => {
+  const interval = setInterval(() => {
+    nextSlide();
+  }, 5000); // Change slide every 5 seconds
+
+  // Clean up on component unmount
+  return () => clearInterval(interval);
+});
+</script>
