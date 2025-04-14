@@ -6,7 +6,7 @@ import Footer from "~/components/footer.vue";
   <div
     class="scrollbar scrollbar-thumb-green-500 scrollbar-track-[#0f172a]"
   ></div>
-  <div class="bg-[#0f172a] text-white">
+  <div class="bg-slate-900 text-white">
     <Navbar />
     <Headerhero />
     <HorizontalCardGroup id="learningoutcomes" />
