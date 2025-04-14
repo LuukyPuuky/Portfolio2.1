@@ -11,9 +11,11 @@
           <li v-for="(item, i) in learningOutcomes" :key="i">
             <NuxtLink
               :to="item.url"
+              exact-active-class="footer-link-active"
               class="relative text-lg font-medium w-max text-gray-300 hover:text-white font-Roboto group"
             >
               {{ item.label }}
+              <!-- Underline Span  -->
               <span
                 class="absolute left-0 top-5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
               ></span>
@@ -29,9 +31,11 @@
           <li v-for="(item, i) in projectLinks" :key="i">
             <NuxtLink
               :to="item.url"
+              exact-active-class="footer-link-active"
               class="relative text-lg font-medium w-max text-gray-300 hover:text-white font-Roboto group"
             >
               {{ item.label }}
+              <!-- Underline Span  -->
               <span
                 class="absolute left-0 top-5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
               ></span>
@@ -40,7 +44,7 @@
         </ul>
       </div>
 
-      <!-- Social Icons with underline hover -->
+      <!-- Social Icons -->
       <div class="flex items-start gap-6 mt-4 md:mt-0">
         <NuxtLink
           v-for="(item, i) in socialLinks"
@@ -51,7 +55,7 @@
         >
           <component :is="item.icon" class="w-8 h-8" />
           <span
-            class="absolute left-0 bottom-[-3] w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+            class="absolute left-0 bottom-[-3px] w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
           ></span>
         </NuxtLink>
       </div>
@@ -60,14 +64,11 @@
 </template>
 
 <script setup>
-import { Github, Mail, Linkedin } from "lucide-vue-next";
+import { Github, Linkedin } from "lucide-vue-next";
 
 const learningOutcomes = [
   { label: "Interactive Media Products", url: "/lo1" },
-  {
-    label: "Development and Version Control",
-    url: "/lo2",
-  },
+  { label: "Development and Version Control", url: "/lo2" },
   { label: "Design", url: "/lo3" },
   { label: "Personal Leadership", url: "/lo4" },
   { label: "Professional Standards", url: "/lo5" },
