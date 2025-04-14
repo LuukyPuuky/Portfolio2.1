@@ -4,8 +4,8 @@
       <Navbar />
       <HeaderProject title="Portfolio" subtitle="Luuk Steijaert" />
 
-      <teamrolles />
-      <personal />
+      <Teamroles />
+      <Personal />
       <Footer />
     </div>
   </div>

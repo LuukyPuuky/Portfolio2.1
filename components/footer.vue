@@ -1,7 +1,7 @@
 <template>
   <div class="border-t border-gray-600"></div>
   <footer
-    class="bg-slate-900 text-white py-10 md:px-20 font-KronaOne max-w-6xl mx-auto gap-8"
+    class="bg-slate-900 text-white py-10 md:px-20 font-KronaOne max-w-7xl mx-auto gap-8"
   >
     <div class="flex flex-col md:flex-row justify-between">
       <!-- Learning Outcomes -->
