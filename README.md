@@ -14,7 +14,7 @@ Welcome to my portfolio repository! 🎉
 
 ## 📂 Projects
 
-Here’s a glimpse of the projects I’ve worked on:
+Here's a glimpse of the projects I've worked on:
 
 1. **[Branding](#)**
 
@@ -64,8 +64,26 @@ Ik ben een beginnend front-end developer, ik ben op moment van schrijven 21 jaar
 To set up the project locally, follow these steps:
 
 1. Clone the repository:
+
    ```bash
-   git clone https://github.com/LuukyPuuky/S2Portfolio.git
+   git clone https://github.com/LuukyPuuky/Portfolio2.1.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Portfolio2.1
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
    ```
 
 ---
