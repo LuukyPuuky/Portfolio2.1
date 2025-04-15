@@ -253,18 +253,24 @@
           description="Ik heb twee Instagram posts gemaakt voor Boris. Hierin worden twee covers gebruikt die iemand anders uit mijn groep heeft gemaakt. Deze heb ik dan als mockup gebruikt om de instagram posts te maken."
           :loNumber="3"
         >
-          <div class="flex flex-row gap-5">
+          <div class="flex md:flex-row gap-5 flex-col">
             <img
               src="/images/instagram1.png"
               alt="Instagram posts"
-              class="h-auto max-w-full w-full rounded-lg mb-5"
+              class="h-auto max-w-full w-1/2 rounded-lg mb-5"
             />
             <img
               src="/images/instagram2.png"
               alt="Instagram posts"
-              class="h-auto max-w-full w-full rounded-lg mb-5"
+              class="h-auto max-w-full w-1/2 rounded-lg mb-5"
             />
           </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Deze heb ik via canva.com bewerkt in een mockup van een instagram
+            post. Daarna heb ik aan Nico gevraagd, iemand van een andere groep
+            wat hij er van vond. Nico's opinie: "ik vind het super vet gemaakt,
+            als Boris dit product wil hebben is het zeker een toevoeging"
+          </p>
         </ContentSection>
       </div>
     </div>

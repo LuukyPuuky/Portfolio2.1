@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Lo3Products from "~/components/lo3Products.vue";
+import ProductsList from "~/components/ProductsList.vue";
 
 const products = [
   { text: "Onderzoek Boris", to: "/projects/branding#onderzoek" },
@@ -21,23 +21,16 @@ const products = [
             <h2 class="text-4xl font-bold mb-6">Reflectie</h2>
             <div class="space-y-4 max-w-3xl">
               <p class="text-gray-300 leading-relaxed">
-                We kregen de opdracht om de visuele en digitale branding van
-                Boris Schmidt te maken. Boris is een Techno Dj en producer. Hij
-                studeert aan de Rockacademie van Fontys. Voor zijn
-              </p>
-              <p class="text-gray-300 leading-relaxed">
-                Boris is een talentvolle DJ en producer aan de Rockacademie van
-                Fontys, bekend om zijn melodische techno en energieke beats. Het
-                doel was om zowel een jonger publiek aan te spreken als zijn
-                bestaande fanbase te behouden. We richtten ons op
-                socialmediastrategieën, visuele branding, merchandise en het
-                ontwerpen van een nieuwe website om zijn unieke stijl te
-                weerspiegelen en verder te ontwikkelen.
+                In dit semester heb ik veel geleerd over het iteratieve
+                ontwerpproces. Ik heb verschillende versies van designs gemaakt
+                en deze getest met gebruikers en stakeholders. Door feedback te
+                verzamelen en te verwerken, kon ik mijn ontwerpen continu
+                verbeteren.
               </p>
             </div>
           </div>
 
-          <Lo3Products :products="products" />
+          <ProductsList :products="products" />
         </div>
       </div>
       <Footer />
