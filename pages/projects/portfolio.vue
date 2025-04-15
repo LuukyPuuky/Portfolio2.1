@@ -36,7 +36,7 @@
             class="scroll-mt-24"
             subtitle="Learning outcome 5 Personal Leadership"
             description="De 16 Personalities test is een test die ik heb gedaan tijdens een workshop van Guido. Hierin ben ik erachter gekomen wat mijn eigen kernwaardes zijn, Welke kernwaardes andere van mij vinden en wat voor persoon ik zelf ben. De test wordt gebruikt om te bepalen wat voor soort persoon ik ben. Hiermee kan je namelijk beter bepalen hoe je ligt met andere mensen binnen de groep. Ook kan je hieruit afleiden wat voor persoon ik ben en wat voor persoon andere mensen binnen de groep zijn."
-            pdfLink="/documents/personalities.pdf"
+            pdfLink="/documents/Personalities.pdf"
             pdfText="16 Personalities"
             :loNumber="5"
           >
