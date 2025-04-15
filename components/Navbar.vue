@@ -52,9 +52,6 @@ const isOpen = ref(false);
             class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
           ></span>
         </NuxtLink>
-
-        <!-- Dark Mode Toggle -->
-        <DarkmodeToggle />
       </div>
     </nav>
   </div>

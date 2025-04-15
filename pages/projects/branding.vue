@@ -272,6 +272,28 @@
             als Boris dit product wil hebben is het zeker een toevoeging"
           </p>
         </ContentSection>
+
+        <ContentSection
+          id="linktree"
+          class="scroll-mt-24"
+          title="Linktree"
+          subtitle="Learning outcome 3: Iterative design"
+          description="Ik heb een linktree gemaakt voor Boris. Hierin worden alle relevante links naar zijn sociale media accounts gebruikt. Deze heb ik dan als mockup gebruikt om de instagram posts te maken."
+          :loNumber="3"
+        >
+          <div class="flex md:flex-row gap-5 flex-col">
+            <img
+              src="/images/linktree1.png"
+              alt="Linktree"
+              class="h-auto max-w-full w-1/2 rounded-lg mb-5"
+            />
+            <img
+              src="/images/linktree2.png"
+              alt="Linktree"
+              class="h-auto max-w-full w-1/2 rounded-lg mb-5"
+            />
+          </div>
+        </ContentSection>
       </div>
     </div>
     <Footer />
