@@ -16,23 +16,14 @@ const isOpen = ref(false);
       <!-- Top Section (Logo & Hamburger) -->
       <div class="flex w-full justify-between items-center gap-8">
         <!-- Logo -->
-        <NuxtLink
-          href="/"
-          class="text-lg font-medium font-Roboto text-gray-500 dark:text-white"
-        >
+        <NuxtLink href="/" class="text-lg font-medium font-Roboto text-white">
           Luuk Steijaert
         </NuxtLink>
 
         <!-- Hamburger Icon -->
         <button @click="isOpen = !isOpen" class="md:hidden focus:outline-none">
-          <Menu
-            v-if="!isOpen"
-            class="w-8 h-8 text-gray-500 dark:text-white cursor-pointer"
-          />
-          <X
-            v-else
-            class="w-8 h-8 text-gray-500 dark:text-white cursor-pointer"
-          />
+          <Menu v-if="!isOpen" class="w-8 h-8 text-white cursor-pointer" />
+          <X v-else class="w-8 h-8 text-white cursor-pointer" />
         </button>
       </div>
 
@@ -45,7 +36,7 @@ const isOpen = ref(false);
           v-for="(item, index) in navItems"
           :key="index"
           :href="item.url"
-          class="relative text-lg font-medium w-max text-gray-500 dark:text-white hover:text-white font-Roboto group z-50"
+          class="relative text-lg font-medium w-max text-white hover:text-white font-Roboto group z-50"
         >
           {{ item.label }}
           <span
