@@ -2,8 +2,7 @@
 import Lo1Products from "~/components/lo1Products.vue";
 
 const products = [
-  { text: "Moodboard", to: "/projects/branding#moodboard" },
-  { text: "Stylescapes", to: "/projects/branding#stylescapes" },
+  { text: "Moodboard Boris", to: "/projects/branding#moodboard" },
 ];
 </script>
 

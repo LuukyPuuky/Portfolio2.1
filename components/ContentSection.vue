@@ -17,7 +17,11 @@
       {{ description }}
     </p>
     <slot></slot>
-    <Pdf :documentLink="pdfLink" :buttonText="pdfText" />
+    <Pdf
+      v-if="pdfLink && pdfLink !== '/'"
+      :documentLink="pdfLink"
+      :buttonText="pdfText"
+    />
   </div>
 </template>
 

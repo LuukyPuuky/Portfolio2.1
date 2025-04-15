@@ -34,7 +34,7 @@
           title="Samenwerkingsovereenkomst"
           subtitle="Learning Outcome 4 Professional Standard"
           description="Voordat we begonnen met het groepsproject heb ik een samenwerkingsovereenkomst gemaakt zodat we regels hadden om ons aan te houden tijdens het werken aan dit project."
-          pdfLink="/documents/Samenwerkingsovereenkomstbranding.pdf"
+          pdfLink="/documents/SamenwerkingsovereenkomstBranding.pdf"
           pdfText="Samenwerkingsovereenkomst"
           :loNumber="4"
         />
@@ -88,7 +88,6 @@
             geen Feedpulse van deze feedback gemaakt omdat dit feedback was die
             naar de hele groep was gericht.
           </p>
-          <Pdf />
         </div>
 
         <ContentSection
@@ -190,6 +189,23 @@
             alt="Crooked Colours"
             class="h-auto max-w-full w-full rounded-lg mb-5"
           />
+        </ContentSection>
+
+        <ContentSection
+          id="logo"
+          class="scroll-mt-24"
+          title="Logo's Boris"
+          subtitle="Learning outcome 3: Iterative design"
+          description="Na het maken van de stylescapes ben ik begonnen met het ontwerpen van verschillende logo's voor Boris. Ik heb verschillende versies gemaakt die passen bij zijn stijl en de sfeer van zijn muziek."
+          :loNumber="3"
+        >
+          <div class="h-auto max-w-full w-full rounded-lg mb-5 mt-2">
+            <img
+              src="/images/LogoDesignsLuuk.png"
+              alt="Boris Schmidt logo white"
+              class="h-auto max-w-full w-full rounded-lg mb-5"
+            />
+          </div>
         </ContentSection>
       </div>
     </div>

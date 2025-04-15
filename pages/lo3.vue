@@ -4,6 +4,7 @@ import Lo3Products from "~/components/lo3Products.vue";
 const products = [
   { text: "Onderzoek Boris", to: "/projects/branding#onderzoek" },
   { text: "Stylescapes", to: "/projects/branding#stylescapes" },
+  { text: "Logo's Boris", to: "/projects/branding#logo" },
 ];
 </script>
 

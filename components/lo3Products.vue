@@ -1,15 +1,3 @@
-<script setup lang="ts">
-interface ProductLink {
-  text: string;
-  to: string;
-}
-
-defineProps<{
-  title?: string;
-  products: ProductLink[];
-}>();
-</script>
-
 <template>
   <div id="products" class="mb-12">
     <h2 class="text-4xl font-bold mb-6">{{ title || "Producten" }}</h2>
@@ -28,3 +16,15 @@ defineProps<{
     </ul>
   </div>
 </template>
+
+<script setup lang="ts">
+interface ProductLink {
+  text: string;
+  to: string;
+}
+
+defineProps<{
+  title?: string;
+  products: ProductLink[];
+}>();
+</script>
