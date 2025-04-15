@@ -218,6 +218,54 @@
             class="h-auto max-w-full w-full rounded-lg mb-5"
           />
         </ContentSection>
+
+        <ContentSection
+          id="midterm"
+          class="scroll-mt-24"
+          title="Midterm Powerpoint"
+          subtitle="Learning outcome 1: Interactive Media Products"
+          description="Iedereen van de groep heeft aan de powerpoint gewerkt. Ik heb samen met Laurens en Zakaria de presentatie gemaakt. Dit was een midterm presentatie. Hiermee wil ik zeggen dat we wat feedback van Boris wilde hebben over hoe onze designs verder moesten gaan."
+          :loNumber="1"
+          pdfLink="/documents/brandingprojectmidtermpowerpoint.pdf"
+          pdfText="Midterm Powerpoint Boris"
+        >
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            We hebben het hele gesprek opgenomen zodat we dat later nog konden
+            gebruiken voor welke richting we konden opgaan.
+          </p>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            De <span class="underline decoration-purple-400">Feedback</span> die
+            we kregen op de presentatie:
+            <span class="italic"
+              >“Ik vind logo C, en stylescape 2 het beste. Ik hou van de
+              abstracte lijnen en vind de warme kleuren leuk. Ook vind ik logo B
+              mooi want die heeft echt zo'n techno vibe en dat techno vibe en
+              dat blauwe van stylescape 1 vind ik ook mooi”.</span
+            >
+          </p>
+        </ContentSection>
+
+        <ContentSection
+          id="instagram"
+          class="scroll-mt-24"
+          title="Instagram Posts"
+          subtitle="Learning outcome 3: Iterative design"
+          description="Ik heb twee Instagram posts gemaakt voor Boris. Hierin worden twee covers gebruikt die iemand anders uit mijn groep heeft gemaakt. Deze heb ik dan als mockup gebruikt om de instagram posts te maken."
+          :loNumber="3"
+        >
+          <div class="flex flex-row gap-5">
+            <img
+              src="/images/instagram1.png"
+              alt="Instagram posts"
+              class="h-auto max-w-full w-full rounded-lg mb-5"
+            />
+            <img
+              src="/images/instagram2.png"
+              alt="Instagram posts"
+              class="h-auto max-w-full w-full rounded-lg mb-5"
+            />
+          </div>
+        </ContentSection>
       </div>
     </div>
     <Footer />

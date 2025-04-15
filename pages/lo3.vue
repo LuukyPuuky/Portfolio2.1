@@ -5,6 +5,7 @@ const products = [
   { text: "Onderzoek Boris", to: "/projects/branding#onderzoek" },
   { text: "Stylescapes", to: "/projects/branding#stylescapes" },
   { text: "Logo's Boris", to: "/projects/branding#logo" },
+  { text: "Instagram Posts", to: "/projects/branding#instagram" },
 ];
 </script>
 
