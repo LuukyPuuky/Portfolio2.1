@@ -196,16 +196,27 @@
           class="scroll-mt-24"
           title="Logo's Boris"
           subtitle="Learning outcome 3: Iterative design"
-          description="Na het maken van de stylescapes ben ik begonnen met het ontwerpen van verschillende logo's voor Boris. Ik heb verschillende versies gemaakt die passen bij zijn stijl en de sfeer van zijn muziek."
+          description="Na het maken van de stylescapes ben ik begonnen met het ontwerpen van verschillende logo's voor Boris. Ik heb een stuk of 20 verschillende versies gemaakt die passen bij zijn stijl en de sfeer van zijn muziek."
           :loNumber="3"
         >
           <div class="h-auto max-w-full w-full rounded-lg mb-5 mt-2">
             <img
               src="/images/LogoDesignsLuuk.png"
               alt="Boris Schmidt logo white"
-              class="h-auto max-w-full w-full rounded-lg mb-5"
+              class="h-auto max-w-full w-full rounded-lg"
             />
           </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Uiteindelijk nadat iedereen van de groep zijn eigen logo's had
+            gemaakt gingen we kiezen welke logos wij zelf het beste vonden. Deze
+            heb ik aangeduid met de A, B en C. gingen we kiezen welke logos wij
+            zelf het beste vonden. Deze heb ik aangeduid met de A, B en C.
+          </p>
+          <img
+            src="/images/abclogo.png"
+            alt="top 3 logos"
+            class="h-auto max-w-full w-full rounded-lg mb-5"
+          />
         </ContentSection>
       </div>
     </div>
