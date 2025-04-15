@@ -27,7 +27,7 @@
             />
           </div>
         </div>
-
+        <!-- Samenwerkingsovereenkomst -->
         <ContentSection
           id="samenwerking"
           class="scroll-mt-24"
@@ -39,15 +39,17 @@
           :loNumber="4"
         />
 
+        <!-- Onderzoek Boris -->
         <ContentSection
           id="onderzoek"
           class="scroll-mt-24"
           title="Onderzoek Boris"
-          subtitle="Learning outcome 3: Iterative design"
+          subtitle="Learning outcome 1: Interactive Media Products"
           description="Als eerste ben ik gaan kijken op het internet naar informatie over Boris zelf via Google. Wat zijn muziek precies is, wat voor soort muziek hij maakt en welke artiesten hij zelf als inspiratie heeft. Daarnaast heeft hij al veel verschillende sociale media platformen om zijn muziek te delen met de wereld, zoals Soundcloud en Spotify. Ook gebruikt hij Tiktok en Instagram om zijn muziek meer aandacht te laten trekken. Hierdoor kreeg ik een beter beeld van zijn muziek."
-          :loNumber="3"
+          :loNumber="1"
         />
 
+        <!-- Moodboard -->
         <div id="moodboard" class="max-w-2xl mb-10 scroll-mt-24">
           <h1 class="font-RobotoCondensed text-4xl">Moodboard</h1>
           <NuxtLink
@@ -90,6 +92,7 @@
           </p>
         </div>
 
+        <!-- Stylescapes -->
         <ContentSection
           id="stylescapes"
           class="scroll-mt-24"
@@ -191,6 +194,7 @@
           />
         </ContentSection>
 
+        <!-- Logo's -->
         <ContentSection
           id="logo"
           class="scroll-mt-24"
@@ -219,6 +223,7 @@
           />
         </ContentSection>
 
+        <!-- Midterm Powerpoint -->
         <ContentSection
           id="midterm"
           class="scroll-mt-24"
@@ -234,7 +239,7 @@
             gebruiken voor welke richting we konden opgaan.
           </p>
           <p class="text-gray-300 font-Roboto text-xl mb-5">
-            De <span class="underline decoration-purple-400">Feedback</span> die
+            De <span class="underline decoration-purple-400">feedback</span> die
             we kregen op de presentatie:
             <span class="italic"
               >"Ik vind logo C, en stylescape 2 het beste. Ik hou van de
@@ -245,6 +250,7 @@
           </p>
         </ContentSection>
 
+        <!-- Instagram Posts -->
         <ContentSection
           id="instagram"
           class="scroll-mt-24"
@@ -273,6 +279,7 @@
           </p>
         </ContentSection>
 
+        <!-- Linktree -->
         <ContentSection
           id="linktree"
           class="scroll-mt-24"
@@ -383,18 +390,124 @@
           </p>
         </ContentSection>
 
+        <!-- Spotify Covers -->
         <ContentSection
           id="spotify"
           class="scroll-mt-24"
           title="Spotify Covers"
           subtitle="Learning outcome 3: Iterative design"
-          description="Ik heb een Spotify playlist gemaakt voor Boris. Hierin zijn alle nummers die Boris heeft gemaakt te vinden. Ook zijn er nummers van andere artiesten te vinden die Boris leuk vindt."
+          description="ik heb gewerkt aan het maken van nieuwe spotify covers voor Boris. Ik heb deze gemaakt met behulp van AI. Ik heb gebruik gemaakt van DeepAI prompt generator. Hieruit heb ik twee spotify covers gemaakt. Deze heb ik vervolgens gedesigned met behulp van een template die al op Figma stond."
           :loNumber="3"
         >
-          <p class="text-gray-300 font-Roboto text-xl mb-5">
-            De iteratie van de linktree is van een combinatie tussen de linktree
-            die ik heb gemaakt en de linktree die Laurens heeft gemaakt.
+          <p class="text-gray-300 font-Roboto text-xl">
+            De twee covers zijn Woods en Haunted. De elementen die ik in de
+            album covers wilde zetten waren:
           </p>
+          <ul
+            class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5"
+          >
+            <li>Mysterious</li>
+            <li>Dark</li>
+            <li>Orange</li>
+          </ul>
+          <p class="text-gray-300 font-Roboto text-xl">
+            Voor woods was de prompt: "generate an image using dark mysterious
+            orangeish colors and have it dark."
+          </p>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Voor haunted was de prompt: "generate an image using dark mysterious
+            dj set, orangeish colors and have it dark and forest."
+          </p>
+
+          <!-- Spotify Covers Slider -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden rounded-lg">
+              <div
+                class="flex transition-transform duration-500 ease-in-out"
+                ref="spotifySliderContainer"
+              >
+                <div class="w-full flex-shrink-0">
+                  <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+                    Woods
+                  </h3>
+                  <img
+                    src="/images/spotifycovers1.png"
+                    alt="Spotify cover Woods"
+                    class="h-auto max-w-[400px] w-full rounded-lg mx-auto"
+                  />
+                </div>
+                <div class="w-full flex-shrink-0">
+                  <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+                    Haunted
+                  </h3>
+                  <img
+                    src="/images/spotifycovers2.png"
+                    alt="Spotify cover Haunted"
+                    class="h-auto max-w-[400px] w-full rounded-lg mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-4 gap-2">
+              <button
+                v-for="(_, index) in 2"
+                :key="index"
+                @click="currentSpotifySlide = index"
+                class="w-3 h-3 rounded-full transition-colors duration-300"
+                :class="
+                  currentSpotifySlide === index
+                    ? 'bg-purple-400'
+                    : 'bg-gray-400 hover:bg-gray-300'
+                "
+                :aria-label="`Go to spotify cover ${index + 1}`"
+              ></button>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button
+              @click="prevSpotifySlide"
+              class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Previous cover"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              @click="nextSpotifySlide"
+              class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Next cover"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </ContentSection>
       </div>
     </div>
@@ -421,6 +534,10 @@ const sliderContainer = ref(null);
 const currentLinktreeSlide = ref(0);
 const linktreeSliderContainer = ref(null);
 
+// Spotify slider
+const currentSpotifySlide = ref(0);
+const spotifySliderContainer = ref(null);
+
 // Function to go to previous slide
 const prevSlide = () => {
   currentSlide.value =
@@ -432,6 +549,10 @@ const prevLinktreeSlide = () => {
   currentLinktreeSlide.value = (currentLinktreeSlide.value - 1 + 2) % 2;
 };
 
+const prevSpotifySlide = () => {
+  currentSpotifySlide.value = (currentSpotifySlide.value - 1 + 2) % 2;
+};
+
 // Function to go to next slide
 const nextSlide = () => {
   currentSlide.value = (currentSlide.value + 1) % stylescapeImages.length;
@@ -439,6 +560,10 @@ const nextSlide = () => {
 
 const nextLinktreeSlide = () => {
   currentLinktreeSlide.value = (currentLinktreeSlide.value + 1) % 2;
+};
+
+const nextSpotifySlide = () => {
+  currentSpotifySlide.value = (currentSpotifySlide.value + 1) % 2;
 };
 
 // Watch for slide changes to update the transform
@@ -451,6 +576,14 @@ watch(currentSlide, (newValue) => {
 watch(currentLinktreeSlide, (newValue) => {
   if (linktreeSliderContainer.value) {
     linktreeSliderContainer.value.style.transform = `translateX(-${
+      newValue * 100
+    }%)`;
+  }
+});
+
+watch(currentSpotifySlide, (newValue) => {
+  if (spotifySliderContainer.value) {
+    spotifySliderContainer.value.style.transform = `translateX(-${
       newValue * 100
     }%)`;
   }

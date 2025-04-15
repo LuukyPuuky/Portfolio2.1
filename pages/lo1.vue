@@ -2,6 +2,7 @@
 import ProductsList from "~/components/ProductsList.vue";
 
 const products = [
+  { text: "Onderzoek Boris", to: "/projects/branding#onderzoek" },
   { text: "Moodboard Boris", to: "/projects/branding#moodboard" },
   { text: "Midterm Powerpoint Boris", to: "/projects/branding#midterm" },
 ];
