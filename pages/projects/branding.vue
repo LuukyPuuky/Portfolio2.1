@@ -419,12 +419,128 @@
             dj set, orangeish colors and have it dark and forest."
           </p>
 
-          <!-- Spotify Covers Slider -->
+          <!--Versie 1-->
+          <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+            Versie 1
+          </h3>
+          <!-- Spotify Covers Slider Versie 1-->
           <div class="relative mb-8">
             <div class="overflow-hidden rounded-lg">
               <div
                 class="flex transition-transform duration-500 ease-in-out"
-                ref="spotifySliderContainer"
+                ref="spotifyV1SliderContainer"
+              >
+                <div class="w-full flex-shrink-0">
+                  <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+                    Woods
+                  </h3>
+                  <img
+                    src="/images/spotifycoverpre1.png"
+                    alt="Spotify cover Woods"
+                    class="h-auto max-w-[400px] w-full rounded-lg mx-auto"
+                  />
+                </div>
+                <div class="w-full flex-shrink-0">
+                  <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+                    Haunted
+                  </h3>
+                  <img
+                    src="/images/spotifycoverpre2.png"
+                    alt="Spotify cover Haunted"
+                    class="h-auto max-w-[400px] w-full rounded-lg mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-4 gap-2">
+              <button
+                v-for="(_, index) in 2"
+                :key="index"
+                @click="currentSpotifyV1Slide = index"
+                class="w-3 h-3 rounded-full transition-colors duration-300"
+                :class="
+                  currentSpotifyV1Slide === index
+                    ? 'bg-purple-400'
+                    : 'bg-gray-400 hover:bg-gray-300'
+                "
+                :aria-label="`Go to spotify cover ${index + 1}`"
+              ></button>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button
+              @click="prevSpotifyV1Slide"
+              class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Previous cover"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              @click="nextSpotifyV1Slide"
+              class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Next cover"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Deze versie is de eerste versie die ik had gemaakt voor de album
+            covers van Spotify. We kwamen er alleen achter na wat feedback van
+            Boris dat zijn muziek helemaal geen lyrics bevat. De
+            <span class="underline decoration-purple-400"
+              >specifieke feedback</span
+            >
+            was:
+            <span class="italic"
+              >"Leuke album covers en ik vind ze echt cool hoe ze eruit zien op
+              spotify alleen heeft mijn muziek weinig tot geen lyrics dus dat
+              kan je weghalen."</span
+            >
+            Hierdoor heb ik een aanpassing gedaan samen met Laurens en is dat
+            aangepast op versie 2.
+          </p>
+
+          <!--Versie 2-->
+          <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+            Versie 2
+          </h3>
+
+          <!-- Spotify Covers Slider Versie 2 -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden rounded-lg">
+              <div
+                class="flex transition-transform duration-500 ease-in-out"
+                ref="spotifyV2SliderContainer"
               >
                 <div class="w-full flex-shrink-0">
                   <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
@@ -454,10 +570,10 @@
               <button
                 v-for="(_, index) in 2"
                 :key="index"
-                @click="currentSpotifySlide = index"
+                @click="currentSpotifyV2Slide = index"
                 class="w-3 h-3 rounded-full transition-colors duration-300"
                 :class="
-                  currentSpotifySlide === index
+                  currentSpotifyV2Slide === index
                     ? 'bg-purple-400'
                     : 'bg-gray-400 hover:bg-gray-300'
                 "
@@ -467,7 +583,7 @@
 
             <!-- Navigation Arrows -->
             <button
-              @click="prevSpotifySlide"
+              @click="prevSpotifyV2Slide"
               class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
               aria-label="Previous cover"
             >
@@ -488,7 +604,7 @@
             </button>
 
             <button
-              @click="nextSpotifySlide"
+              @click="nextSpotifyV2Slide"
               class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
               aria-label="Next cover"
             >
@@ -526,7 +642,6 @@ const stylescapeImages = [
   "/images/StylescapeLuuk4.png",
 ];
 
-// Stylescape slider
 const currentSlide = ref(0);
 const sliderContainer = ref(null);
 
@@ -534,9 +649,13 @@ const sliderContainer = ref(null);
 const currentLinktreeSlide = ref(0);
 const linktreeSliderContainer = ref(null);
 
-// Spotify slider
-const currentSpotifySlide = ref(0);
-const spotifySliderContainer = ref(null);
+// Spotify version 1 slider
+const currentSpotifyV1Slide = ref(0);
+const spotifyV1SliderContainer = ref(null);
+
+// Spotify version 2 slider
+const currentSpotifyV2Slide = ref(0);
+const spotifyV2SliderContainer = ref(null);
 
 // Function to go to previous slide
 const prevSlide = () => {
@@ -549,8 +668,12 @@ const prevLinktreeSlide = () => {
   currentLinktreeSlide.value = (currentLinktreeSlide.value - 1 + 2) % 2;
 };
 
-const prevSpotifySlide = () => {
-  currentSpotifySlide.value = (currentSpotifySlide.value - 1 + 2) % 2;
+const prevSpotifyV1Slide = () => {
+  currentSpotifyV1Slide.value = (currentSpotifyV1Slide.value - 1 + 2) % 2;
+};
+
+const prevSpotifyV2Slide = () => {
+  currentSpotifyV2Slide.value = (currentSpotifyV2Slide.value - 1 + 2) % 2;
 };
 
 // Function to go to next slide
@@ -562,8 +685,12 @@ const nextLinktreeSlide = () => {
   currentLinktreeSlide.value = (currentLinktreeSlide.value + 1) % 2;
 };
 
-const nextSpotifySlide = () => {
-  currentSpotifySlide.value = (currentSpotifySlide.value + 1) % 2;
+const nextSpotifyV1Slide = () => {
+  currentSpotifyV1Slide.value = (currentSpotifyV1Slide.value + 1) % 2;
+};
+
+const nextSpotifyV2Slide = () => {
+  currentSpotifyV2Slide.value = (currentSpotifyV2Slide.value + 1) % 2;
 };
 
 // Watch for slide changes to update the transform
@@ -581,9 +708,17 @@ watch(currentLinktreeSlide, (newValue) => {
   }
 });
 
-watch(currentSpotifySlide, (newValue) => {
-  if (spotifySliderContainer.value) {
-    spotifySliderContainer.value.style.transform = `translateX(-${
+watch(currentSpotifyV1Slide, (newValue) => {
+  if (spotifyV1SliderContainer.value) {
+    spotifyV1SliderContainer.value.style.transform = `translateX(-${
+      newValue * 100
+    }%)`;
+  }
+});
+
+watch(currentSpotifyV2Slide, (newValue) => {
+  if (spotifyV2SliderContainer.value) {
+    spotifyV2SliderContainer.value.style.transform = `translateX(-${
       newValue * 100
     }%)`;
   }
