@@ -3,7 +3,7 @@
     <Navbar />
     <HeaderProject title="Branding" subtitle="Boris Schmidt" />
     <div class="min-h-screen p-4">
-      <div class="max-w-6xl mx-auto">
+      <div class="max-w-6xl mx-auto flex flex-col items-center justify-center">
         <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10">
           <div class="max-w-2xl mt-8">
             <h1 class="font-RobotoCondensed text-4xl">Introductie</h1>
@@ -27,6 +27,7 @@
             />
           </div>
         </div>
+
         <!-- Samenwerkingsovereenkomst -->
         <ContentSection
           id="samenwerking"
@@ -50,7 +51,7 @@
         />
 
         <!-- Moodboard -->
-        <div id="moodboard" class="max-w-2xl mb-10 scroll-mt-24">
+        <div id="moodboard" class="max-w-3xl mb-10 scroll-mt-24">
           <h1 class="font-RobotoCondensed text-4xl">Moodboard</h1>
           <NuxtLink
             to="/lo1"
