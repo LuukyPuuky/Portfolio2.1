@@ -237,10 +237,10 @@
             De <span class="underline decoration-purple-400">Feedback</span> die
             we kregen op de presentatie:
             <span class="italic"
-              >“Ik vind logo C, en stylescape 2 het beste. Ik hou van de
+              >"Ik vind logo C, en stylescape 2 het beste. Ik hou van de
               abstracte lijnen en vind de warme kleuren leuk. Ook vind ik logo B
               mooi want die heeft echt zo'n techno vibe en dat techno vibe en
-              dat blauwe van stylescape 1 vind ik ook mooi”.</span
+              dat blauwe van stylescape 1 vind ik ook mooi".</span
             >
           </p>
         </ContentSection>
@@ -278,21 +278,102 @@
           class="scroll-mt-24"
           title="Linktree"
           subtitle="Learning outcome 3: Iterative design"
-          description="Ik heb een linktree gemaakt voor Boris. Hierin worden alle relevante links naar zijn sociale media accounts gebruikt. Deze heb ik dan als mockup gebruikt om de instagram posts te maken."
+          description=" Er zijn twee versies van de Linktree. De eerste versie, versie A is die van mij. Daarna hebben we met de groep ernaar gekeken en hebben we op deze linktree geïtereerd. Dit is versie B. "
           :loNumber="3"
         >
-          <div class="flex md:flex-row gap-5 flex-col">
-            <img
-              src="/images/linktree1.png"
-              alt="Linktree"
-              class="h-auto max-w-full w-1/2 rounded-lg mb-5"
-            />
-            <img
-              src="/images/linktree2.png"
-              alt="Linktree"
-              class="h-auto max-w-full w-1/2 rounded-lg mb-5"
-            />
+          <!-- Linktree Slider -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden rounded-lg">
+              <div
+                class="flex transition-transform duration-500 ease-in-out"
+                ref="linktreeSliderContainer"
+              >
+                <div class="w-full flex-shrink-0">
+                  <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+                    Versie A
+                  </h3>
+                  <img
+                    src="/images/linktree1.png"
+                    alt="Linktree versie A"
+                    class="h-auto max-w-[600px] w-1/2 rounded-lg mx-auto"
+                  />
+                </div>
+                <div class="w-full flex-shrink-0">
+                  <h3 class="text-2xl font-RobotoCondensed text-white mb-4">
+                    Versie B
+                  </h3>
+                  <img
+                    src="/images/linktree2.png"
+                    alt="Linktree versie B"
+                    class="h-auto max-w-[600px] w-1/2 rounded-lg mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-4 gap-2">
+              <button
+                v-for="(_, index) in 2"
+                :key="index"
+                @click="currentLinktreeSlide = index"
+                class="w-3 h-3 rounded-full transition-colors duration-300"
+                :class="
+                  currentLinktreeSlide === index
+                    ? 'bg-purple-400'
+                    : 'bg-gray-400 hover:bg-gray-300'
+                "
+                :aria-label="`Go to linktree version ${index + 1}`"
+              ></button>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button
+              @click="prevLinktreeSlide"
+              class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Previous version"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              @click="nextLinktreeSlide"
+              class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Next version"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
           </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            De iteratie van de linktree is van een combinatie tussen de linktree
+            die ik heb gemaakt en de linktree die Laurens heeft gemaakt.
+          </p>
         </ContentSection>
       </div>
     </div>
@@ -314,6 +395,10 @@ const stylescapeImages = [
 const currentSlide = ref(0);
 const sliderContainer = ref(null);
 
+// Linktree slider
+const currentLinktreeSlide = ref(0);
+const linktreeSliderContainer = ref(null);
+
 // Function to go to previous slide
 const prevSlide = () => {
   currentSlide.value =
@@ -321,15 +406,31 @@ const prevSlide = () => {
     stylescapeImages.length;
 };
 
+const prevLinktreeSlide = () => {
+  currentLinktreeSlide.value = (currentLinktreeSlide.value - 1 + 2) % 2;
+};
+
 // Function to go to next slide
 const nextSlide = () => {
   currentSlide.value = (currentSlide.value + 1) % stylescapeImages.length;
+};
+
+const nextLinktreeSlide = () => {
+  currentLinktreeSlide.value = (currentLinktreeSlide.value + 1) % 2;
 };
 
 // Watch for slide changes to update the transform
 watch(currentSlide, (newValue) => {
   if (sliderContainer.value) {
     sliderContainer.value.style.transform = `translateX(-${newValue * 100}%)`;
+  }
+});
+
+watch(currentLinktreeSlide, (newValue) => {
+  if (linktreeSliderContainer.value) {
+    linktreeSliderContainer.value.style.transform = `translateX(-${
+      newValue * 100
+    }%)`;
   }
 });
 
