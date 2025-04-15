@@ -6,6 +6,8 @@ const products = [
   { text: "Stylescapes", to: "/projects/branding#stylescapes" },
   { text: "Logo's Boris", to: "/projects/branding#logo" },
   { text: "Instagram Posts", to: "/projects/branding#instagram" },
+  { text: "Linktree", to: "/projects/branding#linktree" },
+  { text: "Spotify", to: "/projects/branding#spotify" },
 ];
 </script>
 

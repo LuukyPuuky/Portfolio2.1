@@ -281,6 +281,13 @@
           description=" Er zijn twee versies van de Linktree. De eerste versie, versie A is die van mij. Daarna hebben we met de groep ernaar gekeken en hebben we op deze linktree geïtereerd. Dit is versie B. "
           :loNumber="3"
         >
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Boris had als
+            <span class="underline decoration-purple-400">feedback</span>
+            gegeven dat hij graag zijn linktree zouden willen updaten. Deze heb
+            ik daarom ook gedesigned. De linktree heeft de kleuren van de
+            Stylescape die we hadden gekozen na zijn feedback in de powerpoint.
+          </p>
           <!-- Linktree Slider -->
           <div class="relative mb-8">
             <div class="overflow-hidden rounded-lg">
@@ -375,6 +382,20 @@
             die ik heb gemaakt en de linktree die Laurens heeft gemaakt.
           </p>
         </ContentSection>
+
+        <ContentSection
+          id="spotify"
+          class="scroll-mt-24"
+          title="Spotify Covers"
+          subtitle="Learning outcome 3: Iterative design"
+          description="Ik heb een Spotify playlist gemaakt voor Boris. Hierin zijn alle nummers die Boris heeft gemaakt te vinden. Ook zijn er nummers van andere artiesten te vinden die Boris leuk vindt."
+          :loNumber="3"
+        >
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            De iteratie van de linktree is van een combinatie tussen de linktree
+            die ik heb gemaakt en de linktree die Laurens heeft gemaakt.
+          </p>
+        </ContentSection>
       </div>
     </div>
     <Footer />
@@ -392,6 +413,7 @@ const stylescapeImages = [
   "/images/StylescapeLuuk4.png",
 ];
 
+// Stylescape slider
 const currentSlide = ref(0);
 const sliderContainer = ref(null);
 
