@@ -12,7 +12,4 @@
   </div>
 </template>
 
-<script setup>
-import ScrollToBottom from "~/components/ScrollToBottom.vue";
-// ... rest of the script ...
-</script>
+<script setup></script>

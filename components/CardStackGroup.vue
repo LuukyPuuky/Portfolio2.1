@@ -56,13 +56,34 @@ const cards = [
   },
   {
     title: "Project 3",
+    subtitle: "Development",
+    description:
+      "Dit project gaat over de development van project 2, create that UX. In dit project heb ik samen met mijn groepsgenoten gewerkt aan het coderen van project 2.",
+    buttonText: "Lees Meer",
+    buttonLink: "/projects/development",
+    brandingTitle: "Development",
+    brandingImage: "images/Cardanlogo.svg",
+    fileColor: "#654E6F",
+  },
+  {
+    title: "Project 4",
     subtitle: "Portfolio",
     description:
       "Dit project gaat over mijn portfolio. Hierin beschrijf ik hoe ik tot mijn portfolio ben gekomen, wat ik ervoor heb gedesigned en hoe ik mezelf beter ben leren kennen in mijn waardes.",
     buttonText: "Lees Meer",
     buttonLink: "/projects/portfolio",
     brandingTitle: "Luuk Steijaert",
-    brandingImage: "",
+    fileColor: "#00c951",
+  },
+  {
+    title: "Project 5",
+    subtitle: "Project X",
+    description:
+      "Bij dit project mag ik zelf een project kiezen. Ik heb gekozen om Spline te gaan ontdekken. Spline is een tool waarmee je 3D objecten kan maken.",
+    buttonText: "Lees Meer",
+    buttonLink: "/projects/project-x",
+    brandingTitle: "Spline",
+    brandingImage: "images/splinelogo.png",
     fileColor: "#00c951",
   },
 ];

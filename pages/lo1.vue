@@ -21,7 +21,7 @@ const products = [
       <div class="w-full text-white">
         <div class="mx-auto mt-12 max-w-6xl flex flex-col">
           <!-- Reflection Section -->
-          <
+
           <div id="reflection" class="mb-12">
             <h1 class="text-4xl font-bold">Introductie</h1>
             <p class="text-gray-300 font-Roboto text-xl mb-5 max-w-3xl">
@@ -32,10 +32,6 @@ const products = [
             <h2 class="text-4xl font-bold">Reflectie</h2>
             <div class="space-y-4 max-w-2xl">
               <p class="text-gray-300 text-xl">hier komt nog een reflectie</p>
-              <p class="text-gray-300 text-xl">
-                Ook heb ik feedback gevraagd aan mijn groepsgenoten en aan mijn
-                leraren over het process.
-              </p>
             </div>
           </div>
 

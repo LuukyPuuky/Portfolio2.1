@@ -40,12 +40,25 @@
             d="M25.0268 58.4342V242.768C25.0268 261.855 41.3403 277.33 61.4643 277.33H401.548C421.671 277.33 437.985 261.855 437.985 242.768V104.518C437.985 85.4292 421.671 69.9551 401.548 69.9551H241.568C231.904 69.9551 222.637 66.3138 215.804 59.832L181.449 27.2462C179.171 25.0856 176.082 23.8717 172.861 23.8717H61.4643C54.7564 23.8717 49.3184 18.7136 49.3184 12.3509C49.3184 5.98819 54.7564 0.830078 61.4643 0.830078H172.861C182.524 0.830078 191.791 4.47135 198.625 10.9532L232.98 43.539C235.257 45.6996 238.346 46.9134 241.568 46.9134H401.548C435.087 46.9134 462.277 72.7037 462.277 104.518V242.768C462.277 274.581 435.087 300.372 401.548 300.372H61.4643C27.9245 300.372 0.735107 274.581 0.735107 242.768V58.4342C0.735107 52.0715 6.17304 46.9134 12.8809 46.9134C19.5888 46.9134 25.0268 52.0715 25.0268 58.4342Z"
             :fill="fileColor"
           />
-          <foreignObject x="35" y="60" width="400" height="200">
-            <img
-              :src="brandingImage"
-              class="w-full h-full object-contain px-4"
-              alt="Branding Image"
-            />
+          <foreignObject
+            v-if="brandingImage"
+            x="35"
+            y="60"
+            width="400"
+            height="200"
+          >
+            <div class="w-full h-full flex items-center justify-center">
+              <img
+                :src="brandingImage"
+                :class="[
+                  'object-contain px-4',
+                  title === 'Project 5'
+                    ? 'max-w-[200px] max-h-[150px]'
+                    : 'w-full h-full',
+                ]"
+                alt="Branding Image"
+              />
+            </div>
           </foreignObject>
         </svg>
       </div>
@@ -83,7 +96,6 @@ export default {
     },
     brandingImage: {
       type: String,
-      default: "/images/card1folderinside.svg",
     },
     fileColor: {
       type: String,
