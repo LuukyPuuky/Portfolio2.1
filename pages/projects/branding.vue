@@ -669,7 +669,7 @@
           class="scroll-mt-24"
           title="Eind Presentatie"
           subtitle="Learning outcome 4: Professional Standard"
-          description="Als laatste zijn we naar Tilburg toe gegaan om de eind presentatie te geven aan Boris. Dit was een hele leuke ervaring omdat je dan met de stakeholder oog in oog stond en het direct kon vertellen in plaats van dat het via een teamsvergadering gaat."
+          description="Als laatste zijn we naar Tilburg toe gegaan om de eind presentatie te geven aan Boris. Dit was een hele leuke ervaring omdat je dan met de stakeholder oog in oog stond en het direct kon vertellen in plaats van dat het via een teamsvergadering gaat. De eindpresentatie was een combinatie van de brandguide en de contentstrategie samen."
           :loNumber="4"
         >
           <img
