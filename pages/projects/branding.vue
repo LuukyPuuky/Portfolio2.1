@@ -626,6 +626,42 @@
             </button>
           </div>
         </ContentSection>
+
+        <!-- Brandguide -->
+        <ContentSection
+          id="brandguide"
+          class="scroll-mt-24"
+          title="Brandguide"
+          subtitle="Learning outcome 1: Interactive Media Products"
+          description="Ik heb samen met mijn groep een brandguide gemaakt voor Boris. In deze brandguide hebben we alles wat we hebben geproduceerd voor Boris om zijn branding te verbeteren toegevoegd."
+          :loNumber="1"
+          pdfLink="https://www.figma.com/proto/EK9EOAI5VEAANG395V9M2w/Project-1--Branding?page-id=268%3A2&node-id=596-252&viewport=-1007%2C841%2C0.04&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=596%3A252&show-proto-sidebar=1&embed-host=share"
+          pdfText="View in Figma"
+        >
+          <img
+            src="/images/brandguide.png"
+            alt="brandguide"
+            class="mb-5 h-auto max-w-full w-full rounded-lg"
+          />
+        </ContentSection>
+
+        <!-- Content Strategie -->
+        <ContentSection
+          id="contentstrategie"
+          class="scroll-mt-24"
+          title="Content Strategie"
+          subtitle="Learning outcome 1: Interactive Media Products"
+          description="Samen met Laurens heb ik de content strategie gemaakt. Hij had voornamelijk de inhoud van de strategie gemaakt en ik had de presentatie eromheen gemaakt met alle keywords en wat er precies gezegd zou moeten worden."
+          :loNumber="1"
+          pdfLink="https://www.figma.com/proto/EK9EOAI5VEAANG395V9M2w/Project-1--Branding?page-id=268%3A2&node-id=799-6&viewport=-1144%2C1056%2C0.03&t=8WFuWfpBosDUbs8s-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=444%3A584&show-proto-sidebar=1"
+          pdfText="View in Figma"
+        >
+          <img
+            src="/images/contentstrategie.png"
+            alt="contentstrategie"
+            class="mb-5 h-auto max-w-full w-full rounded-lg"
+          />
+        </ContentSection>
       </div>
     </div>
     <Footer />

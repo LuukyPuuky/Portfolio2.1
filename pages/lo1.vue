@@ -5,6 +5,11 @@ const products = [
   { text: "Onderzoek Boris", to: "/projects/branding#onderzoek" },
   { text: "Moodboard Boris", to: "/projects/branding#moodboard" },
   { text: "Midterm Powerpoint Boris", to: "/projects/branding#midterm" },
+  { text: "Brandguide Boris", to: "/projects/branding#brandguide" },
+  {
+    text: "Content Strategie Boris",
+    to: "/projects/branding#contentstrategie",
+  },
 ];
 </script>
 
