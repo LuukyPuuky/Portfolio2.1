@@ -663,6 +663,107 @@
           />
         </ContentSection>
 
+        <!-- Communicatie Stakeholder -->
+        <ContentSection
+          id="communicatie"
+          class="scroll-mt-24"
+          title="Communicatie Stakeholder"
+          subtitle="Learning outcome 4: Professional Standard"
+          description="Voor dit project heb ik de meeste communicatie gedaan samen met onze stakeholder Boris. Ik heb via teams besproken over de feedback die we kregen en Als we vragen hadden dat we die ook gelijk konden communiceren en beantwoord konnen krijgen zodat we verder niet hoefte te wachten."
+          :loNumber="4"
+        >
+          <!-- Communication Images Slider -->
+          <div class="relative mb-8">
+            <div class="overflow-hidden rounded-lg">
+              <div
+                class="flex transition-transform duration-500 ease-in-out"
+                ref="communicationSliderContainer"
+              >
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="/images/communicatie1.png"
+                    alt="communicatie"
+                    class="h-auto max-w-[600px] w-full rounded-lg mx-auto"
+                  />
+                </div>
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="/images/communicatie2.png"
+                    alt="teams"
+                    class="h-auto max-w-[600px] w-full rounded-lg mx-auto"
+                  />
+                </div>
+                <div class="w-full flex-shrink-0">
+                  <img
+                    src="/images/communicatie3.png"
+                    alt="teams"
+                    class="h-auto max-w-[600px] w-full rounded-lg mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Navigation Dots -->
+            <div class="flex justify-center mt-4 gap-2">
+              <button
+                v-for="(_, index) in 3"
+                :key="index"
+                @click="currentCommunicationSlide = index"
+                class="w-3 h-3 rounded-full transition-colors duration-300"
+                :class="
+                  currentCommunicationSlide === index
+                    ? 'bg-purple-400'
+                    : 'bg-gray-400 hover:bg-gray-300'
+                "
+                :aria-label="`Go to communication image ${index + 1}`"
+              ></button>
+            </div>
+
+            <!-- Navigation Arrows -->
+            <button
+              @click="prevCommunicationSlide"
+              class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Previous image"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+
+            <button
+              @click="nextCommunicationSlide"
+              class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+              aria-label="Next image"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
+        </ContentSection>
+
         <!-- Eind presentatie-->
         <ContentSection
           id="eindpp"
@@ -721,6 +822,10 @@ const spotifyV1SliderContainer = ref(null);
 const currentSpotifyV2Slide = ref(0);
 const spotifyV2SliderContainer = ref(null);
 
+// Communication slider
+const currentCommunicationSlide = ref(0);
+const communicationSliderContainer = ref(null);
+
 // Function to go to previous slide
 const prevSlide = () => {
   currentSlide.value =
@@ -740,6 +845,11 @@ const prevSpotifyV2Slide = () => {
   currentSpotifyV2Slide.value = (currentSpotifyV2Slide.value - 1 + 2) % 2;
 };
 
+const prevCommunicationSlide = () => {
+  currentCommunicationSlide.value =
+    (currentCommunicationSlide.value - 1 + 3) % 3;
+};
+
 // Function to go to next slide
 const nextSlide = () => {
   currentSlide.value = (currentSlide.value + 1) % stylescapeImages.length;
@@ -755,6 +865,10 @@ const nextSpotifyV1Slide = () => {
 
 const nextSpotifyV2Slide = () => {
   currentSpotifyV2Slide.value = (currentSpotifyV2Slide.value + 1) % 2;
+};
+
+const nextCommunicationSlide = () => {
+  currentCommunicationSlide.value = (currentCommunicationSlide.value + 1) % 3;
 };
 
 // Watch for slide changes to update the transform
@@ -783,6 +897,14 @@ watch(currentSpotifyV1Slide, (newValue) => {
 watch(currentSpotifyV2Slide, (newValue) => {
   if (spotifyV2SliderContainer.value) {
     spotifyV2SliderContainer.value.style.transform = `translateX(-${
+      newValue * 100
+    }%)`;
+  }
+});
+
+watch(currentCommunicationSlide, (newValue) => {
+  if (communicationSliderContainer.value) {
+    communicationSliderContainer.value.style.transform = `translateX(-${
       newValue * 100
     }%)`;
   }

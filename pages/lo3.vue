@@ -2,11 +2,11 @@
 import ProductsList from "~/components/ProductsList.vue";
 
 const products = [
-  { text: "Stylescapes", to: "/projects/branding#stylescapes" },
+  { text: "Stylescapes Boris", to: "/projects/branding#stylescapes" },
   { text: "Logo's Boris", to: "/projects/branding#logo" },
-  { text: "Instagram Posts", to: "/projects/branding#instagram" },
-  { text: "Linktree", to: "/projects/branding#linktree" },
-  { text: "Spotify", to: "/projects/branding#spotify" },
+  { text: "Instagram Posts Boris", to: "/projects/branding#instagram" },
+  { text: "Linktree Boris", to: "/projects/branding#linktree" },
+  { text: "Spotify Boris", to: "/projects/branding#spotify" },
 ];
 </script>
 

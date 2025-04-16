@@ -2,8 +2,15 @@
 import ProductsList from "~/components/ProductsList.vue";
 
 const products = [
-  { text: "Samenwerkingsovereenkomst", to: "/projects/branding#samenwerking" },
-  { text: "Eind Presentatie", to: "/projects/branding#eindpp" },
+  {
+    text: "Samenwerkingsovereenkomst Boris",
+    to: "/projects/branding#samenwerking",
+  },
+  {
+    text: "Communicatie Stakeholder",
+    to: "/projects/branding#communicatie",
+  },
+  { text: "Eind Presentatie Boris", to: "/projects/branding#eindpp" },
 ];
 </script>
 
@@ -16,14 +23,18 @@ const products = [
         <div class="mx-auto mt-12 max-w-6xl flex flex-col">
           <!-- Reflection Section -->
           <div id="reflection" class="mb-12">
-            <h2 class="text-4xl font-bold mb-6">Reflectie</h2>
-            <div class="space-y-4 max-w-3xl">
-              <p class="text-gray-300 leading-relaxed">
-                In dit semester heb ik geleerd hoe belangrijk professionele
-                standaarden zijn in het werkveld. Door het maken van een
-                samenwerkingsovereenkomst en het volgen van professionele
-                richtlijnen, heb ik ervaren hoe dit bijdraagt aan een succesvol
-                project.
+            <h1 class="text-4xl font-bold">Introductie</h1>
+            <p class="text-gray-300 font-Roboto text-xl mb-5 max-w-3xl">
+              "Je past professionele vaardigheden toe, zowel individueel als in
+              teams, op het gebied van projectorganisatie, communicatie met
+              stakeholders, verkennend onderzoek en rapportage."
+            </p>
+            <h2 class="text-4xl font-bold">Reflectie</h2>
+            <div class="space-y-4 max-w-2xl">
+              <p class="text-gray-300 text-xl">hier komt nog een reflectie</p>
+              <p class="text-gray-300 text-xl">
+                Ook heb ik feedback gevraagd aan mijn groepsgenoten en aan mijn
+                leraren over het process.
               </p>
             </div>
           </div>
