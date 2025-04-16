@@ -3,6 +3,7 @@ import ProductsList from "~/components/ProductsList.vue";
 
 const products = [
   { text: "Samenwerkingsovereenkomst", to: "/projects/branding#samenwerking" },
+  { text: "Eind Presentatie", to: "/projects/branding#eindpp" },
 ];
 </script>
 

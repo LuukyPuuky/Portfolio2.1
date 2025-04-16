@@ -662,6 +662,33 @@
             class="mb-5 h-auto max-w-full w-full rounded-lg"
           />
         </ContentSection>
+
+        <!-- Eind presentatie-->
+        <ContentSection
+          id="eindpp"
+          class="scroll-mt-24"
+          title="Eind Presentatie"
+          subtitle="Learning outcome 4: Professional Standard"
+          description="Als laatste zijn we naar Tilburg toe gegaan om de eind presentatie te geven aan Boris. Dit was een hele leuke ervaring omdat je dan met de stakeholder oog in oog stond en het direct kon vertellen in plaats van dat het via een teamsvergadering gaat."
+          :loNumber="4"
+        >
+          <img
+            src="/images/presentatieboris.jpg"
+            alt="eindpp"
+            class="mb-5 h-auto max-w-full w-full rounded-lg"
+          />
+          <p class="text-gray-300 font-Roboto text-xl">
+            De <span class="underline decoration-purple-400">feedback</span> die
+            we van Boris kregen was:
+            <span class="italic"
+              >"Energieke presentatie. Sociale media fijn voor Covers waren wel
+              iets te groot contrast voor volgende keer wat minder contrast. Er
+              waren iets te veel albumcovers. Neon kleuren waren afwijkend maar
+              voeg hier reden achter. Voeg voorbeelden toe aan de
+              contentstrategie zodat je daar naar kan verwijzen"
+            </span>
+          </p>
+        </ContentSection>
       </div>
     </div>
     <Footer />
