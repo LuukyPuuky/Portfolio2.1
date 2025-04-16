@@ -84,7 +84,7 @@ const cards = [
     buttonLink: "/projects/project-x",
     brandingTitle: "Spline",
     brandingImage: "images/splinelogo.png",
-    fileColor: "#00c951",
+    fileColor: "#217ce5",
   },
 ];
 

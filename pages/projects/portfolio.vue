@@ -64,9 +64,23 @@
             id="mapslider"
             class="scroll-mt-24"
             subtitle="Learning outcome 2 Development & Version Control"
-            description=" "
+            description="Dit is de tweede slider op de index pagina. Deze slider heb ik gemaakt ter inspiratie van een slider die op de website van wyre.studiofright staat. "
             :loNumber="2"
           >
+            <p class="text-gray-300 font-Roboto text-xl max-w-2xl">
+              Ik heb deze scrollanimatie deels gemaakt door het bekijken van een
+              youtube tutorial. Die maakte namelijk precies wat ik wilde maken
+              en idee had om te doen.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl max-w-2xl">
+              Hieronder is de code te zien hoe ik de scrollanimatie heb gemaakt.
+              Dit is ook gemaakt met GSAP.
+            </p>
+            <img
+              src="/images/codevertical.png"
+              alt="projecten map slider"
+              class="h-auto max-w-full w-full rounded-lg mb-5"
+            />
           </ContentSection>
 
           <!-- Team Roles -->

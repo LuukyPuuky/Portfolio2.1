@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const products = [
   { text: "Leeruitkomsten Slider", to: "/projects/portfolio#leeruitkomsten" },
+  { text: "Projecten Map Slider", to: "/projects/portfolio#mapslider" },
 ];
 </script>
 
