@@ -14,20 +14,20 @@ const products = [
   <div class="scrollbar scrollbar-thumb-green-500 scrollbar-track-slate-900">
     <div class="bg-slate-900 text-white">
       <Navbar />
-      <HeaderProject title="Iterative Design" />
+      <HeaderProject title="Interactive Media Products" />
       <div class="w-full text-white">
         <div class="mx-auto mt-12 max-w-6xl flex flex-col">
           <!-- Reflection Section -->
+
           <div id="reflection" class="mb-12">
-            <h2 class="text-4xl font-bold mb-6">Reflectie</h2>
-            <div class="space-y-4 max-w-3xl">
-              <p class="text-gray-300 leading-relaxed">
-                In dit semester heb ik veel geleerd over het iteratieve
-                ontwerpproces. Ik heb verschillende versies van designs gemaakt
-                en deze getest met gebruikers en stakeholders. Door feedback te
-                verzamelen en te verwerken, kon ik mijn ontwerpen continu
-                verbeteren.
-              </p>
+            <h1 class="text-4xl font-bold">Introductie</h1>
+            <p class="text-gray-300 font-Roboto text-xl mb-5 max-w-3xl">
+              "Je verkent en gebruikt professionele ontwerptools en ontwerpt
+              visuele werken op een iteratieve manier."
+            </p>
+            <h2 class="text-4xl font-bold">Reflectie</h2>
+            <div class="space-y-4 max-w-2xl">
+              <p class="text-gray-300 text-xl">hier komt nog een reflectie</p>
             </div>
           </div>
 

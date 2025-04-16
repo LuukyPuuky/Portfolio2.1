@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const products = [{ text: "..", to: "/" }];
+const products = [
+  { text: "Leeruitkomsten Slider", to: "/projects/portfolio#leeruitkomsten" },
+];
 </script>
 
 <template>
@@ -13,17 +15,12 @@ const products = [{ text: "..", to: "/" }];
           <div id="reflection" class="mb-12">
             <h1 class="text-4xl font-bold">Introductie</h1>
             <p class="text-gray-300 font-Roboto text-xl mb-5 max-w-3xl">
-              "Je oriënteert je op het relevante technologie-, media- en
-              ontwerplandschap en creëert interactieve mediaproducten die je
-              hebt getest met gebruikers en stakeholders."
+              "Je verkent front-end ontwikkeltalen, schrijft code en
+              documenteert in een versiebeheersysteem."
             </p>
             <h2 class="text-4xl font-bold">Reflectie</h2>
             <div class="space-y-4 max-w-2xl">
               <p class="text-gray-300 text-xl">hier komt nog een reflectie</p>
-              <p class="text-gray-300 text-xl">
-                Ook heb ik feedback gevraagd aan mijn groepsgenoten en aan mijn
-                leraren over het process.
-              </p>
             </div>
           </div>
 
