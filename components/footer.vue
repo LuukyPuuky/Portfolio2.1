@@ -78,6 +78,7 @@ const projectLinks = [
   { label: "Branding", url: "/projects/branding" },
   { label: "Create that UX", url: "/projects/cardan" },
   { label: "Development", url: "/projects/development" },
+  { label: "Portfolio", url: "/projects/portfolio" },
   { label: "Project X", url: "/projects/project-x" },
 ];
 

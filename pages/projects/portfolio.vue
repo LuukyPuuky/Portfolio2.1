@@ -121,5 +121,10 @@
       </div>
     </div>
     <Footer />
+    <ScrollToBottom />
   </div>
 </template>
+
+<script setup>
+import ScrollToBottom from "~/components/ScrollToBottom.vue";
+</script>

@@ -793,11 +793,13 @@
       </div>
     </div>
     <Footer />
+    <ScrollToBottom />
   </div>
 </template>
 
 <script setup>
 import { ref, watch, onMounted } from "vue";
+import ScrollToBottom from "~/components/ScrollToBottom.vue";
 
 // Stylescape images array
 const stylescapeImages = [
