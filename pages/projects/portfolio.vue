@@ -32,7 +32,7 @@
             :loNumber="2"
           >
             <img
-              src="/images/lenisinspo.png"
+              src="/images/Lenisinspo.png"
               alt="lenis inspiratie"
               class="h-auto max-w-full w-full rounded-lg mb-5"
             />
