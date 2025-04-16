@@ -30,8 +30,9 @@ const products = [
               hebt getest met gebruikers en stakeholders."
             </p>
             <h2 class="text-4xl font-bold">Reflectie</h2>
-            <div class="space-y-4 max-w-2xl">
-              <p class="text-gray-300 text-xl">hier komt nog een reflectie</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
+              <div class="space-y-4"></div>
+              <div class="space-y-4"></div>
             </div>
           </div>
 
