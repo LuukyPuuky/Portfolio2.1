@@ -12,6 +12,7 @@ const products = [
   },
   { text: "Eind Presentatie Boris", to: "/projects/branding#eindpp" },
   { text: "Projectplan Cardan", to: "/projects/cardan#projectplan" },
+  { text: "Researchplan Cardan", to: "/projects/cardan#researchplan" },
 ];
 </script>
 

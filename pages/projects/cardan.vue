@@ -42,14 +42,101 @@
             :loNumber="4"
           >
             <p class="text-gray-300 font-Roboto text-xl">
-              Daarnaast hebben we een onderzoeksdoel en een probleemdefinitie
-              geformuleerd.
+              In het projectplan hebben we de volgende dingen beschreven:
+            </p>
+            <ul
+              class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 md:grid md:grid-cols-2 mt-5"
+            >
+              <li>Aanleiding van het project</li>
+              <li>Onderzoeksdoel</li>
+              <li>Probleemdefinitie</li>
+              <li>Onderzoeksvraag & Deelvragen</li>
+              <li>Over de opdrachtgever</li>
+              <li>Methodologie</li>
+              <li>Planning/Aanpak</li>
+              <li>Communicatie/Werkafspraken</li>
+              <li>Beperkingen</li>
+              <li>Eindproduct</li>
+              <li>Deelproduct</li>
+            </ul>
+          </ContentSection>
+
+          <!-- Research plan -->
+          <ContentSection
+            id="researchplan"
+            class="scroll-mt-24"
+            title="Researchplan"
+            subtitle="Learning Outcome 4 Professional Standard"
+            description="In het researchplan heb ik samen met mijn groep de onderzoeksvragen beantwoord die we eerder bij punt 4 van het projectplan hadden opgesteld."
+            pdfLink="/documents/ResearchplanCardan.pdf"
+            pdfText="Researchplan"
+            :loNumber="4"
+          >
+            <p class="text-gray-300 font-Roboto text-xl">
+              In het eerste gedeelte van het researchplan staan alle
+              onderzoeksvragen die we hadden opgesteld. Iedereen van de groep
+              moest 3 vragen opstellen. De vragen die ik had opgesteld waren:
+            </p>
+            <ul
+              class="list-disc list-inside text-gray-300 font-Roboto text-xl my-5"
+            >
+              <li>
+                Welke methoden worden gebruikt om de toegankelijkheid van
+                websites te testen en in hoeverre houden deze rekening met
+                cognitieve beperkingen?
+              </li>
+              <li>
+                Hoe kunnen gebruikers met cognitieve beperkingen betrokken
+                worden bij het testen en verbeteren van digitale
+                toegankelijkheid?
+              </li>
+              <li>
+                Welke veelvoorkomende fouten maken websites waardoor ze niet
+                voldoen aan de WCAG 2.0-richtlijnen?
+              </li>
+            </ul>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              We hebben daarna al de vragen die we hadden opgesteld
+              onderverdeeld in 5 hoofdvragen. Ook hebben we aan deze hoofdvragen
+              het
+              <span class="underline decoration-purple-400">DOT-framework</span>
+              gebruikt.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl">
+              De vraag die ik ging uitwerken is vraag 5, Wat zijn de grootste
+              obstakels die mensen met een beperking ervaren bij het navigeren
+              en gebruiken van digitale diensten?
             </p>
             <p class="text-gray-300 font-Roboto text-xl mb-5">
-              Ook hebben we in het projectplan andere onderdelen opgenomen,
-              zoals een Trello-bord voor het bijhouden van onze voortgang.
+              Deze vraag viel onder de groep van Field / Library in het
+              DOT-framework.
+            </p>
+
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Ik heb zelf de hoofdvraag weer opgedeeld in 5 delen. er zijn
+              namelijk meerdere beperkingen en ik wilde deze graag allemaal in
+              kaart hebben.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              het plan was om uiteindelijk alle 5 de groepen een interview te
+              doen in een bejaardetehuis. Dit is er helaas niet meer van
+              gekomen. Wel heb ik 1 interview kunnen doen met Cedric, een vriend
+              van mij die zelf 70% zicht heeft en kleurenblindheid. Dit
+              interview is verder beschreven in een kopje hieronder.
             </p>
           </ContentSection>
+
+          <!-- Interview -->
+          <!-- <ContentSection
+            id="researchplan"
+            class="scroll-mt-24"
+            title="Researchplan"
+            subtitle="Learning Outcome 4 Professional Standard"
+            description="."
+            pdfLink="/documents/ResearchplanCardan.pdf"
+            pdfText="Researchplan"
+            :loNumber="4"
+          ></ContentSection> -->
         </div>
       </div>
     </div>
