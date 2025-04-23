@@ -159,6 +159,59 @@
               daadwerkelijk de kleuren.
             </p>
           </ContentSection>
+
+          <!-- Midterm powerpoint Cardan -->
+          <ContentSection
+            id="midtermpowerpoint"
+            class="scroll-mt-24"
+            title="Midterm Powerpoint"
+            subtitle="Learning Outcome 1 Interactive Media Products"
+            description="Samen met de groep hebben we de eerste sprint oplevering gehad. Hierin hebben we een powerpoint gemaakt waarin we alles wat we tot nu toe hebben gedaan hebben beschreven. "
+            pdfLink="/documents/Cardanmidtermpp.pdf"
+            pdfText="Midterm Powerpoint"
+            :loNumber="1"
+          >
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Ook kregen we natuurlijk feedback op de powerpoint en wat we
+              allemaal hebben laten zien. De
+              <span class="underline decoration-purple-400">feedback</span> die
+              we kregen van Carolina was:
+            </p>
+            <p class="italic text-gray-300 font-Roboto text-xl mb-5">
+              "Het was niet helemaal duidelijk hoe de vragen zijn in het
+              ervaringsplein waren. Hoe erg wil je in het speelse gaan en in het
+              serieuze wil gaan? Welke kant wil je liever op gaan?" "Het spel
+              met de bom voor kleurenblindheid: Bom onschadelijk maken naar
+              situatie verbeteren naar wat iemand echt kan tegen komen. Echte
+              situaties maken. Het spel is wel leuk. Maar veranderen Echte
+              situaties maken. Het spel is wel leuk. Maar veranderen naar
+              dagelijkse activiteiten." "Het design is iets te druk met te veel
+              tekst. Probeer hier op te verbeteren"
+            </p>
+
+            <img
+              src="/images/midtermppcardan.png"
+              alt="midterm powerpoint cardan"
+              class="mb-5 rounded-lg"
+            />
+          </ContentSection>
+
+          <!-- Motorische Beperking -->
+          <ContentSection
+            id="motorischebeperking"
+            class="scroll-mt-24"
+            title="Figma Design Proces"
+            subtitle="Learning Outcome 3 Iterative Design"
+            description="In dit gedeelte heb ik mijn design proces gemaakt. Ik heb in totaal 3 versies gemaakt van mijn station. Iedereen van  de groep had zijn eigen station gekozen om te gaan ontwerpen. "
+            pdfLink="/documents/TestCardan.pdf"
+            pdfText="Figma Prototype"
+            :loNumber="3"
+          >
+            <img
+              src="/images/versie1moto.png"
+              alt="motorischebeperking versie 1"
+            />
+          </ContentSection>
         </div>
       </div>
     </div>

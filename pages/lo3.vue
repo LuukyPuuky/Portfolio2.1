@@ -7,6 +7,7 @@ const products = [
   { text: "Instagram Posts Boris", to: "/projects/branding#instagram" },
   { text: "Linktree Boris", to: "/projects/branding#linktree" },
   { text: "Spotify Boris", to: "/projects/branding#spotify" },
+  { text: "Design Proces Cardan", to: "/projects/cardan#motorischebeperking" },
 ];
 </script>
 

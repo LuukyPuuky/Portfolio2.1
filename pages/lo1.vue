@@ -11,6 +11,10 @@ const products = [
     to: "/projects/branding#contentstrategie",
   },
   { text: "Test Doelgroep Cardan", to: "/projects/cardan#testdoelgroep" },
+  {
+    text: "Midterm Powerpoint Cardan",
+    to: "/projects/cardan#midtermpowerpoint",
+  },
 ];
 </script>
 
