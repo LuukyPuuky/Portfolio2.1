@@ -7,10 +7,11 @@ const products = [
     to: "/projects/branding#samenwerking",
   },
   {
-    text: "Communicatie Stakeholder",
+    text: "Communicatie Stakeholder Boris",
     to: "/projects/branding#communicatie",
   },
   { text: "Eind Presentatie Boris", to: "/projects/branding#eindpp" },
+  { text: "Projectplan Cardan", to: "/projects/cardan#projectplan" },
 ];
 </script>
 
