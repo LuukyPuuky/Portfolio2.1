@@ -126,17 +126,39 @@
             </p>
           </ContentSection>
 
-          <!-- Interview -->
-          <!-- <ContentSection
-            id="researchplan"
+          <!-- Testplan -->
+          <ContentSection
+            id="testdoelgroep"
             class="scroll-mt-24"
-            title="Researchplan"
-            subtitle="Learning Outcome 4 Professional Standard"
-            description="."
-            pdfLink="/documents/ResearchplanCardan.pdf"
-            pdfText="Researchplan"
-            :loNumber="4"
-          ></ContentSection> -->
+            title="Test Doelgroep"
+            subtitle="Learning Outcome 1 Interactive Media Products"
+            description="Om meer te weten te komen hoe iemand met een beperking websites gebruikt, heb ik een test gedaan met Cédric."
+            pdfLink="/documents/TestCardan.pdf"
+            pdfText="Test Cédric"
+            :loNumber="1"
+          >
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Cédric heeft 70% zicht en is kleurenblind (deuteranomaly). Hij
+              gebruikt in het echt natuurlijk gewoon een bril maar wilde voor
+              deze test zijn bril wel afdoen om een beter effect te laten zien
+              voor het onderzoek.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              In de test heb ik met hem 2 scenario's doorgelopen. In het eerste
+              scenario moest hij een handdoek kopen bij de Hema. In de test
+              hieronder kan je lezen hoe dat gelopen is.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Het volgende scenario was om een rode stoel te bestellen bij de
+              Ikea. Ook deze kan je lezen in het bijgevoegde document.
+            </p>
+
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Om een conclusie te kunnen trekken over deze test is dat
+              kleurenblinde mensen meer op textuur van een website letten dan
+              daadwerkelijk de kleuren.
+            </p>
+          </ContentSection>
         </div>
       </div>
     </div>

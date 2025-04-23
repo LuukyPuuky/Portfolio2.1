@@ -10,6 +10,7 @@ const products = [
     text: "Content Strategie Boris",
     to: "/projects/branding#contentstrategie",
   },
+  { text: "Test Doelgroep Cardan", to: "/projects/cardan#testdoelgroep" },
 ];
 </script>
 
