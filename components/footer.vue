@@ -18,6 +18,7 @@
               <!-- Underline Span  -->
               <span
                 class="absolute left-0 top-5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+                :class="{ 'scale-x-100': $route.path === item.url }"
               ></span>
             </NuxtLink>
           </li>
@@ -38,6 +39,7 @@
               <!-- Underline Span  -->
               <span
                 class="absolute left-0 top-5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+                :class="{ 'scale-x-100': $route.path === item.url }"
               ></span>
             </NuxtLink>
           </li>

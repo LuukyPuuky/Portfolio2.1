@@ -13,7 +13,7 @@
         class="absolute left-0 top-7 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
       ></span>
     </NuxtLink>
-    <p class="text-gray-300 font-Roboto md:text-xl text-lg mb-5">
+    <p class="text-gray-300 font-Roboto text-xl mb-5">
       {{ description }}
     </p>
     <slot></slot>

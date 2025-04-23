@@ -38,7 +38,7 @@ const scrollHeight = ref(0);
 const cards = ref([
   { number: "01", title: "Interactive Media Products", buttonLink: "/lo1" },
   { number: "02", title: "Development & Version Control", buttonLink: "/lo2" },
-  { number: "03", title: "Design", buttonLink: "/lo3" },
+  { number: "03", title: "Iterative Design", buttonLink: "/lo3" },
   { number: "04", title: "Professional Standard", buttonLink: "/lo4" },
   { number: "05", title: "Personal Leadership", buttonLink: "/lo5" },
 ]);

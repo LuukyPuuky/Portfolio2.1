@@ -134,7 +134,7 @@
             subtitle="Learning Outcome 1 Interactive Media Products"
             description="Om meer te weten te komen hoe iemand met een beperking websites gebruikt, heb ik een test gedaan met Cédric."
             pdfLink="/documents/TestCardan.pdf"
-            pdfText="Test Cédric"
+            pdfText="Test Doelgroep"
             :loNumber="1"
           >
             <p class="text-gray-300 font-Roboto text-xl mb-5">
