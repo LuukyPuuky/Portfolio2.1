@@ -22,6 +22,19 @@
           </div>
         </div>
         <div class="max-w-6xl mx-auto">
+          <!--Version control github-->
+          <ContentSection
+            title="Versie Control Github"
+            id="versioncontrolportfolio"
+            class="scroll-mt-24"
+            subtitle="Learning outcome 2 Development & Version Control"
+            description="Ik heb bij mijn portfolio gebruik gemaakt van versie control. Ik heb het programma van git, Github gebruikt. Hierin zijn verschillende versies te zien hoe ik tot stand ben gekomen met het maken van dit portfolio. "
+            :loNumber="2"
+            pdfLink="https://github.com/LuukyPuuky/Portfolio2.1/commits/main/"
+            pdfText="Versie Control Github"
+          >
+          </ContentSection>
+
           <!-- Leeruitkomsten Slider -->
           <ContentSection
             title="Leeruitkomsten Slider"

@@ -1,7 +1,17 @@
 <script setup lang="ts">
 const products = [
-  { text: "Leeruitkomsten Slider", to: "/projects/portfolio#leeruitkomsten" },
-  { text: "Projecten Map Slider", to: "/projects/portfolio#mapslider" },
+  {
+    text: "Leeruitkomsten Slider Portfolio",
+    to: "/projects/portfolio#leeruitkomsten",
+  },
+  {
+    text: "Projecten Map Slider Portfolio",
+    to: "/projects/portfolio#mapslider",
+  },
+  {
+    text: "Versie Control Github Portfolio",
+    to: "/projects/portfolio#versioncontrolportfolio",
+  },
 ];
 </script>
 
@@ -77,6 +87,7 @@ const products = [
         </div>
       </div>
       <Footer />
+      <ScrollToBottom />
     </div>
   </div>
 </template>

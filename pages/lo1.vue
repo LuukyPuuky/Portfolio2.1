@@ -31,8 +31,34 @@ const products = [
             </p>
             <h2 class="text-4xl font-bold">Reflectie</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
-              <div class="space-y-4"></div>
-              <div class="space-y-4"></div>
+              <div class="space-y-4">
+                <p class="text-gray-300 text-xl">
+                  Dit semester heb ik veel geleerd over interactieve media. Ik
+                  heb veel mediaproducten kunnen maken. Ik heb verschillende
+                  onderzoeksmethode kunnen ontdekken om mijn doelgroep te
+                  omschrijven. Ik heb ook veel verschillende methodes gebruikt
+                  denk hierbij aan de verschillende stylescapes bij het project
+                  van Branding bij Boris. Hierin heb ik gekeken naar zijn smaak
+                  maar ook gekeken naar de smaak van de doelgroep.
+                </p>
+                <p class="text-gray-300 text-xl">
+                  Ook heb ik meer feedback gevraagd aan mijn stakeholders,
+                  leraren en mijn groepsgenoten. Zij gaven veel insides over hoe
+                  ik mijn producten het beste kon maken en verwoorden.
+                </p>
+                <p class="text-gray-300 text-xl">
+                  Daarnaast heb ik veel verschillende methodes gebruikt om tot
+                  mijn producten te komen. Via het internet ben ik gaan kijken
+                  naar wat de doelgroep interesseert en wat voor voorbeelden zij
+                  hebben om tot hun producten te komen. Ook heb ik gekeken naar
+                  hoe bijvoorbeeld material design gemaakt wordt. Hierdoor kwam
+                  ik beter tot de conclusie hoe ik mijn producten moest maken.
+                </p>
+                <p class="text-gray-300 text-xl"></p>
+              </div>
+              <div class="space-y-4">
+                <p class="text-gray-300 text-xl"></p>
+              </div>
             </div>
           </div>
 
@@ -40,6 +66,7 @@ const products = [
         </div>
       </div>
       <Footer />
+      <ScrollToBottom />
     </div>
   </div>
 </template>

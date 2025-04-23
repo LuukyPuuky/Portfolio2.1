@@ -35,6 +35,7 @@ const products = [
         </div>
       </div>
       <Footer />
+      <ScrollToBottom />
     </div>
   </div>
 </template>

@@ -7,6 +7,7 @@
     <Headerhero />
     <HorizontalCardGroup id="learningoutcomes" />
     <CardStackGroup id="projects" />
+    <ScrollToBottom />
     <Footer />
   </div>
 </template>
