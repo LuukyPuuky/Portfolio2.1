@@ -59,7 +59,32 @@
             </ul>
           </ContentSection>
 
-          <!--Station 1 Visuele Beperking-->
+          <!-- station 4 Motorische Beperking-->
+          <ContentSection
+            id="motorischebeperking"
+            class="scroll-mt-24"
+            title="Station 4 Motorische Beperking"
+            subtitle="Learning Outcome 2 Development and Version Control"
+            description="Dit station gaat over de motorische beperking. Binnen dit station gaat de gebruiker door een form zijn gegevens invullen. Hierbij zal hij twee verschillende challenges krijgen."
+            :loNumber="2"
+          >
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              De eerste challenge is dat de gebruiker terecht komt bij dat zijn
+              muis alle kanten op beweegt. Dit is helaas niet heel makkelijk om
+              te coderen omdat je de muis officieel legaal niet mag overnemen
+              binnen de browser.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Naast deze challenge heeft de gebruiker nog een andere challenge
+              binnen dit station en dat is dat tijdens het typen van de letters
+              op hun toetsenbord af en toe per ongeluk een random letter
+              intypen.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Hieronder is een video hoe het er uit ziet.
+            </p>
+            <video src=""></video>
+          </ContentSection>
         </div>
       </div>
     </div>

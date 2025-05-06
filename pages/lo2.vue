@@ -12,6 +12,10 @@ const products = [
     text: "Versie Control Github Portfolio",
     to: "/projects/portfolio#versioncontrolportfolio",
   },
+  {
+    text: "Motorische Beperking Cardan",
+    to: "/projects/development#motorischebeperking",
+  },
 ];
 </script>
 
