@@ -8,6 +8,7 @@
           class="max-w-6xl mx-auto flex flex-col items-center justify-center"
         >
           <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10">
+            <!--Introductie content-->
             <div class="max-w-2xl mt-8">
               <h1 class="font-RobotoCondensed text-4xl">Introductie</h1>
               <p class="text-gray-300 font-Roboto text-xl">
@@ -21,6 +22,7 @@
                 de vorm van een simulatie-tool.
               </p>
             </div>
+
             <div class="max-w-4xl flex justify-center items-center">
               <img
                 src="/images/Cardanlogo.svg"
@@ -28,6 +30,9 @@
                 class="flex justify-center items-center size-72"
               />
             </div>
+          </div>
+          <div class="flex max-w-6xl mx-auto">
+            <ProductsList :products="products" />
           </div>
 
           <!-- Projectplan -->
@@ -120,7 +125,7 @@
             <p class="text-gray-300 font-Roboto text-xl mb-5">
               het plan was om uiteindelijk alle 5 de groepen een interview te
               doen in een bejaardetehuis. Dit is er helaas niet meer van
-              gekomen. Wel heb ik 1 interview kunnen doen met Cedric, een vriend
+              gekomen. Wel heb ik 1 interview kunnen doen met Cédric, een vriend
               van mij die zelf 70% zicht heeft en kleurenblindheid. Dit
               interview is verder beschreven in een kopje hieronder.
             </p>
@@ -192,25 +197,114 @@
             <img
               src="/images/midtermppcardan.png"
               alt="midterm powerpoint cardan"
-              class="mb-5 rounded-lg"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
             />
           </ContentSection>
 
-          <!-- Motorische Beperking -->
+          <!-- Motorische Beperking Design Process -->
           <ContentSection
-            id="motorischebeperking"
+            id="designproces"
             class="scroll-mt-24"
             title="Figma Design Proces"
             subtitle="Learning Outcome 3 Iterative Design"
-            description="In dit gedeelte heb ik mijn design proces gemaakt. Ik heb in totaal 3 versies gemaakt van mijn station. Iedereen van  de groep had zijn eigen station gekozen om te gaan ontwerpen. "
-            pdfLink="/documents/TestCardan.pdf"
-            pdfText="Figma Prototype"
+            description="In dit gedeelte heb ik mijn design proces gemaakt. Ik heb in totaal 3 versies gemaakt van mijn station. 2 daarvan zijn iteraties van feedback op het design. Iedereen van  de groep had zijn eigen station gekozen om te gaan ontwerpen. "
             :loNumber="3"
           >
-            <img
-              src="/images/versie1moto.png"
-              alt="motorischebeperking versie 1"
-            />
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              De eerste versie was mijn gedachte van hoe ik dacht mijn station
+              er uit zou laten zien. Daarna ben ik doorgegaan met een iteratie
+              van deze versie. Op basis van
+              <span class="underline decoration-purple-400">feedback</span> van
+              peers uit de klas
+              <span class="italic"
+                >"Zorg dat er bij elk station een samenhang is in design.
+                Hierdoor zijn het niet allemaal aparte stations maar zorg je
+                voor een geheel"</span
+              >
+              Hierdoor is uiteindelijk versie 2 uitgerold.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              De laatste versie en dus een iteratie op versie 2. Ik heb een
+              Usertest heb uitgevoerd op deze versie. We hadden namelijk
+              gevraagd hoe de indeling van de vragen ten opzichte van het spel
+              moesten plaatsen. Deze usertest is hieronder te vinden in de
+              volgende alinea.
+            </p>
+            <div class="relative mb-8">
+              <div class="overflow-hidden rounded-lg">
+                <div
+                  class="flex transition-transform duration-500 ease-in-out"
+                  ref="sliderContainer"
+                >
+                  <img
+                    v-for="(image, index) in designProcesImages"
+                    :key="index"
+                    :src="image"
+                    :alt="`DesignProces ${index + 1}`"
+                    class="w-full h-auto flex-shrink-0 object-fit drop-shadow-black drop-shadow-xl"
+                  />
+                </div>
+              </div>
+
+              <!-- Navigation Dots -->
+              <div class="flex justify-center mt-4 gap-2">
+                <button
+                  v-for="(_, index) in designProcesImages"
+                  :key="index"
+                  @click="currentSlide = index"
+                  class="w-3 h-3 rounded-full transition-colors duration-300"
+                  :class="
+                    currentSlide === index
+                      ? 'bg-purple-400'
+                      : 'bg-gray-400 hover:bg-gray-300'
+                  "
+                  :aria-label="`Go to slidescape ${index + 1}`"
+                ></button>
+              </div>
+
+              <!-- Navigation Arrows -->
+              <button
+                @click="prevSlide"
+                class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+                aria-label="Previous slide"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 19l-7-7 7-7"
+                  />
+                </svg>
+              </button>
+
+              <button
+                @click="nextSlide"
+                class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-black/50 text-white p-2 rounded-full hover:bg-black/70 cursor-pointer"
+                aria-label="Next slide"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 5l7 7-7 7"
+                  />
+                </svg>
+              </button>
+            </div>
           </ContentSection>
         </div>
       </div>
@@ -220,4 +314,53 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref, watch, onMounted } from "vue";
+
+// designProcesImages array
+const designProcesImages = [
+  "/images/versie1moto.png",
+  "/images/versie2moto.png",
+  "/images/versie3moto.png",
+];
+
+const currentSlide = ref(0);
+const sliderContainer = ref(null);
+
+// Function to go to previous slide
+const prevSlide = () => {
+  currentSlide.value =
+    (currentSlide.value - 1 + designProcesImages.length) %
+    designProcesImages.length;
+};
+
+// Function to go to next slide
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % designProcesImages.length;
+};
+
+// Watch for slide changes to update the transform
+watch(currentSlide, (newValue) => {
+  if (sliderContainer.value) {
+    sliderContainer.value.style.transform = `translateX(-${newValue * 100}%)`;
+  }
+});
+
+import ProductsList from "~/components/ProductsList.vue";
+
+const products = [
+  { text: "Onderzoek Boris", to: "/projects/branding#onderzoek" },
+  { text: "Moodboard Boris", to: "/projects/branding#moodboard" },
+  { text: "Midterm Powerpoint Boris", to: "/projects/branding#midterm" },
+  { text: "Brandguide Boris", to: "/projects/branding#brandguide" },
+  {
+    text: "Content Strategie Boris",
+    to: "/projects/branding#contentstrategie",
+  },
+  { text: "Test Doelgroep Cardan", to: "/projects/cardan#testdoelgroep" },
+  {
+    text: "Midterm Powerpoint Cardan",
+    to: "/projects/cardan#midtermpowerpoint",
+  },
+];
+</script>
