@@ -306,6 +306,16 @@
               </button>
             </div>
           </ContentSection>
+
+          <ContentSection
+            id="UsertestCardanDesign"
+            class="scroll-mt-24"
+            title="Usertest Design Iteratie"
+            subtitle="Learning Outcome 3 Iterative Design"
+            description="Ik heb een Usertest gedaan met studenten van Fontys ICT om te bepalen welke versie van het design zij het beste vonden. De usertest bestond uit een A-B test. In deze A-B test konden de studenten kiezen welke ze het het mooiste oogde en de reden waarom dat het beste oogden."
+            :loNumber="3"
+          >
+          </ContentSection>
         </div>
       </div>
     </div>

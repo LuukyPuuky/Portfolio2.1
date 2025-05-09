@@ -8,6 +8,10 @@ const products = [
   { text: "Linktree Boris", to: "/projects/branding#linktree" },
   { text: "Spotify Boris", to: "/projects/branding#spotify" },
   { text: "Design Proces Cardan", to: "/projects/cardan#designproces" },
+  {
+    text: "Usertest Designproces Cardan",
+    to: "/projects/cardan#UsertestCardanDesign",
+  },
 ];
 </script>
 
