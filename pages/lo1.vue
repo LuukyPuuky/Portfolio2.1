@@ -15,6 +15,7 @@ const products = [
     text: "Midterm Powerpoint Cardan",
     to: "/projects/cardan#midtermpowerpoint",
   },
+  { text: "Customer Journey Cardan", to: "/projects/cardan#customerjourney" },
 ];
 </script>
 

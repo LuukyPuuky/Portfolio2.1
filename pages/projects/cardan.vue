@@ -315,9 +315,60 @@
             class="scroll-mt-24"
             title="Usertest Design Iteratie"
             subtitle="Learning Outcome 3 Iterative Design"
-            description="Ik heb een Usertest gedaan met studenten van Fontys ICT om te bepalen welke versie van het design zij het beste vonden. De usertest bestond uit een A-B test. In deze A-B test konden de studenten kiezen welke ze het het mooiste oogde en de reden waarom dat het beste oogden."
+            description="Ik heb een Usertest gedaan met studenten van Fontys ICT bij de studievereniging Salve Mundi om te bepalen welke versie van het design zij het beste vonden. De usertest bestond uit een A-B test. In deze A-B test konden de studenten kiezen welke ze het het mooiste oogde en de reden waarom dat het beste oogden."
             :loNumber="3"
           >
+            <img
+              src="/images/usertestABdesign.png"
+              alt="usertest AB design"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              De resultaten van de usertest waren als volgt:
+            </p>
+            <img
+              src="/images/usertestABdesignresult.png"
+              alt="usertest AB design result"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <p class="text-gray-300 text-xl mb-5">
+              De meeste studenten gaven aan dat versie B het beste oogde. De
+              reden waarom ze versie B het beste vonden was omdat hierbij de FAQ
+              vragen beter te bereiken waren direct naast de game. Ook kwam de
+              hiarchie hier beter uit.
+            </p>
+            <p class="text-gray-300 text-xl">
+              Door deze usertest heb ik samen met de groep het hele design
+              aangepast en zijn we verder gegaan met dit design omdat de
+              gebruikers duidelijk hebben aangegeven dat dit design het beste
+              was.
+            </p>
+          </ContentSection>
+
+          <ContentSection
+            id="customerjourney"
+            class="scroll-mt-24"
+            title="Customer Journey"
+            subtitle="Learning Outcome 1 Interactive Media Products"
+            description="Ik heb voordat we de presentatie gingen maken een customer journey gemaakt. Hierin heb ik de stappen beschreven die de gebruiker doorloopt bij het gebruik van het ervaringsplein. Dit is gedaan om een duidelijk beeld te krijgen van de gebruikerservaring en om eventuele pijnpunten te identificeren."
+            :loNumber="1"
+          >
+            <img
+              src="/images/customerjourneycardan.png"
+              alt="customer journey cardan"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+          </ContentSection>
+
+          <ContentSection
+            id="eindpowerpoint"
+            class="scroll-mt-24"
+            title="Eind Powerpoint"
+            subtitle="Learning Outcome 1 Interactive Media Products"
+            description="Voor de eindpresentatie hebben we een powerpoint gemaakt waarin we alles wat we tot nu toe hebben gedaan hebben beschreven. We hebben deze presentatie gegeven aan onze opdrachtgever Cardan."
+            :loNumber="1"
+          >
+            <p></p>
           </ContentSection>
         </div>
       </div>
@@ -371,5 +422,6 @@ const products = [
     text: "Usertest Design Iteratie",
     to: "/projects/cardan#UsertestCardanDesign",
   },
+  { text: "Customer Journey", to: "/projects/cardan#customerjourney" },
 ];
 </script>
