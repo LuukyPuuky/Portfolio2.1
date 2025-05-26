@@ -23,6 +23,7 @@
 </template>
 
 <script setup>
+import { ChevronsDown } from "lucide-vue-next";
 import { ref, onMounted, onUnmounted } from "vue";
 import HorizontalCard from "./HorizontalCard.vue";
 import { gsap } from "gsap";
