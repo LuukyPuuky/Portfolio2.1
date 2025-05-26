@@ -367,8 +367,23 @@
             subtitle="Learning Outcome 1 Interactive Media Products"
             description="Voor de eindpresentatie hebben we een powerpoint gemaakt waarin we alles wat we tot nu toe hebben gedaan hebben beschreven. We hebben deze presentatie gegeven aan onze opdrachtgever Cardan."
             :loNumber="1"
+            pdf-text="Eind Powerpoint"
+            pdf-link="/documents/PowepointCardanOplevering.pdf"
           >
-            <p></p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              In de presentatie hebben we de volgende dingen besproken:
+            </p>
+            <ul
+              class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 md:grid md:grid-cols-2 mt-5"
+            >
+              <li>Introductie van het project</li>
+              <li>Feedback / iteraties en design proces</li>
+              <li>Doelgroep onderzoek</li>
+              <li>Persona</li>
+              <li>Customer Journey</li>
+              <li>Slot &amp; Conclusie</li>
+              <li>Prototype</li>
+            </ul>
           </ContentSection>
         </div>
       </div>
@@ -423,5 +438,6 @@ const products = [
     to: "/projects/cardan#UsertestCardanDesign",
   },
   { text: "Customer Journey", to: "/projects/cardan#customerjourney" },
+  { text: "Eind Powerpoint", to: "/projects/cardan#eindpowerpoint" },
 ];
 </script>
