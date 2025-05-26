@@ -34,7 +34,7 @@ const scrollSection = ref(null);
 const cards = [
   {
     title: "Project 1",
-    subtitle: "Boris Schimidt",
+    subtitle: "Boris Schmidt",
     description:
       "Voor dit project heb ik een branding gemaakt voor Boris Schmidt. Boris studeert aan de Rockacademie. Gedurende 4 weken heb ik samen met mijn groep verschillende producten gemaakt voor Boris. Denk aan een moodboard, stylescape, logo, brandguide en content strategie.",
     buttonText: "Lees Meer",
@@ -79,12 +79,12 @@ const cards = [
     title: "Project 5",
     subtitle: "Project X",
     description:
-      "Bij dit project mag ik zelf een project kiezen. Ik heb gekozen om Spline te gaan ontdekken. Spline is een tool waarmee je 3D objecten kan maken.",
+      "Bij dit project mag ik zelf een project kiezen. Ik heb gekozen na wat nadenken en bespreken samen met mijn docent om een project te maken in Blender. Ik ga de boulder grepen namelijk maken in 3D om deze te kunnen plaatsen op mijn website.",
     buttonText: "Lees Meer",
     buttonLink: "/projects/project-x",
-    brandingTitle: "Spline",
-    brandingImage: "images/splinelogo.png",
-    fileColor: "#217ce5",
+    brandingTitle: "Blender",
+    brandingImage: "images/Blenderlogo.png",
+    fileColor: "#eb7700",
   },
 ];
 
