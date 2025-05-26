@@ -18,7 +18,7 @@
                 gemaakt voor Cardan. We hebben verschillende stationen
                 gecodeerd. Elk station heeft een eigen beperking die wordt
                 beschreven en uitgewerkt doormiddel van Javascript. De talen die
-                worden gebruikt in dit project zijn HTML, CSS, JS en PHP.
+                worden gebruikt in dit project zijn HTML, CSS en JS.
               </p>
             </div>
             <div class="max-w-4xl flex justify-center items-center">
@@ -27,6 +27,12 @@
                 alt="Cardan logo"
                 class="flex justify-center items-center size-72"
               />
+            </div>
+          </div>
+          <!-- Products List Section -->
+          <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10 w-full">
+            <div class="max-w-2xl">
+              <ProductsList :products="products" />
             </div>
           </div>
 
@@ -57,6 +63,45 @@
               <li>Beperkingen</li>
               <li>Eindproduct</li>
             </ul>
+
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Daarnaast hebben ik en Zakaria de taken opgedeeld in twee delen.
+              Zakaria was verantwoordelijk voor station 1 en 2 en ik voor
+              station 4 en 5. Station 3 was een soort van vliegende keeper. Deze
+              heb ik uiteindelijk op me genomen.
+            </p>
+          </ContentSection>
+
+          <!-- Station 3 Cognitieve Beperking-->
+          <ContentSection
+            id="cognitievebeperking"
+            class="scroll-mt-24"
+            title="Station 3 Cognitieve Beperking"
+            subtitle="Learning Outcome 2 Development and Version Control"
+            description="Dit station is gericht op mensen die te maken hebben met een cognitieve beperking. In dit station heb ik op basis van het design wat we in het design project van Cardan van Jarvin een e-mail formulier gemaakt met allemaal verschillende popups die op een random moment binnen de container oppoppen."
+            :loNumber="2"
+          >
+            <video
+              src="/images/station3.mp4"
+              muted
+              loop
+              playsinline
+              class="w-full h-auto rounded-lg drop-shadow-black drop-shadow-xl mb-5 auto-play-video"
+            ></video>
+
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Met dit station wordt ervaren hoe het is om ADHD te hebben. Ik heb
+              met JavaScript een array gemaakt die verschillende meldingen en
+              emoji's oproept en deze daarna op een willekeurige plek binnen de
+              container laat zien.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              De code van dit station kan je hier vinden op Github:
+            </p>
+            <Pdf
+              documentLink="https://github.com/LuukyPuuky/Cardan/blob/main/station3.js"
+              buttonText="Station 3 Cognitieve Beperking"
+            ></Pdf>
           </ContentSection>
 
           <!-- station 4 Motorische Beperking-->
@@ -65,25 +110,109 @@
             class="scroll-mt-24"
             title="Station 4 Motorische Beperking"
             subtitle="Learning Outcome 2 Development and Version Control"
-            description="Dit station gaat over de motorische beperking. Binnen dit station gaat de gebruiker door een form zijn gegevens invullen. Hierbij zal hij twee verschillende challenges krijgen."
+            description="Dit station gaat over de motorische beperking. Binnen dit station gaat de gebruiker door een form zijn gegevens invullen. Dit station is iets anders ingericht dan station 3. Namelijk de gebruiker heeft een keuze om twee verschillende games om te spelen om de motorische beperking te ervaren."
             :loNumber="2"
           >
             <p class="text-gray-300 font-Roboto text-xl mb-5">
-              De eerste challenge is dat de gebruiker terecht komt bij dat zijn
-              muis alle kanten op beweegt. Dit is helaas niet heel makkelijk om
-              te coderen omdat je de muis officieel legaal niet mag overnemen
-              binnen de browser.
+              We beginnen met het eerste spel. In dit spel moet de gebruiker een
+              formulier invullen met zijn of haar gegevens, maar er is iets
+              bijzonders aan de hand met de muis. De cursor is namelijk erg
+              lastig te besturen, omdat er een visuele beperking wordt
+              gesimuleerd waarbij de muis willekeurig alle kanten op lijkt te
+              bewegen. Omdat het technisch gezien niet legaal is om de muis
+              volledig over te nemen in de browser, heb ik dit effect
+              gesimuleerd door de cursor onzichtbaar te maken en onverwachte
+              bewegingen toe te voegen via JavaScript.
+            </p>
+
+            <video
+              src="/images/station4game1.mp4"
+              muted
+              loop
+              playsinline
+              class="w-full h-auto rounded-lg drop-shadow-black drop-shadow-xl mb-5 auto-play-video"
+            ></video>
+            <pdf
+              documentLink="https://github.com/LuukyPuuky/Cardan/blob/main/station4game1.js"
+              buttonText="Station 4 Game 1 Motorische Beperking"
+            >
+            </pdf>
+
+            <p class="text-gray-300 font-Roboto text-xl mb-5 mt-5">
+              Het tweede spel is een spel waarbij de gebruiker moeite heeft om
+              te typen. Hiermee wordt gesimuleerd dat je bijvoorbeeld de ziekte
+              MS hebt. In dit spel moet de gebruiker zijn gegevens typen, maar
+              de letters worden willekeurig vervangen door andere letters. Dit
+              maakt het erg moeilijk om de zin correct te typen, wat de
+              frustratie van mensen met motorische beperkingen simuleert.
+            </p>
+            <video
+              src="/images/station4game2.mp4"
+              muted
+              loop
+              playsinline
+              class="w-full h-auto rounded-lg drop-shadow-black drop-shadow-xl mb-5 auto-play-video"
+            ></video>
+
+            <pdf
+              documentLink="https://github.com/LuukyPuuky/Cardan/blob/main/station4game2.js"
+              buttonText="Station 4 Game 2 Motorische Beperking"
+            >
+            </pdf>
+          </ContentSection>
+
+          <!-- Station 5 Dyslexie -->
+          <ContentSection
+            id="dyslexie"
+            class="scroll-mt-24"
+            title="Station 5 Dyslexie"
+            subtitle="Learning Outcome 2 Development and Version Control"
+            description="Dit station is gericht op mensen die te maken hebben met dyslexie. In dit station heb ik een tekst gemaakt die de gebruiker moet lezen. De tekst is zo gemaakt dat het lijkt alsof de letters door elkaar staan en de gebruiker moeite heeft om de tekst te lezen."
+            :loNumber="2"
+          >
+            <video
+              src="/images/station5.mp4"
+              muted
+              loop
+              playsinline
+              class="w-full h-auto rounded-lg drop-shadow-black drop-shadow-xl mb-5 auto-play-video"
+            ></video>
+
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Ik heb de verschillende vragen gemaakt door middel van een les van
+              Frank. In deze les heb ik namelijk geleerd hoe ik verschillende
+              data kan genereren met een json file. In de bijgevoegde linkjes
+              staan de scenario's en de javascript die ik heb gebruikt om deze
+              game te maken.
             </p>
             <p class="text-gray-300 font-Roboto text-xl mb-5">
-              Naast deze challenge heeft de gebruiker nog een andere challenge
-              binnen dit station en dat is dat tijdens het typen van de letters
-              op hun toetsenbord af en toe per ongeluk een random letter
-              intypen.
+              De javascript code checkt of er bepaalde woorden in de ingevulde
+              tekst staan. Deze worden dan vergelijkt met de mogelijke
+              antwoorden die worden op gegeven en daarmee wordt dus de check
+              gedaan of het antwoord goed of fout is.
             </p>
-            <p class="text-gray-300 font-Roboto text-xl mb-5">
-              Hieronder is een video hoe het er uit ziet.
-            </p>
-            <video src=""></video>
+            <div class="flex gap-4">
+              <Pdf
+                documentLink="https://github.com/LuukyPuuky/Cardan/blob/main/scenarios.json"
+                buttonText="json scenario's Cardan"
+              >
+              </Pdf>
+              <Pdf
+                documentLink="https://github.com/LuukyPuuky/Cardan/blob/main/station5.js"
+                buttonText="Station 5 Dyslexie"
+              ></Pdf>
+            </div>
+          </ContentSection>
+
+          <!-- Usertest bevindingen -->
+          <ContentSection
+            id="usertest"
+            class="scroll-mt-24"
+            title="Usertest bevindingen"
+            subtitle="Learning Outcome 3 Iterative Design"
+            description="Tijdens dit project heb ik verschillende usertests gedaan om te kijken of de stationen goed werkten en of de gebruikers tegen problemen aanliepen."
+            :loNumber="3"
+          >
           </ContentSection>
         </div>
       </div>
@@ -93,4 +222,54 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const products = [
+  { text: "Project plan", to: "/projects/development#projectplandev" },
+  {
+    text: "Station 4 Motorische Beperking",
+    to: "/projects/development#motorischebeperking",
+  },
+];
+
+import { ref, onMounted, onUnmounted } from "vue";
+
+let observer = null;
+
+onMounted(() => {
+  // Find all videos with the auto-play-video class
+  const videos = document.querySelectorAll(".auto-play-video");
+
+  if (videos.length > 0) {
+    // Create intersection observer
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // Video is in viewport, start playing
+            entry.target.play().catch(console.error);
+          } else {
+            // Video is out of viewport, pause it
+            entry.target.pause();
+          }
+        });
+      },
+      {
+        // Trigger when 50% of the video is visible
+        threshold: 0.5,
+      }
+    );
+
+    // Observe all videos
+    videos.forEach((video) => {
+      observer.observe(video);
+    });
+  }
+});
+
+onUnmounted(() => {
+  // Clean up observer when component is destroyed
+  if (observer) {
+    observer.disconnect();
+  }
+});
+</script>
