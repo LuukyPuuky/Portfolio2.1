@@ -310,6 +310,7 @@
             </div>
           </ContentSection>
 
+          <!-- Usertest Design Iteratie -->
           <ContentSection
             id="UsertestCardanDesign"
             class="scroll-mt-24"
@@ -345,6 +346,7 @@
             </p>
           </ContentSection>
 
+          <!-- Customer Journey -->
           <ContentSection
             id="customerjourney"
             class="scroll-mt-24"
@@ -360,6 +362,7 @@
             />
           </ContentSection>
 
+          <!-- Eind Powerpoint -->
           <ContentSection
             id="eindpowerpoint"
             class="scroll-mt-24"
@@ -384,6 +387,11 @@
               <li>Slot &amp; Conclusie</li>
               <li>Prototype</li>
             </ul>
+            <img
+              src="/images/presentatiecardan.jpg"
+              alt="presentatie cardan"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+            />
           </ContentSection>
         </div>
       </div>

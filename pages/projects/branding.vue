@@ -27,6 +27,14 @@
             />
           </div>
         </div>
+        <!-- Products List Section -->
+        <div
+          class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10 w-full sm:p-4"
+        >
+          <div class="max-w-2xl">
+            <ProductsList :products="products" />
+          </div>
+        </div>
 
         <!-- Samenwerkingsovereenkomst -->
         <ContentSection
@@ -799,6 +807,31 @@
 
 <script setup>
 import { ref, watch, onMounted } from "vue";
+
+const products = [
+  { text: "Samenwerkingsovereenkomst", to: "/projects/branding#samenwerking" },
+  { text: "Onderzoek", to: "/projects/branding#onderzoek" },
+  { text: "Moodboard", to: "/projects/branding#moodboard" },
+  { text: "Stylescapes", to: "/projects/branding#stylescapes" },
+  { text: "Logo Design", to: "/projects/branding#logo" },
+  {
+    text: "Midterm Powerpoint",
+    to: "/projects/branding#midterm",
+  },
+  { text: "Instagram Posts", to: "/projects/branding#instagram" },
+  { text: "Linktree", to: "/projects/branding#linktree" },
+  { text: "Spotify Covers", to: "/projects/branding#spotify" },
+  { text: "Brandguide", to: "/projects/branding#brandguide" },
+  {
+    text: "Content Strategie",
+    to: "/projects/branding#contentstrategie",
+  },
+  {
+    text: "Communicatie Stakeholder",
+    to: "/projects/branding#communicatie",
+  },
+  { text: "Eind Presentatie", to: "/projects/branding#eindpp" },
+];
 
 // Stylescape images array
 const stylescapeImages = [
