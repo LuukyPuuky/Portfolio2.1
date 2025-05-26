@@ -7,7 +7,7 @@
         <div
           class="max-w-6xl mx-auto flex flex-col items-center justify-center"
         >
-          <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10">
+          <div class="flex flex-col md:flex-row mb-10 md:gap-48 gap-10">
             <!--Introductie content-->
             <div class="max-w-2xl mt-8">
               <h1 class="font-RobotoCondensed text-4xl">Introductie</h1>
@@ -31,8 +31,11 @@
               />
             </div>
           </div>
-          <div class="flex max-w-6xl mx-auto">
-            <ProductsList :products="products" />
+          <!-- Products List Section -->
+          <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10 w-full">
+            <div class="max-w-2xl">
+              <ProductsList :products="products" />
+            </div>
           </div>
 
           <!-- Projectplan -->
@@ -135,11 +138,11 @@
           <ContentSection
             id="testdoelgroep"
             class="scroll-mt-24"
-            title="Test Doelgroep"
+            title="Doelgroep Test"
             subtitle="Learning Outcome 1 Interactive Media Products"
             description="Om meer te weten te komen hoe iemand met een beperking websites gebruikt, heb ik een test gedaan met Cédric."
             pdfLink="/documents/TestCardan.pdf"
-            pdfText="Test Doelgroep"
+            pdfText="Doelgroep Test"
             :loNumber="1"
           >
             <p class="text-gray-300 font-Roboto text-xl mb-5">
@@ -359,18 +362,14 @@ watch(currentSlide, (newValue) => {
 import ProductsList from "~/components/ProductsList.vue";
 
 const products = [
-  { text: "Onderzoek Boris", to: "/projects/branding#onderzoek" },
-  { text: "Moodboard Boris", to: "/projects/branding#moodboard" },
-  { text: "Midterm Powerpoint Boris", to: "/projects/branding#midterm" },
-  { text: "Brandguide Boris", to: "/projects/branding#brandguide" },
+  { text: "Project plan", to: "/projects/cardan#projectplan" },
+  { text: "Research plan", to: "/projects/cardan#researchplan" },
+  { text: "Doelgroep Test", to: "/projects/cardan#testdoelgroep" },
+  { text: "Midterm Powerpoint", to: "/projects/cardan#midtermpowerpoint" },
+  { text: "Figma Design Proces", to: "/projects/cardan#designproces" },
   {
-    text: "Content Strategie Boris",
-    to: "/projects/branding#contentstrategie",
-  },
-  { text: "Test Doelgroep Cardan", to: "/projects/cardan#testdoelgroep" },
-  {
-    text: "Midterm Powerpoint Cardan",
-    to: "/projects/cardan#midtermpowerpoint",
+    text: "Usertest Design Iteratie",
+    to: "/projects/cardan#UsertestCardanDesign",
   },
 ];
 </script>
