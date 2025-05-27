@@ -213,13 +213,15 @@
             subtitle="Learning Outcome 2 Development and Version Control"
             description="Voor dit project heb ik gebruik gemaakt van GitHub. Ik heb samen Zakaria uitgenodigd aan de git repository en we hebben verschillende branches aangemaakt om samen te gelijkertijd aan het project te werken."
             :loNumber="2"
+            pdfLink="https://github.com/LuukyPuuky/Cardan"
+            pdfText="Github"
           >
             <img
               src="/images/branchesdev.png"
               alt="branches dev"
               class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
             />
-            <p class="text-gray-300 font-Roboto text-xl">
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
               De branches die je ziet zijn de verschillende stationen die ik heb
               gemaakt. Daarnaast heb ik ook de navigatiebar en de homepagina
               gemaakt.
