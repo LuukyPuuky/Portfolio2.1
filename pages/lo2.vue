@@ -13,8 +13,17 @@ const products = [
     to: "/projects/portfolio#versioncontrolportfolio",
   },
   {
-    text: "Motorische Beperking Cardan",
+    text: "Station 3 Cognitieve Beperking Development",
+    to: "/projects/development#cognitievebeperking",
+  },
+  {
+    text: "Station 4 Motorische Beperking Development",
     to: "/projects/development#motorischebeperking",
+  },
+
+  {
+    text: "Station 5 Dyslexie Development",
+    to: "/projects/development#dyslexie",
   },
 ];
 </script>

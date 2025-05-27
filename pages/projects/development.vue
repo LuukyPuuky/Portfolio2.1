@@ -191,6 +191,7 @@
               antwoorden die worden op gegeven en daarmee wordt dus de check
               gedaan of het antwoord goed of fout is.
             </p>
+
             <div class="flex gap-4">
               <Pdf
                 documentLink="https://github.com/LuukyPuuky/Cardan/blob/main/scenarios.json"
@@ -210,9 +211,38 @@
             class="scroll-mt-24"
             title="Usertest bevindingen"
             subtitle="Learning Outcome 3 Iterative Design"
-            description="Tijdens dit project heb ik verschillende usertests gedaan om te kijken of de stationen goed werkten en of de gebruikers tegen problemen aanliepen."
+            description="Tijdens dit project heb ik verschillende usertests gedaan om te kijken of de stationen goed werkten en of de gebruikers tegen problemen aanliepen en of er andere bevindingen waren."
             :loNumber="3"
           >
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Door deze usertests ben ik erachter gekomen dat er nog geen
+              startknop was en dat ik deze heb toegevoegd. Hierdoor kan de
+              gebruiker de simulatie starten.
+            </p>
+            <img
+              src="/images/startknop.png"
+              alt="startknop"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <div class="flex flex-col gap-4 w-max">
+              <Pdf
+                documentLink="/documents/UsertestVragenStation3.pdf"
+                buttonText="Usertest Station 3 Cognitieve Beperking"
+              ></Pdf>
+              <Pdf
+                documentLink="/documents/UsertestVragenStation4.pdf"
+                buttonText="Usertest Station 4 Motorische Beperking"
+              ></Pdf>
+              <Pdf
+                class="w-max"
+                documentLink="/documents/UsertestVragenStation5.pdf"
+                buttonText="Usertest Station 5 Dyslexie"
+              ></Pdf>
+            </div>
+            <p class="text-gray-300 font-Roboto text-xl mb-5 mt-5">
+              Ik heb nog meer feedback / een iteratie gekregen op het design
+              maar dit ga ik in het kopje hieronder van de presentatie benoemen.
+            </p>
           </ContentSection>
         </div>
       </div>
@@ -229,6 +259,12 @@ const products = [
     text: "Station 4 Motorische Beperking",
     to: "/projects/development#motorischebeperking",
   },
+  {
+    text: "Station 3 Cognitieve Beperking",
+    to: "/projects/development#cognitievebeperking",
+  },
+  { text: "Station 5 Dyslexie", to: "/projects/development#dyslexie" },
+  { text: "Usertest bevindingen", to: "/projects/development#usertest" },
 ];
 
 import { ref, onMounted, onUnmounted } from "vue";
