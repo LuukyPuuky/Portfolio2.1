@@ -205,6 +205,8 @@
             </div>
           </ContentSection>
 
+          <!-- Versie control Github -->
+
           <!-- Usertest bevindingen -->
           <ContentSection
             id="usertest"
@@ -244,6 +246,95 @@
               maar dit ga ik in het kopje hieronder van de presentatie benoemen.
             </p>
           </ContentSection>
+
+          <!-- Eindpresentatie -->
+          <ContentSection
+            id="eindpresentatiedev"
+            class="scroll-mt-24"
+            title="Eind Presentatie"
+            subtitle="Learning Outcome 1 Interactive Media Products"
+            description="Voor dit project heb ik een presentatie gemaakt waarin ik het project heb gepresenteerd. In deze presentatie heb ik het project uitgelegd en de verschillende stationen laten zien in de demo."
+            :loNumber="1"
+            pdfLink="/documents/DevelopmentEindPresentatie.pdf"
+            pdfText="Eind Presentatie"
+          >
+            <img
+              src="/images/eindppdev.png"
+              alt="eindpresentatie development"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Ik heb tijdens de powerpoint presentatie feedback gekregen van de
+              stakeholder als van Frank en Anke. Daarnaast hebben we als groep
+              ook nog feedback gekregen van twee mede studenten.
+            </p>
+            <p class="text-white font-Roboto text-xl mb-5">
+              De
+              <span class="underline decoration-purple-400">feedback</span> die
+              we kregen van de studenten was:
+            </p>
+
+            <ul
+              class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 mt-5"
+            >
+              <li>
+                Homepagina laat niet duidelijk zien waar je op moet klikken.
+              </li>
+              <li>Bij kokervisie was de handdoek snel vindbaar.</li>
+              <li>
+                Positief punt, alle stationen lijken op elkaar qua design.
+              </li>
+            </ul>
+
+            <p class="text-white font-Roboto text-xl mb-5">
+              De
+              <span class="underline decoration-purple-400">feedback</span> die
+              we kregen van de leraren en de stakeholder was:
+            </p>
+            <ul
+              class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 mt-5"
+            >
+              <li>Bij station 1 kan de legenda weg.</li>
+              <li>
+                Bij station 1 kan je het meer op een echte bioscoop laten lijken
+                met een scherm.
+              </li>
+              <li>
+                Bij station 2 kan de standaard normale video weg. Is niet nodig
+                voor de ervaring.
+              </li>
+              <li>
+                Op de homepagina een grote CTA knop toevoegen zodat de gebruiker
+                direct weet wat er nieuw is en hierdoor sneller naar het nieuwe
+                ervaringsplein gaat.
+              </li>
+              <li>
+                De flow van alle stationen is goed. Je skipt door alles goed
+                heen.
+              </li>
+            </ul>
+
+            <p class="text-white font-Roboto text-xl mb-5">
+              De
+              <span class="underline decoration-purple-400">feedback</span> die
+              ik specifiek kreeg van Frank voor development was:
+            </p>
+            <ul
+              class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 mt-5"
+            >
+              <li>
+                Bij alle stationen kan je het beste voordat je op de start knop
+                klikt de game helemaal op display: none zetten. Dit zorgt voor
+                minder afleiding en dan slaat de gebruiker ook niet de knop
+                over.
+              </li>
+              <li>
+                Nog een aanbeveling is om alle stationen te testen met mensen
+                die bijvoorbeeld echt dyslexie hebben. Hierdoor kan je testen
+                met experts.
+              </li>
+            </ul>
+          </ContentSection>
         </div>
       </div>
     </div>
@@ -265,6 +356,10 @@ const products = [
   },
   { text: "Station 5 Dyslexie", to: "/projects/development#dyslexie" },
   { text: "Usertest bevindingen", to: "/projects/development#usertest" },
+  {
+    text: "Eind Presentatie",
+    to: "/projects/development#eindpresentatiedev",
+  },
 ];
 
 import { ref, onMounted, onUnmounted } from "vue";
