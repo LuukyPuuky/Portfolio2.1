@@ -60,7 +60,6 @@ export default {
           hash: "#learningOutcomes",
         },
         { label: "Projects", url: "/#projects", hash: "#projects" },
-        { label: "About", url: "/about", hash: "#about" },
       ],
     };
   },

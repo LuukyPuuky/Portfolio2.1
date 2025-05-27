@@ -206,6 +206,25 @@
           </ContentSection>
 
           <!-- Versie control Github -->
+          <ContentSection
+            id="versiecontroldev"
+            class="scroll-mt-24"
+            title="Versie Control Github"
+            subtitle="Learning Outcome 2 Development and Version Control"
+            description="Voor dit project heb ik gebruik gemaakt van GitHub. Ik heb samen Zakaria uitgenodigd aan de git repository en we hebben verschillende branches aangemaakt om samen te gelijkertijd aan het project te werken."
+            :loNumber="2"
+          >
+            <img
+              src="/images/branchesdev.png"
+              alt="branches dev"
+              class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <p class="text-gray-300 font-Roboto text-xl">
+              De branches die je ziet zijn de verschillende stationen die ik heb
+              gemaakt. Daarnaast heb ik ook de navigatiebar en de homepagina
+              gemaakt.
+            </p>
+          </ContentSection>
 
           <!-- Usertest bevindingen -->
           <ContentSection
@@ -347,14 +366,19 @@
 const products = [
   { text: "Project plan", to: "/projects/development#projectplandev" },
   {
-    text: "Station 4 Motorische Beperking",
-    to: "/projects/development#motorischebeperking",
-  },
-  {
     text: "Station 3 Cognitieve Beperking",
     to: "/projects/development#cognitievebeperking",
   },
+  {
+    text: "Station 4 Motorische Beperking",
+    to: "/projects/development#motorischebeperking",
+  },
+
   { text: "Station 5 Dyslexie", to: "/projects/development#dyslexie" },
+  {
+    text: "Versie Control Github",
+    to: "/projects/development#versiecontroldev",
+  },
   { text: "Usertest bevindingen", to: "/projects/development#usertest" },
   {
     text: "Eind Presentatie",
