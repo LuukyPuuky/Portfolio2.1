@@ -21,7 +21,62 @@
             />
           </div>
         </div>
+        <!-- Products List Section -->
+        <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10 w-full">
+          <div class="max-w-2xl">
+            <ProductsList :products="products" />
+          </div>
+        </div>
         <div class="max-w-6xl mx-auto">
+          <!-- Design Proces -->
+
+          <ContentSection
+            title="Design Proces"
+            id="designproces"
+            class="scroll-mt-24"
+            subtitle="Learning outcome 3 Iterative Design"
+            description="Het design proces van mijn portfolio is begonnen met het maken van een moodboard. Hierin heb ik verschillende websites bekeken en gekeken naar de kleuren, de layout en de verschillende elementen die zij gebruiken. Ik heb dit gedaan om inspiratie op te doen voor mijn eigen portfolio."
+            :loNumber="3"
+          >
+            <img
+              class="h-auto max-w-full rounded-lg mb-5 mt-2"
+              src="/images/Moodboard2.png"
+              alt="moodboard"
+            />
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Hieronder zijn de websites waarvan ik inspiratie heb op gedaan op
+              het gebied van kleur en layout.
+            </p>
+            <img
+              class="h-auto max-w-full rounded-lg mb-5 mt-2"
+              src="/images/inspiratie.png"
+              alt="inspiratie"
+            />
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Hierna ben ik gaan kijken naar de verschillende elementen die ik
+              wilde gebruiken in mijn portfolio. Ik heb dit gedaan door middel
+              van een wireframe. Hierin heb ik de verschillende elementen
+              geplaatst en gekeken naar de layout van mijn portfolio.
+            </p>
+            <img
+              class="h-auto max-w-full rounded-lg mb-5 mt-2"
+              alt="wireframe"
+            />
+
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Ik heb drie verschillende lettertypes gebruikt in mijn portfolio.
+              Dit zijn Roboto, Roboto Condensed en Krona One. Deze lettertypes
+              heb ik gekozen omdat ze goed passen bij de stijl van mijn
+              portfolio. Roboto heb ik gebruikt voor de normale tekst, Roboto
+              Condensed voor de titels van de normale tekst en Krona One voor de
+              buttons en de grote titels.
+            </p>
+            <img
+              class="h-auto max-w-full rounded-lg mb-5 mt-2"
+              src="/images/fontspng.png"
+              alt="lettertypes"
+            />
+          </ContentSection>
           <!--Version control github-->
           <ContentSection
             title="Versie Control Github"
@@ -152,4 +207,16 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const products = [
+  { text: "Design Proces", to: "/projects/portfolio#designproces" },
+  {
+    text: "Versie Control Github",
+    to: "/projects/portfolio#versioncontrolportfolio",
+  },
+  { text: "Leeruitkomsten Slider", to: "/projects/portfolio#leeruitkomsten" },
+  { text: "Projecten Map Slider", to: "/projects/portfolio#mapslider" },
+  { text: "Team Roles", to: "/projects/portfolio#teamroles" },
+  { text: "16 Personalities", to: "/projects/portfolio#personal" },
+];
+</script>
