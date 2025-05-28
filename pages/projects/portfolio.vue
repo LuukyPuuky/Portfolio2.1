@@ -56,8 +56,19 @@
               Hierna ben ik gaan kijken naar de verschillende elementen die ik
               wilde gebruiken in mijn portfolio. Ik heb dit gedaan door middel
               van een wireframe. Hierin heb ik de verschillende elementen
-              geplaatst en gekeken naar de layout van mijn portfolio.
+              geplaatst en gekeken naar de layouts van mijn portfolio. ik kreeg
+              als feedback van Frank om hier naar te kijken omdat ik al een goed
+              idee had hoe ik mijn portfolio wilde inrichten.
+
+              <span class="underline decoration-purple-400"
+                >De specifieke feedback was:
+              </span>
             </p>
+            <img
+              class="h-auto max-w-full rounded-lg mb-5 mt-2"
+              src="/images/feedbacklayouts.png"
+              alt="feedback layouts"
+            />
 
             <!-- Image Slider for Wireframes -->
             <div class="relative mb-8 mx-auto w-2/3">
@@ -137,9 +148,11 @@
             </div>
 
             <p class="text-gray-300 text-xl mb-5 font-Roboto">
-              Na deze wireframes heb ik ook gekeken naar hoe het zou zijn om de
-              wireframe in de kleuren te hebben die ik wilde gaan gebruiken.
+              Na deze wireframes / layouts heb ik ook gekeken naar hoe het zou
+              zijn om de wireframe in de kleuren te hebben die ik wilde gaan
+              gebruiken.
             </p>
+
             <div class="flex justify-center items-center">
               <img
                 class="h-auto max-w-full w-1/2 rounded-lg mb-5 mt-2 border"
@@ -147,7 +160,13 @@
                 alt="lettertypes"
               />
             </div>
-
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Daarna ben ik gaan kijken naar welke lettertypes ik wilde gaan
+              gebruiken in mijn portfolio. Ik had al een lettertype uitgekozen
+              voor de wireframes / layouts en dit was Krona One. Alleen was die
+              font alleen beschikbaar in 1 gewicht. Dit vond ik niet mooi om
+              voor alles te gebruiken omdat ik dan niet genoeg variatie had.
+            </p>
             <p class="text-gray-300 text-xl mb-5 font-Roboto">
               Ik heb drie verschillende lettertypes gebruikt in mijn portfolio.
               Dit zijn Roboto, Roboto Condensed en Krona One. Deze lettertypes
@@ -160,6 +179,26 @@
               class="h-auto max-w-full rounded-lg mb-5 mt-2"
               src="/images/fontspng.png"
               alt="lettertypes"
+            />
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Ik ben met mijn werk weer richting Bram gegaan voor feedback en
+              hij zei dat ik wat miste qua kleur voor mijn design. Hij gaf als
+              tip om Paars toe te voegen als klein accent kleurtje. Dit heb ik
+              toegepast op verschillende plekken.
+            </p>
+            <ul
+              class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 mt-5"
+            >
+              <li>Underline onder feedback</li>
+              <li>Accent kleur op de quick down button</li>
+              <li>Accent kleur als underline per selector</li>
+              <li>Accent kleur op navigatie underline</li>
+              <li>Accent kleur op de active button in de footer</li>
+            </ul>
+            <img
+              class="h-auto max-w-full rounded-lg mb-5 mt-2"
+              src="/images/feedbackaccentkleur.png"
+              alt="accent kleur"
             />
           </ContentSection>
           <!--Version control github-->
