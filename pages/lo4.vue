@@ -52,13 +52,31 @@ const products = [
                   directe aanspreekpunt geweest van mijn groep en de
                   stakeholder.
                 </p>
-                <p class="text-gray-300 text-xl"></p>
-                <p class="text-gray-300 text-xl"></p>
-
-                <p class="text-gray-300 text-xl"></p>
+                <p class="text-gray-300 text-xl">
+                  ook heb ik bij alle projecten een projectplan opgesteld samen
+                  met mijn groepsgenoten. Hierin hebben we alle taken beschreven
+                  en hebben we afspraken gemaakt zodat we allemaal wisten wat we
+                  moesten doen. Dit heeft ervoor gezorgd dat we goed konden
+                  samenwerken en dat we elkaar konden helpen waar nodig.
+                </p>
               </div>
               <div class="space-y-4">
-                <p class="text-gray-300 text-xl"></p>
+                <p class="text-gray-300 text-xl">
+                  Bij het eerste project, Branding heb ik veel contact gehad met
+                  de stakeholder maar bij het tweede project, Create that UX,
+                  Cardan heb ik wat minder contact gehad naast de geregelde
+                  contact momenten van school. Ik denk dat we een beter product
+                  hadden kunnen neerzetten als ik of wij als groep wat meer
+                  contact hadden met de stakeholder.
+                </p>
+                <p class="text-gray-300 text-xl">
+                  Op het gebied van verkennend onderzoek heb ik verschillende
+                  methodes toegepast om de doelgroep van de stakeholders te
+                  onderzoeken. Zo heb ik veel usertests uitgevoerd waardoor er
+                  belangrijke veranderingen in mijn projecten werden toegepast.
+                  Hierdoor heb ik ook goed kunnen aantonen wat mijn
+                  ontwerpkeuzes zijn.
+                </p>
               </div>
             </div>
           </div>
