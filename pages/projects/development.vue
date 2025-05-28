@@ -273,9 +273,9 @@
             id="eindpresentatiedev"
             class="scroll-mt-24"
             title="Eind Presentatie"
-            subtitle="Learning Outcome 1 Interactive Media Products"
+            subtitle="Learning Outcome 4 Professional Standard"
             description="Voor dit project heb ik een presentatie gemaakt waarin ik het project heb gepresenteerd. In deze presentatie heb ik het project uitgelegd en de verschillende stationen laten zien in de demo."
-            :loNumber="1"
+            :loNumber="4"
             pdfLink="/documents/DevelopmentEindPresentatie.pdf"
             pdfText="Eind Presentatie"
           >

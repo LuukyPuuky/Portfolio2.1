@@ -13,9 +13,15 @@ const products = [
   { text: "Eind Presentatie Boris", to: "/projects/branding#eindpp" },
   { text: "Projectplan Cardan", to: "/projects/cardan#projectplan" },
   { text: "Researchplan Cardan", to: "/projects/cardan#researchplan" },
+  { text: "Eind Powerpoint Cardan", to: "/projects/cardan#eindpowerpoint" },
   {
     text: "Projectplan Development",
     to: "/projects/development#projectplandev",
+  },
+
+  {
+    text: "Eind Powerpoint Development",
+    to: "/projects/development#eindpresentatiedev",
   },
 ];
 </script>
@@ -36,12 +42,24 @@ const products = [
               stakeholders, verkennend onderzoek en rapportage."
             </p>
             <h2 class="text-4xl font-bold">Reflectie</h2>
-            <div class="space-y-4 max-w-2xl">
-              <p class="text-gray-300 text-xl">hier komt nog een reflectie</p>
-              <p class="text-gray-300 text-xl">
-                Ook heb ik feedback gevraagd aan mijn groepsgenoten en aan mijn
-                leraren over het process.
-              </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl">
+              <div class="space-y-4">
+                <p class="text-gray-300 text-xl">
+                  Ik heb dit semester veel gewerkt aan mijn contact met mijn
+                  stakeholders en het contact met mijn leraren en groepsgenoten.
+                  Ik ben bij het eerste project, Project branding degene geweest
+                  die het contact met Boris bleef houden. Hiermee ben ik het
+                  directe aanspreekpunt geweest van mijn groep en de
+                  stakeholder.
+                </p>
+                <p class="text-gray-300 text-xl"></p>
+                <p class="text-gray-300 text-xl"></p>
+
+                <p class="text-gray-300 text-xl"></p>
+              </div>
+              <div class="space-y-4">
+                <p class="text-gray-300 text-xl"></p>
+              </div>
             </div>
           </div>
 

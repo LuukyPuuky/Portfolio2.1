@@ -367,9 +367,9 @@
             id="eindpowerpoint"
             class="scroll-mt-24"
             title="Eind Powerpoint"
-            subtitle="Learning Outcome 1 Interactive Media Products"
+            subtitle="Learning Outcome 4 Professional Standard"
             description="Voor de eindpresentatie hebben we een powerpoint gemaakt waarin we alles wat we tot nu toe hebben gedaan hebben beschreven. We hebben deze presentatie gegeven aan onze opdrachtgever Cardan."
-            :loNumber="1"
+            :loNumber="4"
             pdf-text="Eind Powerpoint"
             pdf-link="/documents/PowepointCardanOplevering.pdf"
           >

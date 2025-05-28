@@ -246,7 +246,7 @@
               rechterkant ontstond. Dat heb ik opgelost door de content naar het
               midden te verplaatsen. Dat ziet er nu een stuk strakker en
               evenwichtiger uit. Dit was feedback van Mette, Mette zit in
-              semester 7 van Media &amp; Design en heeft veel ervaring met het
+              semester 8 van Media &amp; Design en heeft veel ervaring met het
               maken van websites.
             </p>
 
@@ -392,6 +392,7 @@
 <script setup>
 const products = [
   { text: "Design Proces", to: "/projects/portfolio#designproces" },
+  { text: "Feedback & Usertests", to: "/projects/portfolio#feedback" },
   {
     text: "Versie Control Github",
     to: "/projects/portfolio#versioncontrolportfolio",
