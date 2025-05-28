@@ -183,8 +183,10 @@
             <p class="text-gray-300 text-xl mb-5 font-Roboto">
               Ik ben met mijn werk weer richting Bram gegaan voor feedback en
               hij zei dat ik wat miste qua kleur voor mijn design. Hij gaf als
-              tip om Paars toe te voegen als klein accent kleurtje. Dit heb ik
-              toegepast op verschillende plekken.
+              tip om
+              <span class="underline decoration-purple-400">paars</span> toe te
+              voegen als klein accent kleurtje. Dit heb ik toegepast op
+              verschillende plekken.
             </p>
             <ul
               class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 mt-5"
@@ -200,7 +202,63 @@
               src="/images/feedbackaccentkleur.png"
               alt="accent kleur"
             />
+
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              In de wireframes en eerste layouts zie je dat de navigatiebalk er
+              nog anders uitzag dan in mijn uiteindelijke portfolio. Naarmate
+              het project vorderde, heb ik het ontwerp aangepast.
+            </p>
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Zo heb ik de navigatiebalk in het midden geplaatst en een ronding
+              aan beide kanten toegevoegd. Daarnaast heb ik gekozen voor een
+              glassmorphism-effect, omdat ik dat visueel aantrekkelijk vond en
+              het goed paste bij de rest van het ontwerp. Dit kwam ook naar
+              voren bij mijn moodboard.
+            </p>
           </ContentSection>
+
+          <!-- Feedback & Usertests -->
+          <ContentSection
+            title="Feedback & Usertests"
+            id="feedback"
+            class="scroll-mt-24"
+            subtitle="Learning outcome 3 Iterative Design"
+            description="Tijdens het designproces heb ik op verschillende momenten feedback gekregen. Die feedback heb ik gebruikt om mijn portfolio stap voor stap te verbeteren. Ik heb ook een aantal usertests gedaan om te kijken of alles een beetje logisch en gebruiksvriendelijk werkte. Helaas heb ik deze usertests niet concreet kunnen opschrijven omdat het meer peer-feedback was dat ik in de lessen tijdens het maken van mijn portfolio heb gekregen."
+            :loNumber="3"
+          >
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Eén van de dingen die uit de feedback naar voren kwam, was dat de
+              leeruitkomsten-blokken eruitzagen als een slider. Mensen dachten
+              dat je met de muis van rechts naar links kon swipen, terwijl dat
+              eigenlijk niet de bedoeling was. Om die verwarring te voorkomen,
+              heb ik bovenaan de pagina een korte uitleg toegevoegd waarin staat
+              dat je gewoon naar beneden moet blijven scrollen. Zie plaatje.
+            </p>
+            <img
+              class="h-auto max-w-full mb-5 mt-2 border rounded-xl"
+              src="/images/keepscrollingdown.png"
+              alt="feedback keepscrolling down"
+            />
+
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Ook kreeg ik te horen dat de content op de projectpagina's te veel
+              naar links stond, waardoor er een grote lege ruimte aan de
+              rechterkant ontstond. Dat heb ik opgelost door de content naar het
+              midden te verplaatsen. Dat ziet er nu een stuk strakker en
+              evenwichtiger uit. Dit was feedback van Mette, Mette zit in
+              semester 7 van Media &amp; Design en heeft veel ervaring met het
+              maken van websites.
+            </p>
+
+            <p class="text-gray-300 text-xl mb-5 font-Roboto">
+              Als laatste heb ik zelf ook nog wat dingentjes aangepast die ik
+              niet als extra werk wilde toevoegen. Ik had namelijk langere tijd
+              een About Me pagina. Deze heb ik verwijderd omdat ik daar niet
+              veel focus op wilde leggen en dat het voor dit specifieke
+              portfolio niet nodig was.
+            </p>
+          </ContentSection>
+
           <!--Version control github-->
           <ContentSection
             title="Versie Control Github"
