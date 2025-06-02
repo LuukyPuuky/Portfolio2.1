@@ -57,6 +57,27 @@
             <li>Deliverables</li>
           </ul>
         </ContentSection>
+
+        <ContentSection
+          id="OnderzoekX"
+          class="scroll-mt-24"
+          title="Onderzoek Proces"
+          subtitle="Learning Outcome 1Interactive Media Products"
+          description="Ik merk van mezelf dat ik vaak snel afdwaal naar wat ik wil gaan doen. Zodra ik iets zie dat me interesseert, wil ik het zo snel mogelijk toepassen op mijn project of er dieper in duiken. Dit is soms lastig, maar het levert me wel veel waardevolle inzichten op die ik graag in dit project wil gebruiken."
+          loNumber="1"
+        >
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Daarom ook nu, heb ik al wat inzichten gekregen over hoe ik het wil
+            gaan starten. Dit is de fase na mijn project plan dus ik dwaal
+            helaas ook weer een beetje af van de originele planning die ik had
+            gemaakt.
+          </p>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Ik ben er achter gekomen dat ik TresJS moet gaan gebruiken om de 3d
+            objecten toe te voegen aan mijn portfolio via het framework Nuxt wat
+            ik nu aan het gebruiken ben.
+          </p>
+        </ContentSection>
       </div>
     </div>
     <Footer />
