@@ -33,6 +33,30 @@
         </div>
 
         <!-- Content Section -->
+        <ContentSection
+          id="projectplanX"
+          class="scroll-mt-24"
+          title="Projectplan"
+          subtitle="Learning Outcome 4 Professional Standard"
+          description="Om te beginnen met dit project heb ik een projectplan geschreven waarin ik verschillende onderdelen heb beschreven die ik ga uitvoeren."
+          pdfLink="/documents/ProjectplanX.pdf"
+          pdfText="Projectplan"
+          :loNumber="4"
+        >
+          <p class="text-gray-300 font-Roboto text-xl">
+            Zoals het onderzoek naar de verschillende klimgrepen, het design
+            proces in Blender en de implementatie op mijn portfolio website.
+            Hier staan ze nog even op een rijtje:
+          </p>
+          <ul
+            class="list-disc list-inside text-gray-300 font-Roboto text-xl mb-5 mt-5"
+          >
+            <li>Doelstelling</li>
+            <li>Planning</li>
+            <li>Leeruitkomsten</li>
+            <li>Deliverables</li>
+          </ul>
+        </ContentSection>
       </div>
     </div>
     <Footer />
@@ -40,4 +64,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const products = [
+  { text: "Projectplan", to: "/projects/project-x#projectplanX" },
+];
+</script>
