@@ -12,5 +12,5 @@ export default defineNuxtConfig({
     preset: "cloudflare-pages",
   },
 
-  modules: ["@nuxt/fonts"],
+  modules: ["@nuxt/fonts", "@tresjs/nuxt"],
 });
