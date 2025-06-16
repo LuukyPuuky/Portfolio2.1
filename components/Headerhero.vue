@@ -1,6 +1,6 @@
 <template>
   <div class="md:max-w-6xl mx-auto pt-20 px-4 h-screen">
-    <div class="flex flex-row gap-10">
+    <div class="flex md:flex-row gap-10 flex-col">
       <div class="bg-navy-900 text-white flex flex-col gap-2">
         <h1 class="font-KronaOne md:text-9xl text-6xl md:mx-[-10px] mx-[-4px]">
           Portfolio
@@ -13,7 +13,7 @@
       </div>
 
       <!-- 3D Model Container - Fixed positioning -->
-      <div class="h-[500px] w-[500px] pb-10">
+      <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px] relative">
         <ClientOnly>
           <ThreeHold />
           <template #fallback>

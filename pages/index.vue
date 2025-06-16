@@ -8,7 +8,7 @@
       <Headerhero />
     </ClientOnly>
     <div
-      class="flex justify-center items-center flex-col text-5xl gap-5 font-KronaOne"
+      class="flex justify-center items-center flex-col text-5xl gap-5 font-KronaOne px-4 md:px-0 pt-10 md:pt-20"
     >
       <p>Keep scrolling down</p>
       <ChevronsDown class="animate-bounce size-9" />

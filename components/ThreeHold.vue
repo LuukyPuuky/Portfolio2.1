@@ -4,14 +4,12 @@
     <TresPerspectiveCamera
       ref="cameraRef"
       :args="[45, 1, 0.25, 20]"
-      :position="[-1.8, 0.6, 2.7]"
+      :position="[2, 2, 8]"
     />
-
     <!-- Environment (lighting only, no background) -->
     <Suspense>
       <Environment :files="environmentUrl" :background="false" />
     </Suspense>
-
     <!-- GLTF Model -->
     <Suspense>
       <template #default>
@@ -30,14 +28,18 @@
         </TresMesh>
       </template>
     </Suspense>
-
     <!-- Controls -->
     <OrbitControls
-      :min-distance="2"
-      :max-distance="10"
-      :target="[0, 0, -0.2]"
+      :min-distance="3"
+      :max-distance="20"
+      :target="[0, 0, 0]"
       :enable-damping="true"
       :damping-factor="0.05"
+      :enable-pan="true"
+      :pan-speed="1"
+      :rotate-speed="1"
+      :zoom-speed="1"
+      :screen-space-panning="true"
     />
   </TresCanvas>
 </template>
@@ -60,14 +62,38 @@ const gl = reactive({
 // URLs for assets
 const environmentUrl =
   "https://cdn.jsdelivr.net/gh/mrdoob/three.js@master/examples/textures/equirectangular/royal_esplanade_1k.hdr";
-const modelUrl =
-  "https://cdn.jsdelivr.net/gh/mrdoob/three.js@master/examples/models/gltf/DamagedHelmet/glTF/DamagedHelmet.gltf"; // Default model
+const modelUrl = "/model/testhold3.glb"; // Default model
 
 const cameraRef = ref();
 
 // Event handlers
 function onModelLoad(gltf) {
   console.log("Model loaded successfully:", gltf);
+
+  // Auto-fit camera to model
+  const box = new THREE.Box3().setFromObject(gltf.scene);
+  const center = box.getCenter(new THREE.Vector3());
+  const size = box.getSize(new THREE.Vector3());
+
+  // Calculate ideal camera distance
+  const maxDim = Math.max(size.x, size.y, size.z);
+  const fov = cameraRef.value.fov * (Math.PI / 180);
+  const cameraDistance = Math.abs(maxDim / 2 / Math.tan(fov / 2)) * 1.5;
+
+  // Position camera in front of the model, panned right and zoomed out, looking down
+  cameraRef.value.position.set(
+    center.x + 2,
+    center.y + 2,
+    center.z + cameraDistance * 1.5
+  );
+  cameraRef.value.lookAt(center);
+
+  // Update OrbitControls target
+  const controls = cameraRef.value.parent.getObjectByName("OrbitControls");
+  if (controls) {
+    controls.target.copy(center);
+    controls.update();
+  }
 }
 
 function onProgress(progress) {
