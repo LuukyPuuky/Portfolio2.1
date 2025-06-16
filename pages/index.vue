@@ -4,15 +4,15 @@
   ></div>
   <div class="bg-slate-900 text-white">
     <Navbar />
-    <Headerhero />
+    <ClientOnly>
+      <Headerhero />
+    </ClientOnly>
     <div
       class="flex justify-center items-center flex-col text-5xl gap-5 font-KronaOne"
     >
       <p>Keep scrolling down</p>
-
       <ChevronsDown class="animate-bounce size-9" />
     </div>
-
     <HorizontalCardGroup id="learningoutcomes" />
     <CardStackGroup id="projects" />
     <ScrollToBottom />
@@ -22,6 +22,7 @@
 
 <script setup>
 import { ChevronsDown } from "lucide-vue-next";
+import Threetest from "~/components/ThreeHold.vue";
 </script>
 
 <style>

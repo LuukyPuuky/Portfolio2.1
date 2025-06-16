@@ -78,8 +78,21 @@
             ik nu aan het gebruiken ben.
           </p>
         </ContentSection>
+
+        <ContentSection
+          id="DesignX"
+          class="scroll-mt-24"
+          title="Design Proces"
+          subtitle="Learning Outcome 2 Design and Development"
+          description="Het design proces is een belangrijk onderdeel van dit project. Ik ga verschillende klimgrepen ontwerpen in Blender en deze vervolgens implementeren op mijn portfolio website."
+          loNumber="2"
+          pdfLink="https://www.youtube.com/watch?v=6EFOUUC_9gw"
+          pdfText="ahh"
+        >
+        </ContentSection>
       </div>
     </div>
+
     <Footer />
     <ScrollToBottom />
   </div>
