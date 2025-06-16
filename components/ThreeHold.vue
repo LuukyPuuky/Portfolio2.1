@@ -62,7 +62,7 @@ const gl = reactive({
 // URLs for assets
 const environmentUrl =
   "https://cdn.jsdelivr.net/gh/mrdoob/three.js@master/examples/textures/equirectangular/royal_esplanade_1k.hdr";
-const modelUrl = "/model/testhold3.glb"; // Default model
+const modelUrl = "/model/testhold3compressed.glb"; // Default model
 
 const cameraRef = ref();
 
