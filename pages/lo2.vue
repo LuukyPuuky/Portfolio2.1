@@ -25,6 +25,10 @@ const products = [
     text: "Station 5 Dyslexie Development",
     to: "/projects/development#dyslexie",
   },
+  {
+    text: "",
+    to: "/projects/project-x#DevelopmentX",
+  },
 ];
 </script>
 

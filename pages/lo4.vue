@@ -23,6 +23,10 @@ const products = [
     text: "Eind Powerpoint Development",
     to: "/projects/development#eindpresentatiedev",
   },
+  {
+    text: "Projectplan X",
+    to: "/projects/project-x#projectplanX",
+  },
 ];
 </script>
 

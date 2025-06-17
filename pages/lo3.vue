@@ -17,6 +17,7 @@ const products = [
     text: "Feedback & Usertests Portfolio",
     to: "/projects/portfolio#feedback",
   },
+  { text: "Design Project X", to: "/projects/project-x#DesignX" },
 ];
 </script>
 

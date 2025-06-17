@@ -251,5 +251,8 @@
 <script setup>
 const products = [
   { text: "Projectplan", to: "/projects/project-x#projectplanX" },
+  { text: "Onderzoek", to: "/projects/project-x#OnderzoekX" },
+  { text: "Design", to: "/projects/project-x#DesignX" },
+  { text: "Development", to: "/projects/project-x#DevelopmentX" },
 ];
 </script>

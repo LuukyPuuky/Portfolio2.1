@@ -16,6 +16,7 @@ const products = [
     to: "/projects/cardan#midtermpowerpoint",
   },
   { text: "Customer Journey Cardan", to: "/projects/cardan#customerjourney" },
+  { text: "Onderzoek Project X", to: "/projects/project-x#OnderzoekX" },
 ];
 </script>
 
