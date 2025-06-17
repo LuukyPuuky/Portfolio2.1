@@ -4,7 +4,7 @@
     <TresPerspectiveCamera
       ref="cameraRef"
       :args="[45, 1, 0.25, 20]"
-      :position="[2, 2, 8]"
+      :position="[2, 2, 12]"
     />
     <!-- Environment (lighting only, no background) -->
     <Suspense>
@@ -14,7 +14,7 @@
     <Suspense>
       <template #default>
         <GLTFModel
-          :path="modelUrl"
+          :path="props.modelUrl"
           @load="onModelLoad"
           @progress="onProgress"
           @error="onError"
@@ -50,6 +50,14 @@ import { OrbitControls, GLTFModel, Environment } from "@tresjs/cientos";
 import { ref, reactive } from "vue";
 import * as THREE from "three";
 
+// Props
+const props = defineProps({
+  modelUrl: {
+    type: String,
+    default: "/model/hold3.glb", // Default model URL
+  },
+});
+
 // Reactive WebGL settings
 const gl = reactive({
   antialias: true,
@@ -62,7 +70,7 @@ const gl = reactive({
 // URLs for assets
 const environmentUrl =
   "https://cdn.jsdelivr.net/gh/mrdoob/three.js@master/examples/textures/equirectangular/royal_esplanade_1k.hdr";
-const modelUrl = "/model/testhold3compressed.glb"; // Default model
+const modelUrl = "/model/hold3.glb"; // Default model
 
 const cameraRef = ref();
 
