@@ -183,10 +183,11 @@
             voetgreep.
           </p>
 
-          <p class="text-gray-300 font-Roboto text-xl mb-5">
-            Hier zie je het proces dat ik heb doorlopen. Ik heb er telkens 1
-            greep aan toegevoegd.
-          </p>
+          <img
+            src="/images/boulderholds3d.png"
+            alt="boulderholds 3d"
+            class="mb-5 rounded-lg drop-shadow-black drop-shadow-xl"
+          />
         </ContentSection>
 
         <!-- Implementatie -->
@@ -209,7 +210,15 @@
             website erachter dat ze te groot qua file size waren voor
             Cloudflare. Ik host mijn website hierop. Ik heb via het internet een
             compresser gebruikt die de filesize wat naar beneden bracht.
+            Hieronder staat de code om het 3d model in te laden.
           </p>
+          <Pdf
+            documentLink="https://github.com/LuukyPuuky/Portfolio2.1/blob/main/components/ThreeHold.vue"
+            buttonText="Code voor 3D model inladen"
+            class="mb-5"
+          >
+          </Pdf>
+
           <div class="flex gap-2 mb-5">
             <Pdf
               documentLink="https://codesandbox.io/p/sandbox/threejs-gltf-loader-example-ehvrg?file=%2Fsrc%2Findex.js"
@@ -226,6 +235,10 @@
             >
             </Pdf>
           </div>
+          <p class="text-gray-300 text-xl mb-5">
+            De presentatie van dit komt aankomende vrijdag maar dat heb ik niet
+            voor deze website klaar.
+          </p>
         </ContentSection>
       </div>
     </div>
