@@ -32,7 +32,7 @@
           </div>
         </div>
 
-        <!-- Content Section -->
+        <!-- Projectplan -->
         <ContentSection
           id="projectplanX"
           class="scroll-mt-24"
@@ -58,6 +58,7 @@
           </ul>
         </ContentSection>
 
+        <!-- Onderzoek -->
         <ContentSection
           id="OnderzoekX"
           class="scroll-mt-24"
@@ -79,13 +80,14 @@
           </p>
         </ContentSection>
 
+        <!-- Design Proces -->
         <ContentSection
           id="DesignX"
           class="scroll-mt-24"
           title="Design Proces"
-          subtitle="Learning Outcome 2 Design and Development"
+          subtitle="Learning Outcome 3 Iterative Design"
           description="Het design proces is een belangrijk onderdeel van dit project. Ik ga verschillende klimgrepen ontwerpen in Blender en deze vervolgens implementeren op mijn portfolio website."
-          loNumber="2"
+          loNumber="3"
         >
           <p class="text-gray-300 font-Roboto text-xl mb-5">
             Ik heb gebruik gemaakt van een youtube video van Coleman Becker. Hij
@@ -94,7 +96,7 @@
             basis van verschillende grepen die ik heb gezien in de klimhal.
           </p>
           <div
-            class="grid md:grid-cols-3 md:grid-rows-3 grid-cols-2 grid-rows-2 gap-4 mb-5"
+            class="grid md:grid-cols-3 md:grid-rows-3 grid-cols-1 grid-rows-1 gap-4 mb-5"
           >
             <img
               src="/images/monk1.jpg"
@@ -149,14 +151,14 @@
             te bekijken en uit te voeren, de Donut tutorial.
           </p>
           <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px] relative">
-            <ClientOnly>
+            <LazyClientOnly>
               <ThreeHold model-url="/model/donut.glb" :zoomlevel="20" />
               <template #fallback>
                 <div class="w-full h-full flex items-center justify-center">
                   <div class="text-white/50 text-sm">Loading 3D...</div>
                 </div>
               </template>
-            </ClientOnly>
+            </LazyClientOnly>
           </div>
           <p class="text-gray-300 font-Roboto text-xl mb-5">
             Je ziet dat de render in deze donut niet helemaal goed is. Ik ben
@@ -180,42 +182,50 @@
             het opgedeeld in 3 verschillende grepen. twee handgrepen en 1
             voetgreep.
           </p>
-          <div class="flex gap-10">
-            <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px]">
-              <ClientOnly>
-                <ThreeHold model-url="/model/hold1.glb" :zoomlevel="20" />
-                <template #fallback>
-                  <div class="w-full h-full flex items-center justify-center">
-                    <div class="text-white/50 text-sm">Loading 3D...</div>
-                  </div>
-                </template>
-              </ClientOnly>
-            </div>
-            <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px]">
-              <ClientOnly>
-                <ThreeHold model-url="/model/hold2.glb" :zoomlevel="20" />
-                <template #fallback>
-                  <div class="w-full h-full flex items-center justify-center">
-                    <div class="text-white/50 text-sm">Loading 3D...</div>
-                  </div>
-                </template>
-              </ClientOnly>
-            </div>
-            <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px]">
-              <ClientOnly>
-                <ThreeHold model-url="/model/hold3.glb" :zoomlevel="20" />
-                <template #fallback>
-                  <div class="w-full h-full flex items-center justify-center">
-                    <div class="text-white/50 text-sm">Loading 3D...</div>
-                  </div>
-                </template>
-              </ClientOnly>
-            </div>
-          </div>
+
           <p class="text-gray-300 font-Roboto text-xl mb-5">
             Hier zie je het proces dat ik heb doorlopen. Ik heb er telkens 1
             greep aan toegevoegd.
           </p>
+        </ContentSection>
+
+        <!-- Implementatie -->
+        <ContentSection
+          id="DevelopmentX"
+          class="scroll-mt-24"
+          title="Development Proces"
+          subtitle="Learning Outcome 2 Development & Version Control"
+          description="Om de klimgrepen toe te voegen aan mijn portfolio website, heb ik gebruik gemaakt van TresJS. Dit is een library die het mogelijk maakt om 3D objecten toe te voegen aan je website met behulp van Three.js."
+          loNumber="2"
+        >
+          <p class="text-gray-300 text-xl mb-5">
+            Ik kreeg het eerst niet voor elkaar om mijn modellen in te laden in
+            mijn file dus heb ik op het internet gekeken en heb ik via
+            codesandbox een gltf loader toegevoegd aan mijn project. Deze bleek
+            heel goed te werken.
+          </p>
+          <p class="text-gray-300 text-xl mb-5">
+            Toen kwam ik bij het inladen van mijn blender creaties in mijn
+            website erachter dat ze te groot qua file size waren voor
+            Cloudflare. Ik host mijn website hierop. Ik heb via het internet een
+            compresser gebruikt die de filesize wat naar beneden bracht.
+          </p>
+          <div class="flex gap-2 mb-5">
+            <Pdf
+              documentLink="https://codesandbox.io/p/sandbox/threejs-gltf-loader-example-ehvrg?file=%2Fsrc%2Findex.js"
+              buttonText="Codesandbox GLTF Loader"
+            >
+            </Pdf>
+            <Pdf
+              documentLink="https://gltf.report/"
+              buttonText="GLTF Report"
+            ></Pdf>
+            <Pdf
+              documentLink="https://glb.babylonpress.org/"
+              buttonText="Compress GLB"
+            >
+            </Pdf>
+          </div>
         </ContentSection>
       </div>
     </div>
