@@ -15,7 +15,7 @@
       <!-- 3D Model Container - Fixed positioning -->
       <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px] relative">
         <ClientOnly>
-          <ThreeHold />
+          <ThreeHold model-url="/model/hold3.glb" />
           <template #fallback>
             <div class="w-full h-full flex items-center justify-center">
               <div class="text-white/50 text-sm">Loading 3D...</div>

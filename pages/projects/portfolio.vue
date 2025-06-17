@@ -4,7 +4,7 @@
     <HeaderProject title="Portfolio" subtitle="Luuk Steijaert" />
     <div class="min-h-screen p-4">
       <div class="max-w-6xl mx-auto flex flex-col items-center justify-center">
-        <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-10">
+        <div class="flex flex-col md:flex-row mb-22 md:gap-48 gap-2">
           <div class="max-w-2xl mt-8">
             <h1 class="font-RobotoCondensed text-4xl">Introductie</h1>
             <p class="text-gray-300 font-Roboto text-xl">
@@ -13,12 +13,15 @@
               aan het bekijken bent.
             </p>
           </div>
-          <div class="max-w-4xl flex justify-center items-center">
-            <img
-              src="/images/boulderholds.png"
-              alt="Bolderholds"
-              class="size-64 flex justify-center items-center"
-            />
+          <div class="md:h-[400px] md:w-[400px] h-[400px] w-[400px] relative">
+            <ClientOnly>
+              <ThreeHold model-url="/model/hold3.glb" />
+              <template #fallback>
+                <div class="w-full h-full flex items-center justify-center">
+                  <div class="text-white/50 text-sm">Loading 3D...</div>
+                </div>
+              </template>
+            </ClientOnly>
           </div>
         </div>
         <!-- Products List Section -->

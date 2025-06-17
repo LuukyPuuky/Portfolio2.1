@@ -89,7 +89,78 @@
           pdfLink="https://www.youtube.com/watch?v=6EFOUUC_9gw"
           pdfText="ahh"
         >
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Ik heb gebruik gemaakt van een youtube video van Coleman Becker. Hij
+            had een video gemaakt over hoe je het beste klimgrepen kan maken in
+            blender. Hier heb ik uiteindelijk mijn eigen draai aan gegeven op
+            basis van verschillende grepen die ik heb gezien in de klimhal.
+          </p>
+          <div
+            class="grid md:grid-cols-3 md:grid-rows-3 grid-cols-2 grid-rows-2 gap-4 mb-5"
+          >
+            <img
+              src="/images/monk1.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl h-"
+            />
+            <img
+              src="/images/monk2.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <img
+              src="/images/monk3.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <img
+              src="/images/monk4.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <img
+              src="/images/monk5.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+
+            <img
+              src="/images/monk6.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <img
+              src="/images/monk7.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <img
+              src="/images/monk8.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+            <img
+              src="/images/monk9.jpg"
+              alt="presentatie cardan"
+              class="h-60 w-full object-cover rounded-lg drop-shadow-black drop-shadow-xl"
+            />
+          </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Ik kwam er achter dat ik het nog heel lastig vond om blender te
+            gebruiken dus heb ik besloten om de meest bekende blender tutorial
+            te bekijken en uit te voeren, de Donut tutorial.
+          </p>
         </ContentSection>
+        <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px] relative">
+          <ClientOnly>
+            <ThreeHold model-url="/model/donut.glb" />
+            <template #fallback>
+              <div class="w-full h-full flex items-center justify-center">
+                <div class="text-white/50 text-sm">Loading 3D...</div>
+              </div>
+            </template>
+          </ClientOnly>
+        </div>
       </div>
     </div>
 
