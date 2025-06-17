@@ -86,8 +86,6 @@
           subtitle="Learning Outcome 2 Design and Development"
           description="Het design proces is een belangrijk onderdeel van dit project. Ik ga verschillende klimgrepen ontwerpen in Blender en deze vervolgens implementeren op mijn portfolio website."
           loNumber="2"
-          pdfLink="https://www.youtube.com/watch?v=6EFOUUC_9gw"
-          pdfText="ahh"
         >
           <p class="text-gray-300 font-Roboto text-xl mb-5">
             Ik heb gebruik gemaakt van een youtube video van Coleman Becker. Hij
@@ -150,17 +148,75 @@
             gebruiken dus heb ik besloten om de meest bekende blender tutorial
             te bekijken en uit te voeren, de Donut tutorial.
           </p>
+          <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px] relative">
+            <ClientOnly>
+              <ThreeHold model-url="/model/donut.glb" :zoomlevel="20" />
+              <template #fallback>
+                <div class="w-full h-full flex items-center justify-center">
+                  <div class="text-white/50 text-sm">Loading 3D...</div>
+                </div>
+              </template>
+            </ClientOnly>
+          </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Je ziet dat de render in deze donut niet helemaal goed is. Ik ben
+            ook niet verder gegaan met de tutorial, omdat ik vond dat ik genoeg
+            informatie had gekregen om verder te kunnen met de klimgrepen.
+          </p>
+
+          <div class="flex gap-2 mb-5">
+            <Pdf
+              documentLink="https://www.youtube.com/watch?v=4haAdmHqGOw"
+              buttonText="Donut tutorial"
+            ></Pdf>
+            <Pdf
+              documentLink="https://www.youtube.com/watch?v=6EFOUUC_9gw"
+              buttonText="Klimgrepen tutorial"
+            >
+            </Pdf>
+          </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Ik ben daarna verder gegaan met het maken van de klimgrepen. Ik heb
+            het opgedeeld in 3 verschillende grepen. twee handgrepen en 1
+            voetgreep.
+          </p>
+          <div class="flex gap-10">
+            <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px]">
+              <ClientOnly>
+                <ThreeHold model-url="/model/hold1.glb" :zoomlevel="20" />
+                <template #fallback>
+                  <div class="w-full h-full flex items-center justify-center">
+                    <div class="text-white/50 text-sm">Loading 3D...</div>
+                  </div>
+                </template>
+              </ClientOnly>
+            </div>
+            <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px]">
+              <ClientOnly>
+                <ThreeHold model-url="/model/hold2.glb" :zoomlevel="20" />
+                <template #fallback>
+                  <div class="w-full h-full flex items-center justify-center">
+                    <div class="text-white/50 text-sm">Loading 3D...</div>
+                  </div>
+                </template>
+              </ClientOnly>
+            </div>
+            <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px]">
+              <ClientOnly>
+                <ThreeHold model-url="/model/hold3.glb" :zoomlevel="20" />
+                <template #fallback>
+                  <div class="w-full h-full flex items-center justify-center">
+                    <div class="text-white/50 text-sm">Loading 3D...</div>
+                  </div>
+                </template>
+              </ClientOnly>
+            </div>
+          </div>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Hier zie je het proces dat ik heb doorlopen. Ik heb er telkens 1
+            greep aan toegevoegd.
+          </p>
         </ContentSection>
-        <div class="md:h-[500px] md:w-[500px] h-[300px] w-[300px] relative">
-          <ClientOnly>
-            <ThreeHold model-url="/model/donut.glb" />
-            <template #fallback>
-              <div class="w-full h-full flex items-center justify-center">
-                <div class="text-white/50 text-sm">Loading 3D...</div>
-              </div>
-            </template>
-          </ClientOnly>
-        </div>
       </div>
     </div>
 
