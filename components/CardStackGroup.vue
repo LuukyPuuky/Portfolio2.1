@@ -47,7 +47,7 @@ const cards = [
     title: "Project 2",
     subtitle: "Cardan",
     description:
-      "Voor dit project heb ik samen met mijn groepsgenoten een UX design gemaakt voor Cardan. Cardan is een bedrijf dat zich richt op het verbeteren van de accecibility van websites.",
+      "Voor dit project heb ik samen met mijn groepsgenoten een UX-design gemaakt voor Cardan. Cardan is een bedrijf dat zich richt op het verbeteren van de toegankelijkheid van websites.",
     buttonText: "Lees Meer",
     buttonLink: "/projects/cardan",
     brandingTitle: "Create that UX",
@@ -58,7 +58,7 @@ const cards = [
     title: "Project 3",
     subtitle: "Development",
     description:
-      "Dit project gaat over de development van project 2, create that UX. In dit project heb ik samen met mijn groepsgenoten gewerkt aan het coderen van project 2.",
+      "Dit project gaat over de development van project 2: Create That UX. In dit project heb ik samen met mijn groepsgenoten gewerkt aan het coderen en ontwikkelen van de ontworpen UX uit project 2.",
     buttonText: "Lees Meer",
     buttonLink: "/projects/development",
     brandingTitle: "Development",
@@ -69,7 +69,7 @@ const cards = [
     title: "Project 4",
     subtitle: "Portfolio",
     description:
-      "Dit project gaat over mijn portfolio. Hierin beschrijf ik hoe ik tot mijn portfolio ben gekomen, wat ik ervoor heb gedesigned en hoe ik mezelf beter ben leren kennen in mijn waardes.",
+      "Dit project draait om mijn portfolio. Hierin beschrijf ik hoe ik tot mijn portfolio ben gekomen, wat ik ervoor heb ontworpen en hoe ik mezelf beter heb leren kennen op het gebied van mijn waarden.",
     buttonText: "Lees Meer",
     buttonLink: "/projects/portfolio",
     brandingTitle: "Luuk Steijaert",
