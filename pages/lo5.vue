@@ -4,6 +4,7 @@ import ProductsList from "~/components/ProductsList.vue";
 const products = [
   { text: "Team Roles", to: "/projects/portfolio#teamroles" },
   { text: "16 Personalities", to: "/projects/portfolio#personal" },
+  { text: "Toekomstige Plannen", to: "/projects/portfolio#toekomst" },
 ];
 </script>
 

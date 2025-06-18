@@ -384,6 +384,60 @@
               alt="16 personallities result"
             />
           </ContentSection>
+
+          <ContentSection
+            title="Toekomstige Plannen"
+            id="toekomst"
+            class="scroll-mt-24"
+            subtitle="Learning outcome 5 Personal Leadership"
+            description="Ik ben van plan om voor mijn toekomstige projecten en semesters richting de front-end kant van de ICT te gaan. "
+            :loNumber="5"
+          >
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Ik ga nu semester 3 Front-end Developer doen. Dit past namelijk
+              precies bij wat ik zoek voor de komende tijd en ik denk dat ik
+              daardoor mijn kennis ga verbreden. Ik ben zelf vooral
+              geïntereseerd in animaties op de website. Dit is nu een mega trend
+              en denk dat dat de gebruikers ook aantrekt om mooie functionele
+              websites te kunnen maken.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Ik ben er wel bewust van dat ik nog veel moet leren en dat ik
+              zeker nog aan de start van mijn front-end carrière sta. Maar ik
+              ben gemotiveerd om te blijven leren en mezelf te verbeteren. Ik
+              wil mezelf verder gaan verdiepen in frameworks zoals Nuxt, Next,
+              Svelte en Astro. Ook wil ik meer leren over animaties en hoe ik
+              deze kan toepassen in mijn projecten zoals GSAP. Ik ben er van
+              overtuigd dat ik met de kennis die ik heb opgedaan in dit semester
+              een goede basis heb gelegd voor mijn toekomst als front-end
+              developer.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Daarnaast wil ik ook graag dingen gaan leren over databases en
+              Back-end zodat als klanten in de toekomst hierom vragen dat ik ook
+              weet hoe ik daar mee om moet gaan. Heb nu vooral met Javascript
+              gewerkt maar wil ook met Typescript gaan werken en snappen hoe dat
+              allemaal werkt. OOk ben ik benieuwd naar authenticatie en hoe dat
+              allemaal werkt. Dit is namelijk ook een belangrijk onderdeel van
+              het web in het algemeen. Om je gebruikers veilig jou app te kunnen
+              gebruiken.
+            </p>
+
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Om af te ronden: voor dit portfolio heb ik gebruikgemaakt van
+              Nuxt, GSAP, ThreeJS en Tailwind. Deze tools en frameworks beschouw
+              ik als industriestandaarden, en ik ben blij dat ik er nu al mee
+              heb gewerkt of er in ieder geval al wat ervaring mee heb opgedaan.
+            </p>
+            <p class="text-gray-300 font-Roboto text-xl mb-5">
+              Tijdens Career Day merkte ik echter dat bijna elk bedrijf dat op
+              zoek is naar stagiairs vooral werkt met Next.js in combinatie met
+              React, of met React Native voor mobiele apps. Daarom wil ik me
+              volgend semester gaan verdiepen in Next.js. De structuur van dat
+              framework lijkt gelukkig veel op die van Nuxt, dus ik verwacht dat
+              ik het redelijk snel onder de knie zal krijgen.
+            </p>
+          </ContentSection>
         </div>
       </div>
     </div>
@@ -404,6 +458,7 @@ const products = [
   { text: "Projecten Map Slider", to: "/projects/portfolio#mapslider" },
   { text: "Team Roles", to: "/projects/portfolio#teamroles" },
   { text: "16 Personalities", to: "/projects/portfolio#personal" },
+  { text: "Toekomstige Plannen", to: "/projects/portfolio#toekomst" },
 ];
 
 // Wireframe images array

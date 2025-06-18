@@ -11,7 +11,7 @@
               Project X is het maken van een eigen project als laatste opdracht
               binnen mijn semester 2 Media &amp; Design semester 2 opleiding. In
               dit project ga ik mede door onderzoek, design en ontwikkeling
-              verschillende Klim grepen designen in blender en deze toepassen op
+              verschillende klim grepen designen in blender en deze toepassen op
               mijn portfolio website.
             </p>
           </div>
@@ -235,11 +235,36 @@
             >
             </Pdf>
           </div>
-          <p class="text-gray-300 text-xl mb-5">
-            De presentatie van dit komt aankomende vrijdag maar dat heb ik niet
-            voor deze website klaar.
-          </p>
         </ContentSection>
+
+        <!-- Reflectie -->
+        <div class="max-w-3xl">
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Om af te ronden heb ik voor dit project verschillende
+            onderzoeksmethode's gebruikt van het DOT-framework. Ik ben naar de
+            klimhal toe gegaan om ondezoek te doen naar verschillende
+            klimgrepen, dit valt onder Field research.
+          </p>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Daarnaast heb ik ook gebruik gemaakt van verschillende docs op
+            TresJS en ThreeJS om deze libraries voor 3d op het web beter te
+            begrijpen. Dit valt allemaal onder Library.
+          </p>
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Als laatste heb ik ook nog gebruik gemaakt van de donut tutorial.
+            Dit valt onder Workshop omdat ik de tutorial ben gaan uitvoeren om
+            meer kennis te krijgen over Blender.
+          </p>
+
+          <p class="text-gray-300 font-Roboto text-xl mb-5">
+            Ik ben ter reflectie wel van mening dat ik iets meer had kunnen
+            maken en doen voor project X maar de learning curve van Blender
+            gewoon heel stijl is. Daarom heb ik besloten om het hierbij te laten
+            en alleen dit kleine 3d modelletje toe te voegen aan mijn portfolio.
+            Ik ben er wel heel trots op want het heeft wel mijn design skills
+            laten zien voor Blender en 3d objecten projecteren op een website.
+          </p>
+        </div>
       </div>
     </div>
 
