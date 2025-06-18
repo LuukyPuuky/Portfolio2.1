@@ -49,10 +49,20 @@ const products = [
                   maar ook gekeken naar de smaak van de doelgroep.
                 </p>
                 <p class="text-gray-300 text-xl">
-                  Ook heb ik meer feedback gevraagd aan mijn stakeholders,
-                  leraren en mijn groepsgenoten. Zij gaven veel insides over hoe
-                  ik mijn producten het beste kon maken en verwoorden.
+                  Ik heb ook extra feedback gevraagd aan mijn stakeholders,
+                  docenten en groepsgenoten. Zij gaven waardevolle inzichten
+                  over hoe ik mijn producten het beste kon vormgeven en
+                  verwoorden. Zo heb ik bijvoorbeeld feedback van Bram toegepast
+                  door meer kleur toe te voegen. Daarnaast heb ik peerfeedback
+                  van klasgenoten en vrienden verwerkt, zoals het gebruik van
+                  actieve statements in de footer, zodat je duidelijk kunt zien
+                  waar je je bevindt op de website of in de navigatie bar als je
+                  op de home pagina bent.
                 </p>
+
+                <p class="text-gray-300 text-xl"></p>
+              </div>
+              <div class="space-y-4">
                 <p class="text-gray-300 text-xl">
                   Daarnaast heb ik veel verschillende methodes gebruikt om tot
                   mijn producten te komen. Via het internet ben ik gaan kijken
@@ -61,10 +71,6 @@ const products = [
                   hoe bijvoorbeeld material design gemaakt wordt. Hierdoor kwam
                   ik beter tot de conclusie hoe ik mijn producten moest maken.
                 </p>
-                <p class="text-gray-300 text-xl"></p>
-              </div>
-              <div class="space-y-4">
-                <p class="text-gray-300 text-xl"></p>
               </div>
             </div>
           </div>
