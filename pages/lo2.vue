@@ -26,7 +26,7 @@ const products = [
     to: "/projects/development#dyslexie",
   },
   {
-    text: "",
+    text: "Development X",
     to: "/projects/project-x#DevelopmentX",
   },
 ];
