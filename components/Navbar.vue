@@ -24,6 +24,11 @@ const navItems = [
 
 // Function to check which section is currently in view
 const updateActiveSection = () => {
+  // Check if we're in browser environment
+  if (typeof window === "undefined") {
+    return;
+  }
+
   // If we're not on the home page, don't update based on scroll
   if (route.path !== "/") {
     activeSection.value = "none"; // No section active when not on home page
@@ -57,22 +62,31 @@ const updateActiveSection = () => {
 
 // Set up scroll listener and route watcher
 onMounted(() => {
-  window.addEventListener("scroll", updateActiveSection);
-  updateActiveSection(); // Initial check
+  // Only add scroll listener in browser environment
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", updateActiveSection);
+    updateActiveSection(); // Initial check
+  }
 });
 
 onUnmounted(() => {
-  window.removeEventListener("scroll", updateActiveSection);
+  // Only remove listener if it exists
+  if (typeof window !== "undefined") {
+    window.removeEventListener("scroll", updateActiveSection);
+  }
 });
 
 // Watch for route changes to update active state
 watch(
   () => route.path,
   () => {
-    updateActiveSection();
+    // Add a small delay to ensure DOM is ready
+    nextTick(() => {
+      updateActiveSection();
+    });
   },
-  { immediate: true }
-);
+  { immediate: false }
+); // Changed to false to avoid SSR issues
 
 // Function to check if a nav item is active
 const isActiveItem = (item) => {
@@ -143,9 +157,3 @@ const isHomeActive = () => {
     </nav>
   </div>
 </template>
-
-<script>
-export default {
-  name: "Navbar",
-};
-</script>
