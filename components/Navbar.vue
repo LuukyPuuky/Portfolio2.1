@@ -1,7 +1,88 @@
 <script setup>
 import { NuxtLink } from "#components";
 import { Menu, X } from "lucide-vue-next";
+
 const isOpen = ref(false);
+const activeSection = ref("home"); // Default to home
+const route = useRoute(); // Get current route
+
+// Navigation items with their corresponding section IDs
+const navItems = [
+  {
+    label: "Learning Outcomes",
+    url: "/#learningoutcomes",
+    hash: "#learningoutcomes",
+    sectionId: "learningoutcomes",
+  },
+  {
+    label: "Projects",
+    url: "/#projects",
+    hash: "#projects",
+    sectionId: "projects",
+  },
+];
+
+// Function to check which section is currently in view
+const updateActiveSection = () => {
+  // If we're not on the home page, don't update based on scroll
+  if (route.path !== "/") {
+    activeSection.value = "none"; // No section active when not on home page
+    return;
+  }
+
+  const sections = ["learningoutcomes", "projects"];
+  const scrollPosition = window.scrollY + 200; // Offset for better detection
+
+  // Check if we're at the top of the page (home section)
+  if (window.scrollY < 100) {
+    activeSection.value = "home";
+    return;
+  }
+
+  // Check each section
+  for (const sectionId of sections) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const rect = element.getBoundingClientRect();
+      const elementTop = rect.top + window.scrollY;
+      const elementBottom = elementTop + rect.height;
+
+      if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
+        activeSection.value = sectionId;
+        return;
+      }
+    }
+  }
+};
+
+// Set up scroll listener and route watcher
+onMounted(() => {
+  window.addEventListener("scroll", updateActiveSection);
+  updateActiveSection(); // Initial check
+});
+
+onUnmounted(() => {
+  window.removeEventListener("scroll", updateActiveSection);
+});
+
+// Watch for route changes to update active state
+watch(
+  () => route.path,
+  () => {
+    updateActiveSection();
+  },
+  { immediate: true }
+);
+
+// Function to check if a nav item is active
+const isActiveItem = (item) => {
+  return activeSection.value === item.sectionId;
+};
+
+// Function to check if home/logo is active
+const isHomeActive = () => {
+  return activeSection.value === "home";
+};
 </script>
 
 <template>
@@ -16,8 +97,18 @@ const isOpen = ref(false);
       <!-- Top Section (Logo & Hamburger) -->
       <div class="flex w-full justify-between items-center gap-8">
         <!-- Logo -->
-        <NuxtLink href="/" class="text-lg font-medium font-Roboto text-white">
-          Luuk Steijaert
+        <NuxtLink href="/" class="relative group">
+          <p class="text-lg font-medium font-Roboto text-white">
+            Luuk Steijaert
+          </p>
+          <!-- Home active state - always visible when home is active -->
+          <span
+            class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left transition-transform duration-500 ease-in-out"
+            :class="{
+              'scale-x-100': isHomeActive(),
+              'scale-x-0 group-hover:scale-x-100': !isHomeActive(),
+            }"
+          ></span>
         </NuxtLink>
 
         <!-- Hamburger Icon -->
@@ -39,8 +130,13 @@ const isOpen = ref(false);
           class="relative text-lg font-medium w-max text-white hover:text-white font-Roboto group z-50"
         >
           {{ item.label }}
+          <!-- Active state - visible when section is active, hover state when not -->
           <span
-            class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left scale-x-0 transition-transform duration-500 ease-in-out group-hover:scale-x-100"
+            class="absolute left-0 bottom-0.5 w-full h-0.5 bg-purple-400 origin-left transition-transform duration-500 ease-in-out"
+            :class="{
+              'scale-x-100': isActiveItem(item),
+              'scale-x-0 group-hover:scale-x-100': !isActiveItem(item),
+            }"
           ></span>
         </NuxtLink>
       </div>
@@ -51,17 +147,5 @@ const isOpen = ref(false);
 <script>
 export default {
   name: "Navbar",
-  data() {
-    return {
-      navItems: [
-        {
-          label: "Learning Outcomes",
-          url: "/#learningoutcomes",
-          hash: "#learningOutcomes",
-        },
-        { label: "Projects", url: "/#projects", hash: "#projects" },
-      ],
-    };
-  },
 };
 </script>
